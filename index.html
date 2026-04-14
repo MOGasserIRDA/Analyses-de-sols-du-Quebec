@@ -1076,7 +1076,9 @@
       if (colorStops.length > 0) {
         // Use ['to-string', ['get', ...]] to convert PMTiles property to string for matching
         const colorExpression = ['match', ['to-string', ['get', codeProperty]], ...colorStops, '#cccccc'];
-        console.log('Color expression:', colorExpression.slice(0, 10), '... total entries:', colorStops.length / 2);
+        // Log first few codes for debugging
+        const sampleCodes = colorStops.filter((_, i) => i % 2 === 0).slice(0, 10);
+        console.log('Color mapping for', state.level, '- property:', codeProperty, '- sample codes:', sampleCodes, '- total:', colorStops.length / 2);
         state.map.setPaintProperty(`${state.level}-fill`, 'fill-color', colorExpression);
       } else {
         console.warn('No color stops created - check data');
