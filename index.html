@@ -1046,8 +1046,8 @@
       // Build match expression for PMTiles
       const codeProperty = CONFIG.codeProperty[state.level];
       
-      // Create color mapping - use strings only, convert PMTiles property to string
-      const colorStops = [];
+      // Create color mapping - use strings only
+      const colorMap = {};
       filteredData.forEach(d => {
         const value = d[state.indicator];
         if (value !== null && value !== undefined) {
@@ -1056,22 +1056,27 @@
           const codeNum = parseInt(d.code, 10);
           
           // Add string with leading zero (e.g., "01")
-          colorStops.push(codeStr);
-          colorStops.push(color);
+          colorMap[codeStr] = color;
           
           // Add string without leading zero (e.g., "1") if different
           const codeStrNoZero = String(codeNum);
           if (codeStrNoZero !== codeStr) {
-            colorStops.push(codeStrNoZero);
-            colorStops.push(color);
+            colorMap[codeStrNoZero] = color;
           }
         }
+      });
+      
+      // Convert map to array of [code, color, code, color, ...]
+      const colorStops = [];
+      Object.entries(colorMap).forEach(([code, color]) => {
+        colorStops.push(String(code)); // Ensure string
+        colorStops.push(String(color)); // Ensure string
       });
       
       if (colorStops.length > 0) {
         // Use ['to-string', ['get', ...]] to convert PMTiles property to string for matching
         const colorExpression = ['match', ['to-string', ['get', codeProperty]], ...colorStops, '#cccccc'];
-        console.log('Color expression created with', colorStops.length / 2, 'entries for property', codeProperty);
+        console.log('Color expression:', colorExpression.slice(0, 10), '... total entries:', colorStops.length / 2);
         state.map.setPaintProperty(`${state.level}-fill`, 'fill-color', colorExpression);
       } else {
         console.warn('No color stops created - check data');
