@@ -98,6 +98,14 @@
       overflow: hidden;
     }
     
+    /* Content area (map + table stacked vertically) */
+    .content-area {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    
     /* Sidebar */
     .sidebar {
       width: 260px;
@@ -1001,55 +1009,57 @@
         </div>
       </aside>
       
-      <!-- Map and table -->
-      <div class="map-container">
-        <div id="map">
-          <div class="loading" id="loading">
-            <div class="spinner"></div>
-            <span>Chargement...</span>
+      <!-- Content area (map + table) -->
+      <div class="content-area">
+        <div class="map-container">
+          <div id="map">
+            <div class="loading" id="loading">
+              <div class="spinner"></div>
+              <span>Chargement...</span>
+            </div>
+            
+            <!-- Year indicator -->
+            <div class="year-indicator" id="year-indicator">Toutes les années</div>
+            
+            <!-- Legend -->
+            <div class="legend" id="legend">
+              <div class="legend-title" id="legend-title">Phosphore (kg/ha)</div>
+              <div id="legend-items"></div>
+            </div>
+            
+            <!-- Animation controls -->
+            <div class="animation-controls">
+              <button class="btn-animate" id="btn-animate" onclick="toggleAnimation()">
+                <svg id="icon-play" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                <svg id="icon-pause" viewBox="0 0 24 24" style="display:none"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                <span id="btn-animate-text">Animer</span>
+              </button>
+            </div>
+            
+            <!-- Logos - positioned like in flex.qmd -->
+            <a href="https://www.quebec.ca/" target="_blank" rel="noopener" class="map-logo-quebec">
+              <img src="https://www.foretouverte.gouv.qc.ca/particular/images/QUEB.png" alt="Québec">
+            </a>
+            <a href="https://www.irda.qc.ca/" target="_blank" rel="noopener" class="map-logo-irda">
+              <img src="https://irda.qc.ca/dist/assets/logos/logo-irda-color.svg" alt="IRDA">
+            </a>
           </div>
-          
-          <!-- Year indicator -->
-          <div class="year-indicator" id="year-indicator">Toutes les années</div>
-          
-          <!-- Legend -->
-          <div class="legend" id="legend">
-            <div class="legend-title" id="legend-title">Phosphore (kg/ha)</div>
-            <div id="legend-items"></div>
-          </div>
-          
-          <!-- Animation controls -->
-          <div class="animation-controls">
-            <button class="btn-animate" id="btn-animate" onclick="toggleAnimation()">
-              <svg id="icon-play" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-              <svg id="icon-pause" viewBox="0 0 24 24" style="display:none"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
-              <span id="btn-animate-text">Animer</span>
-            </button>
-          </div>
-          
-          <!-- Logos - positioned like in flex.qmd -->
-          <a href="https://www.quebec.ca/" target="_blank" rel="noopener" class="map-logo-quebec">
-            <img src="https://www.foretouverte.gouv.qc.ca/particular/images/QUEB.png" alt="Québec">
-          </a>
-          <a href="https://www.irda.qc.ca/" target="_blank" rel="noopener" class="map-logo-irda">
-            <img src="https://irda.qc.ca/dist/assets/logos/logo-irda-color.svg" alt="IRDA">
-          </a>
         </div>
-      </div>
-      
-      <!-- Table (outside map-container for mobile tabs) -->
-      <div class="table-container">
-        <div class="table-header">
-          <span class="table-title" id="table-title">Données par région</span>
-          <input type="text" class="search-input" placeholder="Rechercher..." id="search-input" oninput="filterTable()">
-        </div>
-        <div class="table-scroll">
-          <table id="data-table">
-            <thead>
-              <tr id="table-head"></tr>
-            </thead>
-            <tbody id="table-body"></tbody>
-          </table>
+        
+        <!-- Table (outside map-container for mobile tabs) -->
+        <div class="table-container">
+          <div class="table-header">
+            <span class="table-title" id="table-title">Données par région</span>
+            <input type="text" class="search-input" placeholder="Rechercher..." id="search-input" oninput="filterTable()">
+          </div>
+          <div class="table-scroll">
+            <table id="data-table">
+              <thead>
+                <tr id="table-head"></tr>
+              </thead>
+              <tbody id="table-body"></tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>
