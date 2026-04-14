@@ -815,12 +815,31 @@
           <div class="sidebar-title">Indicateur</div>
           <div class="form-group">
             <select id="indicator-select" onchange="updateIndicator()">
-              <option value="Phosphore">Phosphore (kg/ha)</option>
-              <option value="ISP1">Indice saturation P (%)</option>
-              <option value="pH_eau">pH eau</option>
-              <option value="Besoin_en_chaux">Besoin en chaux (t/ha)</option>
-              <option value="Matiere_organique">Matière organique (%)</option>
-              <option value="MO4">Analyses >= 4% MO (%)</option>
+              <optgroup label="Mehlich 3 (kg/ha)">
+                <option value="Phosphore">P - Phosphore</option>
+                <option value="Potassium">K - Potassium</option>
+                <option value="Calcium">Ca - Calcium</option>
+                <option value="Magnesium">Mg - Magnésium</option>
+              </optgroup>
+              <optgroup label="Mehlich 3 (ppm)">
+                <option value="Aluminium">Al - Aluminium</option>
+                <option value="Fer">Fe - Fer</option>
+                <option value="Manganese">Mn - Manganèse</option>
+                <option value="Cuivre">Cu - Cuivre</option>
+              </optgroup>
+              <optgroup label="pH et chaulage">
+                <option value="pH_eau">pH eau</option>
+                <option value="pH_tampon">pH tampon</option>
+                <option value="Besoin_en_chaux">Besoin en chaux (t/ha)</option>
+              </optgroup>
+              <optgroup label="Matière organique">
+                <option value="Matiere_organique">Matière organique (%)</option>
+                <option value="MO4">Analyses >= 4% MO (%)</option>
+              </optgroup>
+              <optgroup label="Autres">
+                <option value="ISP1">Indice saturation P (%)</option>
+                <option value="Capacite_dechange_cationique">CEC (méq/100g)</option>
+              </optgroup>
             </select>
           </div>
         </div>
@@ -953,12 +972,24 @@
         region: 'RES_NM_REG'
       },
       indicators: {
-        Phosphore: { label: 'Phosphore (kg/ha)', unit: 'kg/ha', bins: [0, 50, 100, 150, 200, 250, 500], reverse: false, decimals: 0 },
+        // Mehlich 3 - kg/ha
+        Phosphore: { label: 'P Mehlich 3 (kg/ha)', unit: 'kg/ha', bins: [0, 50, 100, 150, 200, 250, 500], reverse: false, decimals: 0 },
+        Potassium: { label: 'K Mehlich 3 (kg/ha)', unit: 'kg/ha', bins: [0, 100, 200, 300, 400, 500, 800], reverse: false, decimals: 0 },
+        Calcium: { label: 'Ca Mehlich 3 (kg/ha)', unit: 'kg/ha', bins: [0, 1000, 2000, 3000, 4000, 5000, 8000], reverse: false, decimals: 0 },
+        Magnesium: { label: 'Mg Mehlich 3 (kg/ha)', unit: 'kg/ha', bins: [0, 100, 200, 300, 400, 500, 800], reverse: false, decimals: 0 },
+        // Mehlich 3 - ppm (mg/kg)
+        Aluminium: { label: 'Al Mehlich 3 (ppm)', unit: 'ppm', bins: [0, 500, 1000, 1500, 2000, 2500, 3500], reverse: false, decimals: 0 },
+        Manganese: { label: 'Mn Mehlich 3 (ppm)', unit: 'ppm', bins: [0, 20, 40, 60, 80, 100, 150], reverse: false, decimals: 0 },
+        Cuivre: { label: 'Cu Mehlich 3 (ppm)', unit: 'ppm', bins: [0, 1, 2, 3, 4, 5, 10], reverse: false, decimals: 1 },
+        Fer: { label: 'Fe Mehlich 3 (ppm)', unit: 'ppm', bins: [0, 100, 200, 300, 400, 500, 800], reverse: false, decimals: 0 },
+        // Autres indicateurs
         ISP1: { label: 'Indice saturation P (%)', unit: '%', bins: [0, 1, 2, 3, 4, 5, 6, 10], reverse: false, decimals: 1 },
         pH_eau: { label: 'pH eau', unit: '', bins: [4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8], reverse: false, decimals: 2 },
+        pH_tampon: { label: 'pH tampon', unit: '', bins: [5, 5.5, 6, 6.5, 7, 7.5, 8], reverse: false, decimals: 2 },
         Besoin_en_chaux: { label: 'Besoin en chaux (t/ha)', unit: 't/ha', bins: [0, 2, 4, 6, 8, 10, 15], reverse: true, decimals: 1 },
         Matiere_organique: { label: 'Matière organique (%)', unit: '%', bins: [0, 2, 3, 4, 5, 6, 8, 12], reverse: false, decimals: 1 },
-        MO4: { label: 'Analyses >= 4% MO (%)', unit: '%', bins: [0, 20, 40, 60, 80, 100], reverse: false, decimals: 0 }
+        MO4: { label: 'Analyses >= 4% MO (%)', unit: '%', bins: [0, 20, 40, 60, 80, 100], reverse: false, decimals: 0 },
+        Capacite_dechange_cationique: { label: 'CEC (méq/100g)', unit: 'méq/100g', bins: [0, 10, 15, 20, 25, 30, 40], reverse: false, decimals: 1 }
       },
       colors: {
         default: ['#d73027', '#fc8d59', '#fee08b', '#d9ef8b', '#91cf60', '#1a9850'],
