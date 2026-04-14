@@ -566,6 +566,123 @@
       color: var(--text-muted);
       margin-top: 4px;
     }
+    
+    /* Info button */
+    .btn-info {
+      background: transparent;
+      border: 2px solid white;
+      color: white;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 12px;
+      transition: all 0.2s;
+    }
+    
+    .btn-info:hover {
+      background: white;
+      color: var(--primary);
+    }
+    
+    /* Modal */
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 1000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    
+    .modal-overlay.open {
+      display: flex;
+    }
+    
+    .modal {
+      background: white;
+      border-radius: var(--radius);
+      max-width: 800px;
+      max-height: 90vh;
+      overflow-y: auto;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    }
+    
+    .modal-header {
+      background: var(--primary);
+      color: white;
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+    }
+    
+    .modal-header h2 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin: 0;
+    }
+    
+    .modal-close {
+      background: transparent;
+      border: none;
+      color: white;
+      font-size: 1.5rem;
+      cursor: pointer;
+      padding: 0;
+      line-height: 1;
+    }
+    
+    .modal-close:hover {
+      opacity: 0.8;
+    }
+    
+    .modal-body {
+      padding: 20px;
+      font-size: 0.9rem;
+      line-height: 1.7;
+      color: var(--text-dark);
+    }
+    
+    .modal-body p {
+      margin-bottom: 1em;
+    }
+    
+    .modal-body p:last-child {
+      margin-bottom: 0;
+    }
+    
+    .modal-body a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+    
+    .modal-body a:hover {
+      text-decoration: underline;
+    }
+    
+    .modal-contact {
+      background: var(--bg-light);
+      padding: 12px 16px;
+      border-radius: var(--radius);
+      margin-top: 1em;
+    }
+    
+    .modal-contact p {
+      margin-bottom: 0.3em;
+    }
   </style>
 </head>
 <body>
@@ -576,15 +693,45 @@
         <button class="mobile-menu-btn" onclick="toggleSidebar()" aria-label="Menu">&#9776;</button>
         <h1>Analyse des sols du Québec (2007-2024)</h1>
       </div>
-      <div class="header-logos">
-        <a href="https://www.quebec.ca/" target="_blank" rel="noopener">
-          <img src="https://www.foretouverte.gouv.qc.ca/particular/images/QUEB.png" alt="Québec">
-        </a>
-        <a href="https://www.irda.qc.ca/" target="_blank" rel="noopener">
-          <img src="https://irda.qc.ca/dist/assets/logos/logo-irda-color.svg" alt="IRDA" class="irda-logo">
-        </a>
+      <div style="display: flex; align-items: center;">
+        <button class="btn-info" onclick="openInfoModal()" aria-label="Information" title="À propos">i</button>
+        <div class="header-logos">
+          <a href="https://www.quebec.ca/" target="_blank" rel="noopener">
+            <img src="https://www.foretouverte.gouv.qc.ca/particular/images/QUEB.png" alt="Québec">
+          </a>
+          <a href="https://www.irda.qc.ca/" target="_blank" rel="noopener">
+            <img src="https://irda.qc.ca/dist/assets/logos/logo-irda-color.svg" alt="IRDA" class="irda-logo">
+          </a>
+        </div>
       </div>
     </header>
+    
+    <!-- Info Modal -->
+    <div class="modal-overlay" id="info-modal" onclick="closeInfoModal(event)">
+      <div class="modal" onclick="event.stopPropagation()">
+        <div class="modal-header">
+          <h2>À propos de ce tableau de bord</h2>
+          <button class="modal-close" onclick="closeInfoModal()">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p>Ce tableau de bord interactif présente un portrait de l'évolution spatio-temporelle de certains indicateurs de la chimie-fertilité des sols agricoles du Québec, basé sur l'analyse de plus de 600 000 échantillons de sols recueillis entre 2007 et 2024 par deux laboratoires privés. Les données ont été centralisées, nettoyées et agrégées afin de permettre une visualisation cohérente des principales tendances observées à travers le territoire québécois.</p>
+          
+          <p>L'outil permet de visualiser l'évolution spatio-temporelle de quatre indicateurs essentiels à l'évaluation de la santé des sols : la matière organique (MO), le pH, le phosphore assimilable (P) et l'indice de saturation en phosphore (ISP). Ces indicateurs jouent un rôle fondamental dans le maintien de la productivité des sols, la durabilité des systèmes agricoles et la prévention des pertes environnementales.</p>
+          
+          <p>Les données sont agrégées à deux niveaux d'analyse géographique : les régions administratives et les municipalités régionales de comté (MRC). Pour chaque indicateur, le tableau de bord permet d'examiner les valeurs médianes régionales et leur évolution de 2007 à 2024, de comparer les écarts entre territoires, et d'identifier les zones où les niveaux des indicateurs sont faibles, moyens, élevés ou sont près de dépasser les seuils critiques. Pour la matière organique, une attention particulière est accordée à la proportion d'échantillons dépassant le seuil de 4 %, tel que défini par le Plan d'agriculture durable (PAD) du MAPAQ comme cible minimale à atteindre pour assurer la résilience et la qualité des sols cultivés.</p>
+          
+          <p>Il est toutefois essentiel d'interpréter ces résultats avec rigueur et prudence. D'une part, la géolocalisation des échantillons repose sur les codes postaux des producteurs ou des organisations ayant soumis les échantillons. Cette méthode engendre une incertitude spatiale variable, avec des écarts parfois significatifs entre la localisation réelle du champ et celle associée au code postal. D'autre part, les pratiques d'échantillonnage ne sont ni aléatoires ni systématiques dans le temps, ce qui limite la comparabilité interannuelle, en particulier à des échelles géographiques fines. Enfin, une fraction des échantillons peut provenir de milieux non agricoles (terrains résidentiels, parcellaires expérimentaux, carrières, etc.), ce qui peut introduire des biais dans l'estimation des teneurs médianes.</p>
+          
+          <p>Pour une compréhension complète des méthodes utilisées, des traitements appliqués aux données, des limites d'interprétation et des choix d'agrégation, nous vous invitons à consulter le document d'accompagnement méthodologique. Ce dernier détaille l'origine des données, les critères de sélection des échantillons, les processus de géocodage, ainsi que les stratégies de filtrage et d'agrégation spatiale mises en œuvre.</p>
+          
+          <div class="modal-contact">
+            <p><strong>Pour plus d'information :</strong></p>
+            <p>Cédric Bouffard, professionnel de recherche : <a href="mailto:cedric.bouffard@irda.qc.ca">cedric.bouffard@irda.qc.ca</a></p>
+            <p>Marc-Olivier Gasser, chercheur : <a href="mailto:marc-o.gasser@irda.qc.ca">marc-o.gasser@irda.qc.ca</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
     
     <!-- Main content -->
     <div class="main-content">
@@ -1340,6 +1487,27 @@
         document.getElementById('sidebar').classList.remove('open');
       }
     }
+    
+    // Open info modal
+    function openInfoModal() {
+      document.getElementById('info-modal').classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    
+    // Close info modal
+    function closeInfoModal(event) {
+      if (!event || event.target === event.currentTarget) {
+        document.getElementById('info-modal').classList.remove('open');
+        document.body.style.overflow = '';
+      }
+    }
+    
+    // Close modal with Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeInfoModal();
+      }
+    });
     
     // Initialize on load
     document.addEventListener('DOMContentLoaded', init);
