@@ -768,7 +768,7 @@
     }
     
     .modal-body {
-      padding: 20px;
+      padding: 24px;
       font-size: 0.9rem;
       line-height: 1.7;
       color: var(--text-dark);
@@ -791,11 +791,121 @@
       text-decoration: underline;
     }
     
+    .modal-section {
+      margin-bottom: 24px;
+    }
+    
+    .modal-section:last-child {
+      margin-bottom: 0;
+    }
+    
+    .modal-section-title {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--primary);
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .modal-section-title svg {
+      width: 18px;
+      height: 18px;
+      flex-shrink: 0;
+    }
+    
+    .modal-highlight {
+      background: linear-gradient(135deg, rgba(0, 39, 82, 0.05), rgba(174, 209, 54, 0.1));
+      padding: 16px;
+      border-radius: var(--radius);
+      border-left: 4px solid var(--secondary);
+      margin: 16px 0;
+    }
+    
+    .modal-stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 12px;
+      margin: 16px 0;
+    }
+    
+    .modal-stat {
+      background: var(--bg-light);
+      padding: 12px;
+      border-radius: var(--radius);
+      text-align: center;
+    }
+    
+    .modal-stat-value {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    
+    .modal-stat-label {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+    
     .modal-contact {
       background: var(--bg-light);
+      padding: 16px;
+      border-radius: var(--radius);
+      margin-top: 16px;
+    }
+    
+    .modal-contact-title {
+      font-weight: 600;
+      margin-bottom: 12px;
+      color: var(--primary);
+    }
+    
+    .modal-contact-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 8px;
+      font-size: 0.85rem;
+    }
+    
+    .modal-contact-item:last-child {
+      margin-bottom: 0;
+    }
+    
+    .modal-contact-item svg {
+      width: 16px;
+      height: 16px;
+      color: var(--text-muted);
+      flex-shrink: 0;
+    }
+    
+    .modal-warning {
+      background: #fff8e6;
+      border-left: 4px solid #f0ad4e;
       padding: 12px 16px;
       border-radius: var(--radius);
-      margin-top: 1em;
+      margin: 16px 0;
+      font-size: 0.85rem;
+    }
+    
+    .modal-logos {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 20px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border-color);
+    }
+    
+    .modal-logos img {
+      height: 40px;
+    }
+    
+    .modal-logos img.irda-logo {
+      height: 32px;
     }
     
     .modal-contact p {
@@ -951,24 +1061,96 @@
     <div class="modal-overlay" id="info-modal" onclick="closeInfoModal(event)">
       <div class="modal" onclick="event.stopPropagation()">
         <div class="modal-header">
-          <h2>À propos de ce tableau de bord</h2>
+          <h2 id="modal-title">À propos</h2>
           <button class="modal-close" onclick="closeInfoModal()">&times;</button>
         </div>
-        <div class="modal-body">
-          <p>Ce tableau de bord interactif présente un portrait de l'évolution spatio-temporelle de certains indicateurs de la chimie-fertilité des sols agricoles du Québec, basé sur l'analyse de plus de 600 000 échantillons de sols recueillis entre 2007 et 2024 par deux laboratoires privés. Les données ont été centralisées, nettoyées et agrégées afin de permettre une visualisation cohérente des principales tendances observées à travers le territoire québécois.</p>
+        <div class="modal-body" id="modal-body">
+          <!-- Stats summary -->
+          <div class="modal-stats" id="modal-stats">
+            <div class="modal-stat">
+              <div class="modal-stat-value">600 000+</div>
+              <div class="modal-stat-label">échantillons analysés</div>
+            </div>
+            <div class="modal-stat">
+              <div class="modal-stat-value">2007-2024</div>
+              <div class="modal-stat-label">période couverte</div>
+            </div>
+            <div class="modal-stat">
+              <div class="modal-stat-value">17</div>
+              <div class="modal-stat-label">régions</div>
+            </div>
+            <div class="modal-stat">
+              <div class="modal-stat-value">96</div>
+              <div class="modal-stat-label">MRC</div>
+            </div>
+          </div>
           
-          <p>L'outil permet de visualiser l'évolution spatio-temporelle de quatre indicateurs essentiels à l'évaluation de la santé des sols : la matière organique (MO), le pH, le phosphore assimilable (P) et l'indice de saturation en phosphore (ISP). Ces indicateurs jouent un rôle fondamental dans le maintien de la productivité des sols, la durabilité des systèmes agricoles et la prévention des pertes environnementales.</p>
+          <!-- Description -->
+          <div class="modal-section">
+            <div class="modal-section-title">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+              <span id="modal-desc-title">Description</span>
+            </div>
+            <p id="modal-desc-text">Ce tableau de bord interactif présente l'évolution spatio-temporelle des indicateurs de fertilité des sols agricoles du Québec. Les données proviennent de deux laboratoires privés et ont été centralisées, nettoyées et agrégées pour permettre une visualisation cohérente des tendances à travers le territoire.</p>
+          </div>
           
-          <p>Les données sont agrégées à deux niveaux d'analyse géographique : les régions administratives et les municipalités régionales de comté (MRC). Pour chaque indicateur, le tableau de bord permet d'examiner les valeurs médianes régionales et leur évolution de 2007 à 2024, de comparer les écarts entre territoires, et d'identifier les zones où les niveaux des indicateurs sont faibles, moyens, élevés ou sont près de dépasser les seuils critiques. Pour la matière organique, une attention particulière est accordée à la proportion d'échantillons dépassant le seuil de 4 %, tel que défini par le Plan d'agriculture durable (PAD) du MAPAQ comme cible minimale à atteindre pour assurer la résilience et la qualité des sols cultivés.</p>
+          <!-- Indicators -->
+          <div class="modal-section">
+            <div class="modal-section-title">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M18 9l-5 5-4-4-3 3"/></svg>
+              <span id="modal-ind-title">Indicateurs disponibles</span>
+            </div>
+            <div class="modal-highlight" id="modal-ind-list">
+              <strong>Mehlich 3 :</strong> P, K, Ca, Mg, Al, Fe, Mn, Cu<br>
+              <strong>pH :</strong> pH eau, pH tampon, Besoin en chaux<br>
+              <strong>Matière organique :</strong> MO (%), Proportion MO ≥ 4%<br>
+              <strong>Autres :</strong> Indice de saturation en P, CEC
+            </div>
+          </div>
           
-          <p>Il est toutefois essentiel d'interpréter ces résultats avec rigueur et prudence. D'une part, la géolocalisation des échantillons repose sur les codes postaux des producteurs ou des organisations ayant soumis les échantillons. Cette méthode engendre une incertitude spatiale variable, avec des écarts parfois significatifs entre la localisation réelle du champ et celle associée au code postal. D'autre part, les pratiques d'échantillonnage ne sont ni aléatoires ni systématiques dans le temps, ce qui limite la comparabilité interannuelle, en particulier à des échelles géographiques fines. Enfin, une fraction des échantillons peut provenir de milieux non agricoles (terrains résidentiels, parcellaires expérimentaux, carrières, etc.), ce qui peut introduire des biais dans l'estimation des teneurs médianes.</p>
+          <!-- Methodology -->
+          <div class="modal-section">
+            <div class="modal-section-title">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+              <span id="modal-method-title">Méthodologie</span>
+            </div>
+            <p id="modal-method-text">Les données sont agrégées à deux niveaux géographiques : régions administratives et MRC. La géolocalisation est basée sur les codes postaux des producteurs. Les valeurs présentées sont des médianes ou moyennes selon l'indicateur.</p>
+          </div>
           
-          <p>Pour une compréhension complète des méthodes utilisées, des traitements appliqués aux données, des limites d'interprétation et des choix d'agrégation, nous vous invitons à consulter le document d'accompagnement méthodologique. Ce dernier détaille l'origine des données, les critères de sélection des échantillons, les processus de géocodage, ainsi que les stratégies de filtrage et d'agrégation spatiale mises en œuvre.</p>
+          <!-- Warning -->
+          <div class="modal-warning" id="modal-warning">
+            <strong>Note d'interprétation :</strong> La géolocalisation par code postal engendre une incertitude spatiale. Les pratiques d'échantillonnage ne sont ni aléatoires ni systématiques, ce qui limite la comparabilité interannuelle à fine échelle.
+          </div>
           
+          <!-- Contact -->
           <div class="modal-contact">
-            <p><strong>Pour plus d'information :</strong></p>
-            <p>Cédric Bouffard, professionnel de recherche : <a href="mailto:cedric.bouffard@irda.qc.ca">cedric.bouffard@irda.qc.ca</a></p>
-            <p>Marc-Olivier Gasser, chercheur : <a href="mailto:marc-o.gasser@irda.qc.ca">marc-o.gasser@irda.qc.ca</a></p>
+            <div class="modal-contact-title" id="modal-contact-title">Contact</div>
+            <div class="modal-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              <span>Cédric Bouffard, professionnel de recherche</span>
+            </div>
+            <div class="modal-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <a href="mailto:cedric.bouffard@irda.qc.ca">cedric.bouffard@irda.qc.ca</a>
+            </div>
+            <div class="modal-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              <span>Marc-Olivier Gasser, chercheur</span>
+            </div>
+            <div class="modal-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <a href="mailto:marc-o.gasser@irda.qc.ca">marc-o.gasser@irda.qc.ca</a>
+            </div>
+          </div>
+          
+          <!-- Logos -->
+          <div class="modal-logos">
+            <a href="https://www.irda.qc.ca/" target="_blank" rel="noopener">
+              <img src="https://irda.qc.ca/dist/assets/logos/logo-irda-color.svg" alt="IRDA" class="irda-logo">
+            </a>
+            <a href="https://www.quebec.ca/" target="_blank" rel="noopener">
+              <img src="https://www.foretouverte.gouv.qc.ca/particular/images/QUEB.png" alt="Québec">
+            </a>
           </div>
         </div>
       </div>
@@ -1233,13 +1415,21 @@
         stop: 'Arrêter',
         analyses: 'analyses',
         footer: 'Ce projet a été financé par le Ministère de l\'Agriculture, des Pêcheries et de l\'Alimentation du Québec.',
-        aboutTitle: 'À propos de ce tableau de bord',
-        aboutP1: 'Ce tableau de bord interactif présente un portrait de l\'évolution spatio-temporelle de certains indicateurs de la chimie-fertilité des sols agricoles du Québec, basé sur l\'analyse de plus de 600 000 échantillons de sols recueillis entre 2007 et 2024 par deux laboratoires privés. Les données ont été centralisées, nettoyées et agrégées afin de permettre une visualisation cohérente des principales tendances observées à travers le territoire québécois.',
-        aboutP2: 'L\'outil permet de visualiser l\'évolution spatio-temporelle de quatre indicateurs essentiels à l\'évaluation de la santé des sols : la matière organique (MO), le pH, le phosphore assimilable (P) et l\'indice de saturation en phosphore (ISP). Ces indicateurs jouent un rôle fondamental dans le maintien de la productivité des sols, la durabilité des systèmes agricoles et la prévention des pertes environnementales.',
-        aboutP3: 'Les données sont agrégées à deux niveaux d\'analyse géographique : les régions administratives et les municipalités régionales de comté (MRC). Pour chaque indicateur, le tableau de bord permet d\'examiner les valeurs médianes régionales et leur évolution de 2007 à 2024, de comparer les écarts entre territoires, et d\'identifier les zones où les niveaux des indicateurs sont faibles, moyens, élevés ou sont près de dépasser les seuils critiques. Pour la matière organique, une attention particulière est accordée à la proportion d\'échantillons dépassant le seuil de 4 %, tel que défini par le Plan d\'agriculture durable (PAD) du MAPAQ comme cible minimale à atteindre pour assurer la résilience et la qualité des sols cultivés.',
-        aboutP4: 'Il est toutefois essentiel d\'interpréter ces résultats avec rigueur et prudence. D\'une part, la géolocalisation des échantillons repose sur les codes postaux des producteurs ou des organisations ayant soumis les échantillons. Cette méthode engendre une incertitude spatiale variable, avec des écarts parfois significatifs entre la localisation réelle du champ et celle associée au code postal. D\'autre part, les pratiques d\'échantillonnage ne sont ni aléatoires ni systématiques dans le temps, ce qui limite la comparabilité interannuelle, en particulier à des échelles géographiques fines. Enfin, une fraction des échantillons peut provenir de milieux non agricoles (terrains résidentiels, parcellaires expérimentaux, carrières, etc.), ce qui peut introduire des biais dans l\'estimation des teneurs médianes.',
-        aboutP5: 'Pour une compréhension complète des méthodes utilisées, des traitements appliqués aux données, des limites d\'interprétation et des choix d\'agrégation, nous vous invitons à consulter le document d\'accompagnement méthodologique. Ce dernier détaille l\'origine des données, les critères de sélection des échantillons, les processus de géocodage, ainsi que les stratégies de filtrage et d\'agrégation spatiale mises en œuvre.',
-        contactTitle: 'Pour plus d\'information :',
+        aboutTitle: 'À propos',
+        // Modal stats
+        statSamples: 'échantillons analysés',
+        statPeriod: 'période couverte',
+        statRegions: 'régions',
+        statMRC: 'MRC',
+        // Modal sections
+        modalDescTitle: 'Description',
+        modalDescText: 'Ce tableau de bord interactif présente l\'évolution spatio-temporelle des indicateurs de fertilité des sols agricoles du Québec. Les données proviennent de deux laboratoires privés et ont été centralisées, nettoyées et agrégées pour permettre une visualisation cohérente des tendances à travers le territoire.',
+        modalIndTitle: 'Indicateurs disponibles',
+        modalIndList: '<strong>Mehlich 3 :</strong> P, K, Ca, Mg, Al, Fe, Mn, Cu<br><strong>pH :</strong> pH eau, pH tampon, Besoin en chaux<br><strong>Matière organique :</strong> MO (%), Proportion MO ≥ 4%<br><strong>Autres :</strong> Indice de saturation en P, CEC',
+        modalMethodTitle: 'Méthodologie',
+        modalMethodText: 'Les données sont agrégées à deux niveaux géographiques : régions administratives et MRC. La géolocalisation est basée sur les codes postaux des producteurs. Les valeurs présentées sont des médianes ou moyennes selon l\'indicateur.',
+        modalWarning: '<strong>Note d\'interprétation :</strong> La géolocalisation par code postal engendre une incertitude spatiale. Les pratiques d\'échantillonnage ne sont ni aléatoires ni systématiques, ce qui limite la comparabilité interannuelle à fine échelle.',
+        contactTitle: 'Contact',
         contactRole1: 'professionnel de recherche',
         contactRole2: 'chercheur',
         statOnlyMean: 'Seule la moyenne est disponible pour cet indicateur.',
@@ -1316,13 +1506,21 @@
         stop: 'Stop',
         analyses: 'analyses',
         footer: 'This project was funded by the Ministère de l\'Agriculture, des Pêcheries et de l\'Alimentation du Québec.',
-        aboutTitle: 'About this dashboard',
-        aboutP1: 'This interactive dashboard presents a portrait of the spatio-temporal evolution of certain soil chemistry-fertility indicators in Quebec agricultural soils, based on the analysis of more than 600,000 soil samples collected between 2007 and 2024 by two private laboratories. The data have been centralized, cleaned and aggregated to allow a coherent visualization of the main trends observed across Quebec territory.',
-        aboutP2: 'The tool allows visualization of the spatio-temporal evolution of four essential indicators for assessing soil health: organic matter (OM), pH, available phosphorus (P) and phosphorus saturation index (PSI). These indicators play a fundamental role in maintaining soil productivity, the sustainability of agricultural systems and preventing environmental losses.',
-        aboutP3: 'Data are aggregated at two geographic analysis levels: administrative regions and regional county municipalities (RCM). For each indicator, the dashboard allows examining regional median values and their evolution from 2007 to 2024, comparing differences between territories, and identifying areas where indicator levels are low, medium, high or close to exceeding critical thresholds. For organic matter, particular attention is paid to the proportion of samples exceeding the 4% threshold, as defined by MAPAQ\'s Sustainable Agriculture Plan (PAD) as the minimum target to achieve for ensuring soil resilience and quality.',
-        aboutP4: 'However, it is essential to interpret these results with rigor and caution. On one hand, sample geolocation is based on postal codes of producers or organizations that submitted the samples. This method generates variable spatial uncertainty, with sometimes significant differences between the actual field location and that associated with the postal code. On the other hand, sampling practices are neither random nor systematic over time, which limits inter-annual comparability, particularly at fine geographic scales. Finally, a fraction of samples may come from non-agricultural environments (residential land, experimental plots, quarries, etc.), which may introduce biases in estimating median contents.',
-        aboutP5: 'For a complete understanding of the methods used, data processing, interpretation limitations and aggregation choices, please consult the methodological accompanying document. It details data origin, sample selection criteria, geocoding processes, as well as filtering and spatial aggregation strategies implemented.',
-        contactTitle: 'For more information:',
+        aboutTitle: 'About',
+        // Modal stats
+        statSamples: 'samples analyzed',
+        statPeriod: 'period covered',
+        statRegions: 'regions',
+        statMRC: 'RCMs',
+        // Modal sections
+        modalDescTitle: 'Description',
+        modalDescText: 'This interactive dashboard presents the spatio-temporal evolution of soil fertility indicators in Quebec agricultural soils. Data comes from two private laboratories and has been centralized, cleaned and aggregated to allow coherent visualization of trends across the territory.',
+        modalIndTitle: 'Available indicators',
+        modalIndList: '<strong>Mehlich 3:</strong> P, K, Ca, Mg, Al, Fe, Mn, Cu<br><strong>pH:</strong> Water pH, Buffer pH, Lime requirement<br><strong>Organic matter:</strong> OM (%), Proportion OM ≥ 4%<br><strong>Other:</strong> P saturation index, CEC',
+        modalMethodTitle: 'Methodology',
+        modalMethodText: 'Data are aggregated at two geographic levels: administrative regions and RCMs. Geolocation is based on producer postal codes. Values presented are medians or means depending on the indicator.',
+        modalWarning: '<strong>Interpretation note:</strong> Geolocation by postal code creates spatial uncertainty. Sampling practices are neither random nor systematic, which limits inter-annual comparability at fine scales.',
+        contactTitle: 'Contact',
         contactRole1: 'research professional',
         contactRole2: 'researcher',
         statOnlyMean: 'Only the mean is available for this indicator.',
@@ -2175,20 +2373,23 @@
       document.querySelector('.footer').textContent = t('footer');
       
       // Modal
-      document.querySelector('.modal-header h2').textContent = t('aboutTitle');
-      const modalBody = document.querySelector('.modal-body');
-      modalBody.innerHTML = `
-        <p>${t('aboutP1')}</p>
-        <p>${t('aboutP2')}</p>
-        <p>${t('aboutP3')}</p>
-        <p>${t('aboutP4')}</p>
-        <p>${t('aboutP5')}</p>
-        <div class="modal-contact">
-          <p><strong>${t('contactTitle')}</strong></p>
-          <p>Cédric Bouffard, ${t('contactRole1')} : <a href="mailto:cedric.bouffard@irda.qc.ca">cedric.bouffard@irda.qc.ca</a></p>
-          <p>Marc-Olivier Gasser, ${t('contactRole2')} : <a href="mailto:marc-o.gasser@irda.qc.ca">marc-o.gasser@irda.qc.ca</a></p>
-        </div>
-      `;
+      document.getElementById('modal-title').textContent = t('aboutTitle');
+      
+      // Modal stats labels
+      document.querySelectorAll('.modal-stat-label')[0].textContent = t('statSamples');
+      document.querySelectorAll('.modal-stat-label')[1].textContent = t('statPeriod');
+      document.querySelectorAll('.modal-stat-label')[2].textContent = t('statRegions');
+      document.querySelectorAll('.modal-stat-label')[3].textContent = t('statMRC');
+      
+      // Modal sections
+      document.getElementById('modal-desc-title').textContent = t('modalDescTitle');
+      document.getElementById('modal-desc-text').textContent = t('modalDescText');
+      document.getElementById('modal-ind-title').textContent = t('modalIndTitle');
+      document.getElementById('modal-ind-list').innerHTML = t('modalIndList');
+      document.getElementById('modal-method-title').textContent = t('modalMethodTitle');
+      document.getElementById('modal-method-text').textContent = t('modalMethodText');
+      document.getElementById('modal-warning').innerHTML = t('modalWarning');
+      document.getElementById('modal-contact-title').textContent = t('contactTitle');
       
       // Update table and legend
       updateTable();
