@@ -683,6 +683,72 @@
     .modal-contact p {
       margin-bottom: 0.3em;
     }
+    
+    /* Footer */
+    .footer {
+      background: var(--primary);
+      color: white;
+      padding: 8px 16px;
+      font-size: 0.75rem;
+      text-align: center;
+      flex-shrink: 0;
+    }
+    
+    /* Year indicator on map */
+    .year-indicator {
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--primary);
+      color: white;
+      padding: 8px 20px;
+      border-radius: var(--radius);
+      font-size: 1.2rem;
+      font-weight: 600;
+      box-shadow: var(--shadow);
+      z-index: 10;
+    }
+    
+    /* Animation controls */
+    .animation-controls {
+      position: absolute;
+      bottom: 60px;
+      left: 10px;
+      display: flex;
+      gap: 8px;
+      z-index: 10;
+    }
+    
+    .btn-animate {
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 8px 14px;
+      border-radius: var(--radius);
+      font-size: 0.8rem;
+      font-weight: 500;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      box-shadow: var(--shadow);
+      transition: all 0.2s;
+    }
+    
+    .btn-animate:hover {
+      background: #003a7a;
+    }
+    
+    .btn-animate.playing {
+      background: #c0392b;
+    }
+    
+    .btn-animate svg {
+      width: 14px;
+      height: 14px;
+      fill: currentColor;
+    }
   </style>
 </head>
 <body>
@@ -809,10 +875,22 @@
             <span>Chargement...</span>
           </div>
           
+          <!-- Year indicator -->
+          <div class="year-indicator" id="year-indicator">Toutes les années</div>
+          
           <!-- Legend -->
           <div class="legend" id="legend">
             <div class="legend-title" id="legend-title">Phosphore (kg/ha)</div>
             <div id="legend-items"></div>
+          </div>
+          
+          <!-- Animation controls -->
+          <div class="animation-controls">
+            <button class="btn-animate" id="btn-animate" onclick="toggleAnimation()">
+              <svg id="icon-play" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              <svg id="icon-pause" viewBox="0 0 24 24" style="display:none"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+              <span id="btn-animate-text">Animer</span>
+            </button>
           </div>
           
           <!-- Logos - positioned like in flex.qmd -->
@@ -841,6 +919,11 @@
         </div>
       </div>
     </div>
+    
+    <!-- Footer -->
+    <footer class="footer">
+      Ce projet a été financé par le ministère de l'Agriculture, des Pêcheries et de l'Alimentation.
+    </footer>
   </div>
 
   <!-- Scripts -->
@@ -892,7 +975,9 @@
       data: null,
       names: null,
       map: null,
-      selectedCode: null
+      selectedCode: null,
+      animationInterval: null,
+      availableYears: ['2007', '2009', '2011', '2013', '2015', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024']
     };
     
     // Initialize
@@ -1146,6 +1231,17 @@
       updateMapStyle();
       updateLegend();
       updateTable();
+      updateYearIndicator();
+    }
+    
+    // Update year indicator on map
+    function updateYearIndicator() {
+      const indicator = document.getElementById('year-indicator');
+      if (state.year === 'all') {
+        indicator.textContent = 'Toutes les années';
+      } else {
+        indicator.textContent = state.year;
+      }
     }
     
     // Update map style
@@ -1506,8 +1602,67 @@
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') {
         closeInfoModal();
+        stopAnimation();
       }
     });
+    
+    // Toggle animation
+    function toggleAnimation() {
+      if (state.animationInterval) {
+        stopAnimation();
+      } else {
+        startAnimation();
+      }
+    }
+    
+    // Start animation
+    function startAnimation() {
+      const btn = document.getElementById('btn-animate');
+      const iconPlay = document.getElementById('icon-play');
+      const iconPause = document.getElementById('icon-pause');
+      const btnText = document.getElementById('btn-animate-text');
+      
+      btn.classList.add('playing');
+      iconPlay.style.display = 'none';
+      iconPause.style.display = 'block';
+      btnText.textContent = 'Arrêter';
+      
+      let yearIndex = 0;
+      
+      // Start with first year
+      state.year = state.availableYears[yearIndex];
+      document.getElementById('year-select').value = state.year;
+      updateView();
+      
+      state.animationInterval = setInterval(() => {
+        yearIndex++;
+        if (yearIndex >= state.availableYears.length) {
+          yearIndex = 0; // Loop back to beginning
+        }
+        
+        state.year = state.availableYears[yearIndex];
+        document.getElementById('year-select').value = state.year;
+        updateView();
+      }, 2000); // 2 seconds per year
+    }
+    
+    // Stop animation
+    function stopAnimation() {
+      if (state.animationInterval) {
+        clearInterval(state.animationInterval);
+        state.animationInterval = null;
+        
+        const btn = document.getElementById('btn-animate');
+        const iconPlay = document.getElementById('icon-play');
+        const iconPause = document.getElementById('icon-pause');
+        const btnText = document.getElementById('btn-animate-text');
+        
+        btn.classList.remove('playing');
+        iconPlay.style.display = 'block';
+        iconPause.style.display = 'none';
+        btnText.textContent = 'Animer';
+      }
+    }
     
     // Initialize on load
     document.addEventListener('DOMContentLoaded', init);
