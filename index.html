@@ -915,6 +915,9 @@
           if (!feature) return;
           
           const props = feature.properties;
+          // Debug: log all properties from the PMTiles feature
+          console.log('PMTiles feature properties:', props);
+          
           // Use the current state level to get the correct code property
           const currentLevel = state.level;
           const rawCode = props[CONFIG.codeProperty[currentLevel]];
@@ -934,7 +937,7 @@
             `${value.toFixed(indicator.decimals)} ${indicator.unit}` : 'N/A';
           
           // Debug logging
-          console.log('Popup click:', { rawCode, normalizedCode, name, locationData, value, currentLevel });
+          console.log('Popup click:', { rawCode, normalizedCode, name, locationData, value, currentLevel, expectedCodeProp: CONFIG.codeProperty[currentLevel] });
           
           new maplibregl.Popup({ closeButton: true, maxWidth: '250px' })
             .setLngLat(e.lngLat)
@@ -1018,11 +1021,22 @@
       }
       
       // Filter by year if needed
-      const filteredData = state.year === 'all' ? 
-        statData : 
-        statData.filter(d => String(d.Annee) === String(state.year));
+      let filteredData;
+      if (state.year === 'all') {
+        // When "all years" is selected, take the most recent year for each code
+        const latestByCode = {};
+        statData.forEach(d => {
+          const code = d.code;
+          if (!latestByCode[code] || String(d.Annee) > String(latestByCode[code].Annee)) {
+            latestByCode[code] = d;
+          }
+        });
+        filteredData = Object.values(latestByCode);
+      } else {
+        filteredData = statData.filter(d => String(d.Annee) === String(state.year));
+      }
       
-      console.log('updateMapStyle:', { level: state.level, statKey, year: state.year, dataCount: filteredData.length });
+      console.log('updateMapStyle:', { level: state.level, statKey, year: state.year, indicator: state.indicator, dataCount: filteredData.length });
       
       // Create color expression
       const indicator = CONFIG.indicators[state.indicator];
@@ -1107,65 +1121,70 @@
       }
     }
     
-    // Update table
+    // Update table - shows years as columns with selected indicator
     function updateTable() {
       const levelData = state.data[state.level];
-      const statKey = state.year === 'all' ? `${state.stat}_all` : state.stat;
-      const statData = levelData[statKey];
+      // Always use the base stat data (mediane or moyenne) which contains all years
+      const statData = levelData[state.stat];
       
       if (!statData) {
-        console.warn('No table data for:', state.level, statKey);
+        console.warn('No table data for:', state.level, state.stat);
         return;
       }
       
-      // Get data
-      let tableData = state.year === 'all' ? 
-        statData : 
-        statData.filter(d => d.Annee === state.year);
+      // Get all unique years from data, sorted
+      const allYears = [...new Set(statData.map(d => String(d.Annee)))].sort();
       
-      // Sort by name
-      tableData = [...tableData].sort((a, b) => {
-        const nameA = getName(state.level, a.code) || a.code;
-        const nameB = getName(state.level, b.code) || b.code;
+      // Get all unique codes
+      const allCodes = [...new Set(statData.map(d => d.code))];
+      
+      // Build a map: code -> { year -> data }
+      const dataByCode = {};
+      statData.forEach(d => {
+        if (!dataByCode[d.code]) {
+          dataByCode[d.code] = {};
+        }
+        dataByCode[d.code][String(d.Annee)] = d;
+      });
+      
+      // Sort codes by name
+      const sortedCodes = allCodes.sort((a, b) => {
+        const nameA = getName(state.level, a) || a;
+        const nameB = getName(state.level, b) || b;
         return nameA.localeCompare(nameB, 'fr');
       });
       
-      // Update table title
+      // Update table title with indicator name
       const levelName = state.level === 'region' ? 'région' : 'MRC';
-      document.getElementById('table-title').textContent = `Données par ${levelName}`;
+      const indicator = CONFIG.indicators[state.indicator];
+      document.getElementById('table-title').textContent = `${indicator.label} par ${levelName}`;
       
-      // Build table header
+      // Build table header with years as columns
       const thead = document.getElementById('table-head');
-      thead.innerHTML = `
-        <th>Nom</th>
-        <th>N</th>
-        <th>P</th>
-        <th>ISP</th>
-        <th>pH</th>
-        <th>Chaux</th>
-        <th>MO</th>
-        <th>MO4%</th>
-      `;
+      let headerHtml = '<th>Nom</th>';
+      allYears.forEach(year => {
+        headerHtml += `<th>${year}</th>`;
+      });
+      thead.innerHTML = headerHtml;
       
       // Build table body
       const tbody = document.getElementById('table-body');
       tbody.innerHTML = '';
       
-      tableData.forEach(row => {
-        const name = getName(state.level, row.code) || row.code;
+      sortedCodes.forEach(code => {
+        const name = getName(state.level, code) || code;
         const tr = document.createElement('tr');
-        tr.dataset.code = row.code;
-        tr.onclick = () => selectRow(row.code);
-        tr.innerHTML = `
-          <td title="${name}">${name}</td>
-          <td>${row.n ? formatNumber(row.n) : '<span class="na-value">N/A</span>'}</td>
-          <td>${formatValue(row.Phosphore, 'Phosphore')}</td>
-          <td>${formatValue(row.ISP1, 'ISP1')}</td>
-          <td>${formatValue(row.pH_eau, 'pH_eau')}</td>
-          <td>${formatValue(row.Besoin_en_chaux, 'Besoin_en_chaux')}</td>
-          <td>${formatValue(row.Matiere_organique, 'Matiere_organique')}</td>
-          <td>${formatValue(row.MO4, 'MO4')}</td>
-        `;
+        tr.dataset.code = code;
+        tr.onclick = () => selectRow(code);
+        
+        let rowHtml = `<td title="${name}">${name}</td>`;
+        allYears.forEach(year => {
+          const yearData = dataByCode[code][year];
+          const value = yearData ? yearData[state.indicator] : null;
+          rowHtml += `<td>${formatValue(value, state.indicator)}</td>`;
+        });
+        
+        tr.innerHTML = rowHtml;
         tbody.appendChild(tr);
       });
     }
