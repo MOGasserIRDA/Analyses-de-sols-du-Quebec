@@ -1881,7 +1881,9 @@
         const latestData = latestByCode[code];
         const latestValue = latestData ? latestData[state.indicator] : null;
         
-        let rowHtml = `<td title="${name}">${name}</td>`;
+        // Truncate long names on mobile
+        const displayName = isMobile && name.length > 20 ? name.substring(0, 18) + '...' : name;
+        let rowHtml = `<td title="${name}">${displayName}</td>`;
         rowHtml += `<td>${formatValue(latestValue, state.indicator)}</td>`;
         
         allYears.forEach(year => {
