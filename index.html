@@ -2144,6 +2144,7 @@
         const tr = document.createElement('tr');
         tr.dataset.code = code;
         tr.onclick = () => selectRow(code);
+        tr.ondblclick = () => zoomToPolygon(code);
         
         // "Toutes les années" column (most recent value, same as map when "all" is selected)
         const latestData = latestByCode[code];
@@ -2218,6 +2219,50 @@
       } else {
         // Hide highlight by setting impossible filter
         state.map.setFilter(highlightLayerId, ['==', ['get', codeProperty], '']);
+      }
+    }
+    
+    // Zoom to polygon on map
+    function zoomToPolygon(code) {
+      if (!state.map) return;
+      
+      // Select the row first
+      selectRow(code);
+      
+      // Query the features to get the bounds
+      const layerId = `${state.level}-fill`;
+      const codeProperty = CONFIG.codeProperty[state.level];
+      
+      // Query all features from the layer
+      const features = state.map.querySourceFeatures(state.level, {
+        sourceLayer: CONFIG.sourceLayer[state.level],
+        filter: ['==', ['to-string', ['get', codeProperty]], code]
+      });
+      
+      if (features.length > 0) {
+        // Calculate bounds from all matching features
+        const bounds = new maplibregl.LngLatBounds();
+        
+        features.forEach(feature => {
+          if (feature.geometry.type === 'Polygon') {
+            feature.geometry.coordinates[0].forEach(coord => {
+              bounds.extend(coord);
+            });
+          } else if (feature.geometry.type === 'MultiPolygon') {
+            feature.geometry.coordinates.forEach(polygon => {
+              polygon[0].forEach(coord => {
+                bounds.extend(coord);
+              });
+            });
+          }
+        });
+        
+        // Fit the map to the bounds with some padding
+        state.map.fitBounds(bounds, {
+          padding: 50,
+          maxZoom: 10,
+          duration: 1000
+        });
       }
     }
     
