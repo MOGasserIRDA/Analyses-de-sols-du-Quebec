@@ -2220,11 +2220,11 @@
     // Update table - shows years as columns with selected indicator
     function updateTable() {
       const levelData = state.data[state.level];
-      // Always use the base stat data (mediane or moyenne) which contains all years
-      const statData = levelData[state.stat];
+      // Use the _all data which contains all years pooled
+      const statData = levelData[`${state.stat}_all`];
       
       if (!statData) {
-        console.warn('No table data for:', state.level, state.stat);
+        console.warn('No table data for:', state.level, `${state.stat}_all`);
         return;
       }
       
