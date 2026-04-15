@@ -2239,56 +2239,72 @@
       const layerId = `${state.level}-fill`;
       const codeProperty = CONFIG.codeProperty[state.level];
       
-      // First try queryRenderedFeatures (features currently visible)
-      let features = state.map.queryRenderedFeatures({ layers: [layerId] })
-        .filter(f => {
-          const featureCode = String(f.properties[codeProperty]);
-          const normalizedFeatureCode = featureCode.length === 1 ? '0' + featureCode : featureCode;
-          return normalizedFeatureCode === code || featureCode === code;
-        });
-      
-      // If not found in rendered features, try querySourceFeatures
-      if (features.length === 0) {
-        features = state.map.querySourceFeatures(state.level, {
-          sourceLayer: CONFIG.sourceLayer[state.level]
-        }).filter(f => {
-          const featureCode = String(f.properties[codeProperty]);
-          const normalizedFeatureCode = featureCode.length === 1 ? '0' + featureCode : featureCode;
-          return normalizedFeatureCode === code || featureCode === code;
-        });
-      }
-      
-      console.log('Zoom to polygon:', code, 'found features:', features.length);
-      
-      if (features.length > 0) {
-        // Calculate bounds from all matching features
-        const bounds = new maplibregl.LngLatBounds();
+      // Function to find and zoom to feature
+      const findAndZoom = () => {
+        // Try queryRenderedFeatures (features currently visible)
+        let features = state.map.queryRenderedFeatures({ layers: [layerId] })
+          .filter(f => {
+            const featureCode = String(f.properties[codeProperty]);
+            const normalizedFeatureCode = featureCode.length === 1 ? '0' + featureCode : featureCode;
+            return normalizedFeatureCode === code || featureCode === code;
+          });
         
-        features.forEach(feature => {
-          const geom = feature.geometry;
-          if (!geom) return;
-          
-          if (geom.type === 'Polygon') {
-            geom.coordinates[0].forEach(coord => {
-              bounds.extend(coord);
-            });
-          } else if (geom.type === 'MultiPolygon') {
-            geom.coordinates.forEach(polygon => {
-              polygon[0].forEach(coord => {
-                bounds.extend(coord);
-              });
-            });
-          }
-        });
-        
-        if (!bounds.isEmpty()) {
-          // Fit the map to the bounds with some padding
-          state.map.fitBounds(bounds, {
-            padding: 50,
-            maxZoom: 10,
-            duration: 1000
+        // If not found in rendered features, try querySourceFeatures
+        if (features.length === 0) {
+          features = state.map.querySourceFeatures(state.level, {
+            sourceLayer: CONFIG.sourceLayer[state.level]
+          }).filter(f => {
+            const featureCode = String(f.properties[codeProperty]);
+            const normalizedFeatureCode = featureCode.length === 1 ? '0' + featureCode : featureCode;
+            return normalizedFeatureCode === code || featureCode === code;
           });
         }
+        
+        if (features.length > 0) {
+          // Calculate bounds from all matching features
+          const bounds = new maplibregl.LngLatBounds();
+          
+          features.forEach(feature => {
+            const geom = feature.geometry;
+            if (!geom) return;
+            
+            if (geom.type === 'Polygon') {
+              geom.coordinates[0].forEach(coord => {
+                bounds.extend(coord);
+              });
+            } else if (geom.type === 'MultiPolygon') {
+              geom.coordinates.forEach(polygon => {
+                polygon[0].forEach(coord => {
+                  bounds.extend(coord);
+                });
+              });
+            }
+          });
+          
+          if (!bounds.isEmpty()) {
+            // Fit the map to the bounds with some padding
+            state.map.fitBounds(bounds, {
+              padding: 50,
+              maxZoom: 10,
+              duration: 1000
+            });
+            return true;
+          }
+        }
+        return false;
+      };
+      
+      // Try to find immediately
+      if (!findAndZoom()) {
+        // If not found, zoom out first to load all features, then try again
+        state.map.fitBounds([[-80, 44], [-56, 63]], { duration: 500 });
+        
+        // Wait for tiles to load then try again
+        state.map.once('idle', () => {
+          setTimeout(() => {
+            findAndZoom();
+          }, 100);
+        });
       }
     }
     
