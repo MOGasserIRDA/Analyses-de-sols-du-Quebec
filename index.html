@@ -2059,23 +2059,20 @@
     // Get location data
     function getLocationData(code) {
       const levelData = state.data[state.level];
+      const statKey = state.year === 'all' ? `${state.stat}_all` : state.stat;
+      const statData = levelData[statKey];
+      
+      if (!statData) return null;
+      
       const normalizedCode = normalizeCode(code);
       
       if (state.year === 'all') {
-        // When "all years" is selected, use base stat data and return most recent year
-        // This matches the table's "Toutes" column logic
-        const statData = levelData[state.stat];
-        if (!statData) return null;
-        
+        // When "all years" is selected, return the most recent year's data for this code
         const matchingData = statData.filter(d => normalizeCode(d.code) === normalizedCode);
         if (matchingData.length === 0) return null;
-        // Return the most recent year's data
-        return matchingData.reduce((latest, d) => 
-          !latest || String(d.Annee) > String(latest.Annee) ? d : latest, null);
+        // Sort by year descending and return the most recent
+        return matchingData.sort((a, b) => String(b.Annee).localeCompare(String(a.Annee)))[0];
       } else {
-        // For specific year, use the _all data which contains all years
-        const statData = levelData[`${state.stat}_all`];
-        if (!statData) return null;
         return statData.find(d => normalizeCode(d.code) === normalizedCode && String(d.Annee) === String(state.year));
       }
     }
