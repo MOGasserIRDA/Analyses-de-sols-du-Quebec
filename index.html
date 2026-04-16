@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>Analyses des sols du Québec (2007-2024)</title>
+  <title>Analyses de sols du Québec (2007-2024)</title>
   
   <!-- MapLibre GL -->
   <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" />
@@ -1041,7 +1041,7 @@
     <header class="header">
       <div style="display: flex; align-items: center;">
         <button class="mobile-menu-btn" onclick="toggleSidebar()" aria-label="Menu">&#9776;</button>
-        <h1>Analyses des sols du Québec (2007-2024)</h1>
+        <h1>Analyses de sols du Québec (2007-2024)</h1>
       </div>
       <div style="display: flex; align-items: center;">
         <button class="btn-lang" id="btn-lang" onclick="toggleLanguage()" title="Change language">EN</button>
@@ -1524,7 +1524,7 @@
     // Translations
     const TRANSLATIONS = {
       fr: {
-        title: 'Analyses des sols du Québec (2007-2024)',
+        title: 'Analyses de sols du Québec (2007-2024)',
         geoLevel: 'Niveau géographique',
         region: 'Région',
         mrc: 'MRC',
@@ -2183,11 +2183,15 @@
     
     // Get color for value
     function getColorForValue(value, bins, colors) {
-      for (let i = 0; i < bins.length - 1; i++) {
+      const numClasses = bins.length - 1;
+      for (let i = 0; i < numClasses; i++) {
         if (value >= bins[i] && value < bins[i + 1]) {
-          return colors[Math.min(i, colors.length - 1)];
+          // Map bin index to color index proportionally
+          const colorIndex = Math.round(i * (colors.length - 1) / (numClasses - 1));
+          return colors[colorIndex];
         }
       }
+      // Value >= last bin, return last color
       return colors[colors.length - 1];
     }
     
@@ -2202,15 +2206,20 @@
       const legendItems = document.getElementById('legend-items');
       legendItems.innerHTML = '';
       
-      for (let i = 0; i < bins.length - 1; i++) {
+      // Number of classes is bins.length - 1, but we use colors array
+      const numClasses = bins.length - 1;
+      
+      for (let i = 0; i < numClasses; i++) {
         const item = document.createElement('div');
         item.className = 'legend-item';
-        const isLast = i === bins.length - 2;
+        const isLast = i === numClasses - 1;
         const label = isLast ? 
-          `> ${bins[i]} ${indicator.unit}` : 
+          `≥ ${bins[i]} ${indicator.unit}` : 
           `${bins[i]} - ${bins[i + 1]} ${indicator.unit}`;
+        // Map legend index to color index proportionally if different lengths
+        const colorIndex = Math.round(i * (colors.length - 1) / (numClasses - 1));
         item.innerHTML = `
-          <div class="legend-color" style="background: ${colors[Math.min(i, colors.length - 1)]}"></div>
+          <div class="legend-color" style="background: ${colors[colorIndex]}"></div>
           <span>${label}</span>
         `;
         legendItems.appendChild(item);
