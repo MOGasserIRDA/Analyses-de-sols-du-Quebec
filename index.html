@@ -2062,21 +2062,18 @@
     // Get location data
     function getLocationData(code) {
       const levelData = state.data[state.level];
-      const statKey = state.year === 'all' ? `${state.stat}_all` : state.stat;
-      const statData = levelData[statKey];
-      
-      if (!statData) return null;
-      
       const normalizedCode = normalizeCode(code);
       
       if (state.year === 'all') {
-        // When "all years" is selected, return the most recent year's data for this code
-        const matchingData = statData.filter(d => normalizeCode(d.code) === normalizedCode);
-        if (matchingData.length === 0) return null;
-        // Sort by year descending and return the most recent
-        return matchingData.sort((a, b) => String(b.Annee).localeCompare(String(a.Annee)))[0];
+        // Use pooled _all data - return the aggregated entry for this code
+        const pooledData = levelData[`${state.stat}_all`];
+        if (!pooledData) return null;
+        return pooledData.find(d => normalizeCode(d.code) === normalizedCode) || null;
       } else {
-        return statData.find(d => normalizeCode(d.code) === normalizedCode && String(d.Annee) === String(state.year));
+        // Use yearly data and filter by year
+        const yearlyData = levelData[state.stat];
+        if (!yearlyData) return null;
+        return yearlyData.find(d => normalizeCode(d.code) === normalizedCode && String(d.Annee) === String(state.year));
       }
     }
     
@@ -2232,37 +2229,38 @@
     // Update table - shows years as columns with selected indicator
     function updateTable() {
       const levelData = state.data[state.level];
-      // Use the _all data which contains all years pooled
-      const statData = levelData[`${state.stat}_all`];
       
-      if (!statData) {
-        console.warn('No table data for:', state.level, `${state.stat}_all`);
-        return;
+      // Determine data source based on year selection
+      let pooledData, yearlyData, allYears, allCodes, dataByCode;
+      
+      if (state.year === 'all') {
+        // Use pooled _all data for "Toutes" column only
+        pooledData = levelData[`${state.stat}_all`];
+        if (!pooledData) {
+          console.warn('No pooled data for:', state.level, `${state.stat}_all`);
+          return;
+        }
+        allCodes = [...new Set(pooledData.map(d => d.code))];
+        allYears = []; // No year columns when viewing pooled data
+      } else {
+        // Use yearly data (non-pooled) which has Annee column
+        yearlyData = levelData[state.stat];
+        if (!yearlyData) {
+          console.warn('No yearly data for:', state.level, state.stat);
+          return;
+        }
+        allYears = [...new Set(yearlyData.map(d => String(d.Annee)))].sort();
+        allCodes = [...new Set(yearlyData.map(d => d.code))];
+        
+        // Build year -> data map for each code
+        dataByCode = {};
+        yearlyData.forEach(d => {
+          if (!dataByCode[d.code]) {
+            dataByCode[d.code] = {};
+          }
+          dataByCode[d.code][String(d.Annee)] = d;
+        });
       }
-      
-      // Get all unique years from data, sorted
-      const allYears = [...new Set(statData.map(d => String(d.Annee)))].sort();
-      
-      // Get all unique codes
-      const allCodes = [...new Set(statData.map(d => d.code))];
-      
-      // Build a map: code -> { year -> data }
-      const dataByCode = {};
-      statData.forEach(d => {
-        if (!dataByCode[d.code]) {
-          dataByCode[d.code] = {};
-        }
-        dataByCode[d.code][String(d.Annee)] = d;
-      });
-      
-      // Calculate "all years" value (most recent year) for each code
-      const latestByCode = {};
-      statData.forEach(d => {
-        const code = d.code;
-        if (!latestByCode[code] || String(d.Annee) > String(latestByCode[code].Annee)) {
-          latestByCode[code] = d;
-        }
-      });
       
       // Sort codes by name
       const sortedCodes = allCodes.sort((a, b) => {
@@ -2277,12 +2275,14 @@
       const indicatorLabel = isMobile ? getIndicatorShortLabel(state.indicator) : getIndicatorLabel(state.indicator);
       document.getElementById('table-title').textContent = `${indicatorLabel} ${levelName}`;
       
-      // Build table header with "Toutes" column first, then years
+      // Build table header: "Toutes" column first, then years (only if not pooled)
       const thead = document.getElementById('table-head');
       let headerHtml = `<th>${t('name')}</th><th>${t('all')}</th>`;
-      allYears.forEach(year => {
-        headerHtml += `<th>${year}</th>`;
-      });
+      if (state.year !== 'all') {
+        allYears.forEach(year => {
+          headerHtml += `<th>${year}</th>`;
+        });
+      }
       thead.innerHTML = headerHtml;
       
       // Build table body
@@ -2296,18 +2296,24 @@
         tr.onclick = () => selectRow(code);
         tr.ondblclick = () => zoomToPolygon(code);
         
-        // "Toutes les années" column (most recent value, same as map when "all" is selected)
-        const latestData = latestByCode[code];
-        const latestValue = latestData ? latestData[state.indicator] : null;
-        
         let rowHtml = `<td title="${name}">${name}</td>`;
-        rowHtml += `<td>${formatValue(latestValue, state.indicator)}</td>`;
         
-        allYears.forEach(year => {
-          const yearData = dataByCode[code][year];
-          const value = yearData ? yearData[state.indicator] : null;
-          rowHtml += `<td>${formatValue(value, state.indicator)}</td>`;
-        });
+        // "Toutes les années" column - use pooled data value
+        let pooledValue = null;
+        if (pooledData) {
+          const pooledEntry = pooledData.find(d => d.code === code);
+          pooledValue = pooledEntry ? pooledEntry[state.indicator] : null;
+        }
+        rowHtml += `<td>${formatValue(pooledValue, state.indicator)}</td>`;
+        
+        // Year columns (only if viewing specific year, not pooled)
+        if (state.year !== 'all') {
+          allYears.forEach(year => {
+            const yearData = dataByCode[code] ? dataByCode[code][year] : null;
+            const value = yearData ? yearData[state.indicator] : null;
+            rowHtml += `<td>${formatValue(value, state.indicator)}</td>`;
+          });
+        }
         
         tr.innerHTML = rowHtml;
         tbody.appendChild(tr);
