@@ -2237,32 +2237,25 @@
         return;
       }
       
-      // Get yearly data if specific year selected
-      let yearlyData, allYears, allCodes, dataByCode;
-      
-      if (state.year === 'all') {
-        // Use pooled data to get codes when viewing all years
-        allCodes = [...new Set(pooledData.map(d => d.code))];
-        allYears = []; // No year columns when viewing pooled data
-      } else {
-        // Use yearly data (non-pooled) which has Annee column
-        yearlyData = levelData[state.stat];
-        if (!yearlyData) {
-          console.warn('No yearly data for:', state.level, state.stat);
-          return;
-        }
-        allYears = [...new Set(yearlyData.map(d => String(d.Annee)))].sort();
-        allCodes = [...new Set(yearlyData.map(d => d.code))];
-        
-        // Build year -> data map for each code
-        dataByCode = {};
-        yearlyData.forEach(d => {
-          if (!dataByCode[d.code]) {
-            dataByCode[d.code] = {};
-          }
-          dataByCode[d.code][String(d.Annee)] = d;
-        });
+      // Get yearly data (non-pooled) which has Annee column
+      const yearlyData = levelData[state.stat];
+      if (!yearlyData) {
+        console.warn('No yearly data for:', state.level, state.stat);
+        return;
       }
+      
+      // Get all years from yearly data
+      const allYears = [...new Set(yearlyData.map(d => String(d.Annee)))].sort();
+      const allCodes = [...new Set(yearlyData.map(d => d.code))];
+      
+      // Build year -> data map for each code
+      const dataByCode = {};
+      yearlyData.forEach(d => {
+        if (!dataByCode[d.code]) {
+          dataByCode[d.code] = {};
+        }
+        dataByCode[d.code][String(d.Annee)] = d;
+      });
       
       // Sort codes by name
       const sortedCodes = allCodes.sort((a, b) => {
@@ -2277,14 +2270,12 @@
       const indicatorLabel = isMobile ? getIndicatorShortLabel(state.indicator) : getIndicatorLabel(state.indicator);
       document.getElementById('table-title').textContent = `${indicatorLabel} ${levelName}`;
       
-      // Build table header: "Toutes" column first, then years (only if not pooled)
+      // Build table header: "Toutes" column first, then all years
       const thead = document.getElementById('table-head');
       let headerHtml = `<th>${t('name')}</th><th>${t('all')}</th>`;
-      if (state.year !== 'all') {
-        allYears.forEach(year => {
-          headerHtml += `<th>${year}</th>`;
-        });
-      }
+      allYears.forEach(year => {
+        headerHtml += `<th>${year}</th>`;
+      });
       thead.innerHTML = headerHtml;
       
       // Build table body
@@ -2305,14 +2296,12 @@
         const pooledValue = pooledEntry ? pooledEntry[state.indicator] : null;
         rowHtml += `<td>${formatValue(pooledValue, state.indicator)}</td>`;
         
-        // Year columns (only if viewing specific year, not pooled)
-        if (state.year !== 'all') {
-          allYears.forEach(year => {
-            const yearData = dataByCode[code] ? dataByCode[code][year] : null;
-            const value = yearData ? yearData[state.indicator] : null;
-            rowHtml += `<td>${formatValue(value, state.indicator)}</td>`;
-          });
-        }
+        // Year columns - always show all years
+        allYears.forEach(year => {
+          const yearData = dataByCode[code] ? dataByCode[code][year] : null;
+          const value = yearData ? yearData[state.indicator] : null;
+          rowHtml += `<td>${formatValue(value, state.indicator)}</td>`;
+        });
         
         tr.innerHTML = rowHtml;
         tbody.appendChild(tr);
