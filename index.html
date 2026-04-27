@@ -1219,7 +1219,8 @@
                 <option value="MO4">Analyses >= 4% MO (%)</option>
               </optgroup>
               <optgroup label="Autres">
-                <option value="ISP1">Indice saturation P (%)</option>
+                <option value="ISP1">ISP - G1 (%)</option>
+                <option value="ISP2">ISP - G1-G2 (%)</option>
                 <option value="Capacite_dechange_cationique">CEC (méq/100g)</option>
               </optgroup>
             </select>
@@ -1509,7 +1510,8 @@
         Cuivre: { label: 'Cu Mehlich 3 (ppm)', unit: 'ppm', bins: [0, 1, 2, 3, 4, 5, 10], reverse: false, decimals: 1 },
         Fer: { label: 'Fe Mehlich 3 (ppm)', unit: 'ppm', bins: [0, 100, 200, 300, 400, 500, 800], reverse: false, decimals: 0 },
         // Autres indicateurs
-        ISP1: { label: 'Indice saturation P (%)', unit: '%', bins: [0, 2, 4, 6, 8, 10, 15], reverse: false, decimals: 1, palette: 'diverging' },
+        ISP1: { label: 'ISP - G1 (%)', unit: '%', bins: [0, 1.5, 3.1, 7.6, 7.7], colors: ['#1A9850', '#91CF60', '#FDAE61', '#D73027'], decimals: 1 },
+        ISP2: { label: 'ISP - G1-G2 (%)', unit: '%', bins: [0, 3.8, 5.0, 7.5, 15, 15.1], colors: ['#1A9850', '#A6D96A', '#FEE08B', '#F46D43', '#D73027'], decimals: 1 },
         pH_eau: { label: 'pH eau', unit: '', bins: [4, 5, 5.5, 6, 6.5, 7, 7.5, 8], reverse: false, decimals: 2, palette: 'diverging' },
         pH_tampon: { label: 'pH tampon', unit: '', bins: [5, 5.5, 6, 6.5, 7, 7.5, 8], reverse: false, decimals: 2, palette: 'diverging' },
         Besoin_en_chaux: { label: 'Besoin en chaux (t/ha)', unit: 't/ha', bins: [0, 2, 4, 6, 8, 10, 15], reverse: true, decimals: 1, moyenneOnly: true, note: 'Calcul selon le Guide de référence en fertilisation 2e édition du CRAAQ, avec une cible de pH de 6,5.' },
@@ -1585,7 +1587,8 @@
         indChaux: 'Besoin en chaux (t/ha)',
         indMO: 'Matière organique (%)',
         indMO4: 'Analyses >= 4% MO (%)',
-        indISP: 'Indice saturation P (%)',
+        indISP1: 'ISP - G1 (%)',
+        indISP2: 'ISP - G1-G2 (%)',
         indCEC: 'CEC (méq/100g)',
         // Table header
         name: 'Nom',
@@ -1599,7 +1602,8 @@
         labelManganese: 'Mn Mehlich 3 (ppm)',
         labelCuivre: 'Cu Mehlich 3 (ppm)',
         labelFer: 'Fe Mehlich 3 (ppm)',
-        labelISP1: 'Indice saturation P (%)',
+        labelISP1: 'ISP - G1 (%)',
+        labelISP2: 'ISP - G1-G2 (%)',
         labelpH_eau: 'pH eau',
         labelpH_tampon: 'pH tampon',
         labelBesoin_en_chaux: 'Besoin en chaux (t/ha)',
@@ -1690,7 +1694,8 @@
         labelManganese: 'Mn Mehlich 3 (ppm)',
         labelCuivre: 'Cu Mehlich 3 (ppm)',
         labelFer: 'Fe Mehlich 3 (ppm)',
-        labelISP1: 'P saturation index (%)',
+        labelISP1: 'ISP - G1 (%)',
+        labelISP2: 'ISP - G1-G2 (%)',
         labelpH_eau: 'Water pH',
         labelpH_tampon: 'Buffer pH',
         labelBesoin_en_chaux: 'Lime requirement (t/ha)',
@@ -2147,7 +2152,7 @@
       filteredData.forEach(d => {
         const value = d[state.indicator];
         if (value !== null && value !== undefined) {
-          const color = getColorForValue(value, bins, colors);
+const color = getColorForValue(value, indicator);
           const codeStr = String(d.code);
           const codeNum = parseInt(d.code, 10);
           
@@ -2182,11 +2187,14 @@
     }
     
     // Get color for value
-    function getColorForValue(value, bins, colors) {
+    function getColorForValue(value, indicator) {
+      const bins = indicator.bins;
+      // Use custom colors if defined, otherwise fall back to palette
+      const colors = indicator.colors || (indicator.palette ? CONFIG.colors[indicator.palette] : (indicator.reverse ? CONFIG.colors.reversed : CONFIG.colors.default));
       const numClasses = bins.length - 1;
       for (let i = 0; i < numClasses; i++) {
         if (value >= bins[i] && value < bins[i + 1]) {
-          // Map bin index to color index proportionally
+          // Map bin index to color index proportionally if different lengths
           const colorIndex = Math.round(i * (colors.length - 1) / (numClasses - 1));
           return colors[colorIndex];
         }
@@ -2199,7 +2207,8 @@
     function updateLegend() {
       const indicator = CONFIG.indicators[state.indicator];
       const bins = indicator.bins;
-      const colors = indicator.palette ? CONFIG.colors[indicator.palette] : (indicator.reverse ? CONFIG.colors.reversed : CONFIG.colors.default);
+      // Use custom colors if defined, otherwise fall back to palette
+      const colors = indicator.colors || (indicator.palette ? CONFIG.colors[indicator.palette] : (indicator.reverse ? CONFIG.colors.reversed : CONFIG.colors.default));
       
       document.getElementById('legend-title').textContent = getIndicatorLabel(state.indicator);
       
@@ -2322,7 +2331,7 @@
       const indicator = CONFIG.indicators[indicatorKey];
       const bins = indicator.bins;
       const colors = indicator.palette ? CONFIG.colors[indicator.palette] : (indicator.reverse ? CONFIG.colors.reversed : CONFIG.colors.default);
-      const color = getColorForValue(value, bins, colors);
+      const color = getColorForValue(value, indicator);
       const textColor = getContrastColor(color);
       
       return `<span class="cell-value" style="background: ${color}; color: ${textColor}">${value.toFixed(indicator.decimals)}</span>`;
@@ -2763,7 +2772,8 @@
           <option value="MO4">${t('indMO4')}</option>
         </optgroup>
         <optgroup label="${t('groupOther')}">
-          <option value="ISP1">${t('indISP')}</option>
+          <option value="ISP1">${t('indISP1')}</option>
+          <option value="ISP2">${t('indISP2')}</option>
           <option value="Capacite_dechange_cationique">${t('indCEC')}</option>
         </optgroup>
       `;
