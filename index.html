@@ -2103,9 +2103,11 @@
       }
     }
     
-    // Update map style
+// Update map style
     function updateMapStyle() {
       if (!state.map || !state.map.getLayer('mrc-fill')) return;
+      
+      console.log('updateMapStyle called, year:', state.year);
       
       // Toggle layer visibility
       ['mrc', 'region'].forEach(level => {
@@ -2180,9 +2182,10 @@ const color = getColorForValue(value, indicator);
         // Log first few codes for debugging
         const sampleCodes = colorStops.filter((_, i) => i % 2 === 0).slice(0, 10);
         console.log('Color mapping for', state.level, '- property:', codeProperty, '- sample codes:', sampleCodes, '- total:', colorStops.length / 2);
+        console.log('Setting fill-color with', colorStops.length / 2, 'color stops');
         state.map.setPaintProperty(`${state.level}-fill`, 'fill-color', colorExpression);
       } else {
-        console.warn('No color stops created - check data');
+        console.warn('No color stops created - check data or code format in data');
       }
     }
     
