@@ -23975,14 +23975,14 @@
         "Magnesium": 459.5031971435394,
         "Manganèse": 35.31572747230531,
         "MO4": 66.27906976744185,
-        "Matière organique": 4.9321277392332465,
         "pH_eau": 5.890000000000001,
         "pH_tampon": 6.4,
         "Phosphore": 110.53607254732785,
         "Potassium": 158.34386271199236,
         "ISP1": 6.056477312683066,
         "Besoin_en_chaux": 4.9,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 4.9321277392332465
       },
       {
         "code": "02",
@@ -23995,14 +23995,14 @@
         "Magnesium": 139.20799575805657,
         "Manganèse": 78.14145517349243,
         "MO4": 82.98755186721992,
-        "Matière organique": 5.564247607302883,
         "pH_eau": 5.95,
         "pH_tampon": 6.45,
         "Phosphore": 44.822477416992086,
         "Potassium": 92.83282827758788,
         "ISP1": 2.5293957860554586,
         "Besoin_en_chaux": 4.0,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 5.564247607302883
       },
       {
         "code": "03",
@@ -24015,14 +24015,14 @@
         "Magnesium": 290.2449981689462,
         "Manganèse": 26.614321589469913,
         "MO4": 95.8041958041958,
-        "Matière organique": 6.454321805365004,
         "pH_eau": 5.8176439321882025,
         "pH_tampon": 6.25,
         "Phosphore": 41.34391822814944,
         "Potassium": 164.06813110351558,
         "ISP1": 1.9567452945786818,
         "Besoin_en_chaux": 6.9,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 6.454321805365004
       },
       {
         "code": "04",
@@ -24035,14 +24035,14 @@
         "Magnesium": 297.3808229064938,
         "Manganèse": 27.843573510646817,
         "MO4": 92.56410256410257,
-        "Matière organique": 6.422565654235658,
         "pH_eau": 5.9746,
         "pH_tampon": 6.46,
         "Phosphore": 20.450180112838716,
         "Potassium": 136.0487078685547,
         "ISP1": 1.050159609520351,
         "Besoin_en_chaux": 4.0,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 6.422565654235658
       },
       {
         "code": "05",
@@ -24055,14 +24055,14 @@
         "Magnesium": 133.0233807754517,
         "Manganèse": 32.0136451721191,
         "MO4": 79.71516551193226,
-        "Matière organique": 5.236872797840325,
         "pH_eau": 5.92,
         "pH_tampon": 6.49,
         "Phosphore": 41.35142841339115,
         "Potassium": 122.13426377415772,
         "ISP1": 1.901573645346255,
         "Besoin_en_chaux": 4.0,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 5.236872797840325
       },
       {
         "code": "06",
@@ -24075,14 +24075,14 @@
         "Magnesium": 148.07674560546872,
         "Manganèse": 40.300575,
         "MO4": 95.2047952047952,
-        "Matière organique": 6.666666666666713,
         "pH_eau": 6.074429939256353,
         "pH_tampon": 6.5,
         "Phosphore": 35.85676740646358,
         "Potassium": 126.64816640000001,
         "ISP1": 1.6723631269189798,
         "Besoin_en_chaux": 4.0,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 6.666666666666713
       },
       {
         "code": "07",
@@ -24095,14 +24095,14 @@
         "Magnesium": 238.13483886718848,
         "Manganèse": 31.464718222618124,
         "MO4": 98.09697170279662,
-        "Matière organique": 7.060008262755797,
         "pH_eau": 6.21,
         "pH_tampon": 6.59,
         "Phosphore": 50.15053928375251,
         "Potassium": 136.97378387451178,
         "ISP1": 2.750738644340206,
         "Besoin_en_chaux": 2.000000000000009,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 7.060008262755797
       },
       {
         "code": "08",
@@ -24115,14 +24115,14 @@
         "Magnesium": 283.448046875,
         "Manganèse": 34.90615195713042,
         "MO4": 94.1693892937924,
-        "Matière organique": 7.296219789299747,
         "pH_eau": 6.24,
         "pH_tampon": 6.52,
         "Phosphore": 33.67554632186882,
         "Potassium": 173.0209426879882,
         "ISP1": 1.764123976349845,
         "Besoin_en_chaux": 4.0,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 7.296219789299747
       },
       {
         "code": "09",
@@ -24135,14 +24135,14 @@
         "Magnesium": 299.9201280212414,
         "Manganèse": 38.12907314300535,
         "MO4": 91.93667702322828,
-        "Matière organique": 6.678916077890836,
         "pH_eau": 6.33,
         "pH_tampon": 6.63,
         "Phosphore": 43.163685379028394,
         "Potassium": 178.25642700195323,
         "ISP1": 2.374064687665021,
         "Besoin_en_chaux": 2.000000000000009,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 6.678916077890836
       },
       {
         "code": "10",
@@ -24155,14 +24155,14 @@
         "Magnesium": 317.526288490253,
         "Manganèse": 34.73192756615251,
         "MO4": 90.34523691759819,
-        "Matière organique": 6.914194517461411,
         "pH_eau": 6.2,
         "pH_tampon": 6.61,
         "Phosphore": 60.732672,
         "Potassium": 218.1207733154296,
         "ISP1": 3.248482159392805,
         "Besoin_en_chaux": 2.000000000000009,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 6.914194517461411
       },
       {
         "code": "11",
@@ -24175,14 +24175,14 @@
         "Magnesium": 228.4231986999508,
         "Manganèse": 35.44685559272763,
         "MO4": 89.87822236280246,
-        "Matière organique": 6.747701088679813,
         "pH_eau": 6.05,
         "pH_tampon": 6.48,
         "Phosphore": 66.12160147511025,
         "Potassium": 173.16104515036045,
         "ISP1": 3.1035703097414955,
         "Besoin_en_chaux": 4.0,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 6.747701088679813
       },
       {
         "code": "12",
@@ -24195,14 +24195,14 @@
         "Magnesium": 242.26511230468734,
         "Manganèse": 27.87295,
         "MO4": 87.376910813092,
-        "Matière organique": 6.321538360913097,
         "pH_eau": 6.14,
         "pH_tampon": 6.5,
         "Phosphore": 69.01373550415038,
         "Potassium": 181.50232238769522,
         "ISP1": 3.335883644941965,
         "Besoin_en_chaux": 4.0,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 6.321538360913097
       },
       {
         "code": "13",
@@ -24215,14 +24215,14 @@
         "Magnesium": 153.19994750976565,
         "Manganèse": 31.238774633407584,
         "MO4": 91.53089207936765,
-        "Matière organique": 7.15068493150706,
         "pH_eau": 6.0,
         "pH_tampon": 6.43,
         "Phosphore": 54.96690292358406,
         "Potassium": 113.06897132873533,
         "ISP1": 2.4184364242894762,
         "Besoin_en_chaux": 4.9,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 7.15068493150706
       },
       {
         "code": "14",
@@ -24235,14 +24235,14 @@
         "Magnesium": 370.794037805498,
         "Manganèse": 23.837355613708503,
         "MO4": 87.60945970095908,
-        "Matière organique": 6.095215759849884,
         "pH_eau": 6.301875,
         "pH_tampon": 6.5994,
         "Phosphore": 72.87317123413085,
         "Potassium": 296.9424694824209,
         "ISP1": 3.6690094754588967,
         "Besoin_en_chaux": 2.000000000000009,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 6.095215759849884
       },
       {
         "code": "15",
@@ -24255,14 +24255,14 @@
         "Magnesium": 153.5149483642578,
         "Manganèse": 8.765883375462526,
         "MO4": 82.11488250652742,
-        "Matière organique": 6.384021570784634,
         "pH_eau": 5.85,
         "pH_tampon": 6.24,
         "Phosphore": 84.98616454262836,
         "Potassium": 146.16092765808105,
         "ISP1": 2.7552879810432516,
         "Besoin_en_chaux": 6.9,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 6.384021570784634
       },
       {
         "code": "16",
@@ -24275,14 +24275,14 @@
         "Magnesium": 163.81381072998053,
         "Manganèse": 8.232105374336246,
         "MO4": 80.17294626312538,
-        "Matière organique": 6.771827529944437,
         "pH_eau": 6.015806525668463,
         "pH_tampon": 6.28,
         "Phosphore": 82.4668487548828,
         "Potassium": 147.47032318115237,
         "ISP1": 2.7250709370242343,
         "Besoin_en_chaux": 5.900000000000005,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 6.771827529944437
       },
       {
         "code": "17",
@@ -24295,14 +24295,14 @@
         "Magnesium": 333.08496826171825,
         "Manganèse": 21.926469200966,
         "MO4": 91.2691060676239,
-        "Matière organique": 6.290280845484945,
         "pH_eau": 6.26,
         "pH_tampon": 6.56,
         "Phosphore": 57.035508747100856,
         "Potassium": 249.46158472256224,
         "ISP1": 2.936985374685109,
         "Besoin_en_chaux": 2.000000000000009,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 6.290280845484945
       },
       {
         "code": "18",
@@ -24315,14 +24315,14 @@
         "Magnesium": 466.49561157226606,
         "Manganèse": 17.6824,
         "MO4": 91.86011904761905,
-        "Matière organique": 6.366702734808168,
         "pH_eau": 6.28,
         "pH_tampon": 6.54,
         "Phosphore": 72.4436058791716,
         "Potassium": 293.51164532470773,
         "ISP1": 3.410751829440218,
         "Besoin_en_chaux": 4.0,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 6.366702734808168
       },
       {
         "code": "19",
@@ -24335,14 +24335,14 @@
         "Magnesium": 212.21905599999997,
         "Manganèse": 31.062270402908364,
         "MO4": 91.3765297410113,
-        "Matière organique": 6.033715044966069,
         "pH_eau": 6.23,
         "pH_tampon": 6.521897432272737,
         "Phosphore": 125.15180061340332,
         "Potassium": 197.4273950195312,
         "ISP1": 5.458966276794321,
         "Besoin_en_chaux": 4.0,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 6.033715044966069
       },
       {
         "code": "20",
@@ -24355,14 +24355,14 @@
         "Magnesium": 279.4946336,
         "Manganèse": 23.714761400222773,
         "MO4": 67.65505312577218,
-        "Matière organique": 4.590588260883668,
         "pH_eau": 5.89,
         "pH_tampon": 6.4,
         "Phosphore": 176.91962310791024,
         "Potassium": 360.14179687499995,
         "ISP1": 6.9864590072265464,
         "Besoin_en_chaux": 4.9,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 4.590588260883668
       },
       {
         "code": "21",
@@ -24375,14 +24375,14 @@
         "Magnesium": 188.82540588378902,
         "Manganèse": 15.271760893589937,
         "MO4": 78.06072477962782,
-        "Matière organique": 5.324845534544187,
         "pH_eau": 6.06,
         "pH_tampon": 6.430589209285278,
         "Phosphore": 67.998230810543,
         "Potassium": 182.71832405090325,
         "ISP1": 2.749655531565462,
         "Besoin_en_chaux": 4.9,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 5.324845534544187
       },
       {
         "code": "22",
@@ -24395,14 +24395,14 @@
         "Magnesium": 182.66201782226562,
         "Manganèse": 18.5611,
         "MO4": 78.26086956521739,
-        "Matière organique": 6.532147742817957,
         "pH_eau": 6.37,
         "pH_tampon": 6.495,
         "Phosphore": 77.512512,
         "Potassium": 131.69921348571782,
         "ISP1": 3.3767390939518367,
         "Besoin_en_chaux": 4.0,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 6.532147742817957
       },
       {
         "code": "23",
@@ -24415,14 +24415,14 @@
         "Magnesium": 182.846119681717,
         "Manganèse": 15.609161496162422,
         "MO4": 55.89310187300137,
-        "Matière organique": 4.373539697659713,
         "pH_eau": 6.26,
         "pH_tampon": 6.6,
         "Phosphore": 85.16603487043648,
         "Potassium": 163.7322577285767,
         "ISP1": 3.7519749777112956,
         "Besoin_en_chaux": 2.000000000000009,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 4.373539697659713
       },
       {
         "code": "251",
@@ -24435,14 +24435,14 @@
         "Magnesium": 245.847891235352,
         "Manganèse": 21.661977589501,
         "MO4": 80.62515504837509,
-        "Matière organique": 5.354766048940319,
         "pH_eau": 6.228103732647528,
         "pH_tampon": 6.63,
         "Phosphore": 111.10891909790034,
         "Potassium": 183.8402728271485,
         "ISP1": 4.952703343448546,
         "Besoin_en_chaux": 2.000000000000009,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 5.354766048940319
       },
       {
         "code": "26",
@@ -24455,14 +24455,14 @@
         "Magnesium": 219.778812229191,
         "Manganèse": 28.952614543586648,
         "MO4": 87.67580272186208,
-        "Matière organique": 6.126158232359257,
         "pH_eau": 6.15,
         "pH_tampon": 6.56,
         "Phosphore": 146.80411193847652,
         "Potassium": 180.08927999999997,
         "ISP1": 5.841271182166966,
         "Besoin_en_chaux": 2.000000000000009,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 6.126158232359257
       },
       {
         "code": "27",
@@ -24475,14 +24475,14 @@
         "Magnesium": 193.05141662597657,
         "Manganèse": 37.646699999999996,
         "MO4": 89.58451906659079,
-        "Matière organique": 6.317909132860707,
         "pH_eau": 5.95,
         "pH_tampon": 6.45,
         "Phosphore": 96.36662376403812,
         "Potassium": 125.47286911010737,
         "ISP1": 4.1492331016505855,
         "Besoin_en_chaux": 4.9,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 6.317909132860707
       },
       {
         "code": "28",
@@ -24495,14 +24495,14 @@
         "Magnesium": 174.8404362672745,
         "Manganèse": 30.6976970512445,
         "MO4": 94.95254529767041,
-        "Matière organique": 7.842072733396153,
         "pH_eau": 5.83,
         "pH_tampon": 6.35,
         "Phosphore": 73.41489244461064,
         "Potassium": 139.21152115316664,
         "ISP1": 3.061915920348081,
         "Besoin_en_chaux": 4.9,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 7.842072733396153
       },
       {
         "code": "29",
@@ -24515,14 +24515,14 @@
         "Magnesium": 196.48591267963883,
         "Manganèse": 32.20934028625487,
         "MO4": 94.87969201154957,
-        "Matière organique": 6.8472035305437,
         "pH_eau": 6.03,
         "pH_tampon": 6.54,
         "Phosphore": 68.74136584726241,
         "Potassium": 131.60462488496097,
         "ISP1": 3.320592893215901,
         "Besoin_en_chaux": 4.0,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 6.8472035305437
       },
       {
         "code": "30",
@@ -24535,14 +24535,14 @@
         "Magnesium": 219.87747509765634,
         "Manganèse": 34.053560000000004,
         "MO4": 95.54382878921137,
-        "Matière organique": 7.567600971087979,
         "pH_eau": 6.06,
         "pH_tampon": 6.44,
         "Phosphore": 62.760597724914476,
         "Potassium": 135.757729129846,
         "ISP1": 2.6766510534686176,
         "Besoin_en_chaux": 4.9,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 7.567600971087979
       },
       {
         "code": "31",
@@ -24555,14 +24555,14 @@
         "Magnesium": 253.13504653930664,
         "Manganèse": 33.63105165958406,
         "MO4": 92.40980623059629,
-        "Matière organique": 7.339108910890988,
         "pH_eau": 5.91,
         "pH_tampon": 6.4,
         "Phosphore": 71.77530418395986,
         "Potassium": 123.816064618301,
         "ISP1": 3.0564042801530316,
         "Besoin_en_chaux": 4.9,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 7.339108910890988
       },
       {
         "code": "32",
@@ -24575,14 +24575,14 @@
         "Magnesium": 190.7163754896193,
         "Manganèse": 21.850368976593,
         "MO4": 79.76178356917438,
-        "Matière organique": 6.583108562584315,
         "pH_eau": 6.04,
         "pH_tampon": 6.48,
         "Phosphore": 97.26528161146945,
         "Potassium": 108.09818631547077,
         "ISP1": 3.988540774136486,
         "Besoin_en_chaux": 4.0,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 6.583108562584315
       },
       {
         "code": "33",
@@ -24595,14 +24595,14 @@
         "Magnesium": 240.11131668090746,
         "Manganèse": 22.11981854438784,
         "MO4": 81.41972969559177,
-        "Matière organique": 5.460563856114183,
         "pH_eau": 6.29,
         "pH_tampon": 6.6,
         "Phosphore": 109.7837356567383,
         "Potassium": 160.2819232177734,
         "ISP1": 4.8434503745004305,
         "Besoin_en_chaux": 2.000000000000009,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 5.460563856114183
       },
       {
         "code": "34",
@@ -24615,14 +24615,14 @@
         "Magnesium": 192.9567347717005,
         "Manganèse": 11.599951982498201,
         "MO4": 79.87234042553192,
-        "Matière organique": 5.487237508085926,
         "pH_eau": 6.22,
         "pH_tampon": 6.6,
         "Phosphore": 77.62747260888062,
         "Potassium": 173.55274111496516,
         "ISP1": 3.044574869321769,
         "Besoin_en_chaux": 2.000000000000009,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 5.487237508085926
       },
       {
         "code": "35",
@@ -24635,14 +24635,14 @@
         "Magnesium": 253.06666259765584,
         "Manganèse": 8.094925135374075,
         "MO4": 90.63352531070021,
-        "Matière organique": 6.127408862157701,
         "pH_eau": 6.25,
         "pH_tampon": 6.4566,
         "Phosphore": 51.91454360961913,
         "Potassium": 197.952720737289,
         "ISP1": 1.6552816657038578,
         "Besoin_en_chaux": 4.0,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 6.127408862157701
       },
       {
         "code": "36",
@@ -24655,14 +24655,14 @@
         "Magnesium": 234.46419677734366,
         "Manganèse": 10.074313879013099,
         "MO4": 63.858695652173914,
-        "Matière organique": 4.721571830421539,
         "pH_eau": 6.1553,
         "pH_tampon": 6.537953822270261,
         "Phosphore": 84.88235074234007,
         "Potassium": 196.26280612182617,
         "ISP1": 2.756378511126791,
         "Besoin_en_chaux": 4.0,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 4.721571830421539
       },
       {
         "code": "371",
@@ -24675,14 +24675,14 @@
         "Magnesium": 153.6165573120118,
         "Manganèse": 9.2670048191452,
         "MO4": 62.08436724565757,
-        "Matière organique": 4.558777581050774,
         "pH_eau": 6.12,
         "pH_tampon": 6.53,
         "Phosphore": 91.05712504577635,
         "Potassium": 141.172114944458,
         "ISP1": 3.464668647264103,
         "Besoin_en_chaux": 4.0,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 4.558777581050774
       },
       {
         "code": "372",
@@ -24695,14 +24695,14 @@
         "Magnesium": 182.5858550731039,
         "Manganèse": 9.838068375914,
         "MO4": 68.50974196945761,
-        "Matière organique": 4.589781307928652,
         "pH_eau": 6.18,
         "pH_tampon": 6.59,
         "Phosphore": 80.685998916626,
         "Potassium": 170.071014943497,
         "ISP1": 3.188046282088086,
         "Besoin_en_chaux": 2.000000000000009,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 4.589781307928652
       },
       {
         "code": "38",
@@ -24715,14 +24715,14 @@
         "Magnesium": 249.7329949181256,
         "Manganèse": 13.322320246353499,
         "MO4": 53.40571428571429,
-        "Matière organique": 4.084290631602721,
         "pH_eau": 6.29681054386973,
         "pH_tampon": 6.7,
         "Phosphore": 88.69685255049728,
         "Potassium": 165.4284230734095,
         "ISP1": 3.6655697706434154,
         "Besoin_en_chaux": 0.0,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 4.084290631602721
       },
       {
         "code": "39",
@@ -24735,14 +24735,14 @@
         "Magnesium": 187.25554148434938,
         "Manganèse": 22.446644173283,
         "MO4": 65.28410520137511,
-        "Matière organique": 4.98991435468404,
         "pH_eau": 6.16,
         "pH_tampon": 6.69,
         "Phosphore": 107.41994567108699,
         "Potassium": 127.6330112475651,
         "ISP1": 4.618348960957604,
         "Besoin_en_chaux": 0.0,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 4.98991435468404
       },
       {
         "code": "40",
@@ -24755,14 +24755,14 @@
         "Magnesium": 179.58154144287107,
         "Manganèse": 36.8343412876129,
         "MO4": 96.27953745600804,
-        "Matière organique": 6.8079138772617105,
         "pH_eau": 6.22,
         "pH_tampon": 6.53,
         "Phosphore": 71.33567665222168,
         "Potassium": 131.26603892294574,
         "ISP1": 2.9458167386288237,
         "Besoin_en_chaux": 4.0,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 6.8079138772617105
       },
       {
         "code": "41",
@@ -24775,14 +24775,14 @@
         "Magnesium": 151.19033889770506,
         "Manganèse": 37.2604193687439,
         "MO4": 95.91733870967742,
-        "Matière organique": 6.764241981826816,
         "pH_eau": 6.11,
         "pH_tampon": 6.47,
         "Phosphore": 63.813131410181576,
         "Potassium": 127.9793422851562,
         "ISP1": 2.5932550259030025,
         "Besoin_en_chaux": 4.0,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 6.764241981826816
       },
       {
         "code": "42",
@@ -24795,14 +24795,14 @@
         "Magnesium": 208.31551999999996,
         "Manganèse": 33.0045294761658,
         "MO4": 89.5975397780452,
-        "Matière organique": 6.298909557408616,
         "pH_eau": 6.21,
         "pH_tampon": 6.52,
         "Phosphore": 83.2955932302525,
         "Potassium": 131.9084609985352,
         "ISP1": 3.295271253510375,
         "Besoin_en_chaux": 4.0,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 6.298909557408616
       },
       {
         "code": "43",
@@ -24815,14 +24815,14 @@
         "Magnesium": 189.03081227990725,
         "Manganèse": 28.392217731475853,
         "MO4": 80.0894266175697,
-        "Matière organique": 5.712188835427604,
         "pH_eau": 6.09,
         "pH_tampon": 6.432986778301624,
         "Phosphore": 65.17241960144051,
         "Potassium": 120.52139503479003,
         "ISP1": 2.8531923299309705,
         "Besoin_en_chaux": 4.9,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 5.712188835427604
       },
       {
         "code": "44",
@@ -24835,14 +24835,14 @@
         "Magnesium": 202.94881591796874,
         "Manganèse": 48.172427749633826,
         "MO4": 89.26315789473685,
-        "Matière organique": 5.761961128718157,
         "pH_eau": 6.26,
         "pH_tampon": 6.58,
         "Phosphore": 89.51033386230465,
         "Potassium": 159.32189355468748,
         "ISP1": 3.8680799214774817,
         "Besoin_en_chaux": 2.000000000000009,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 5.761961128718157
       },
       {
         "code": "45",
@@ -24855,14 +24855,14 @@
         "Magnesium": 214.34496926513674,
         "Manganèse": 38.58942174911502,
         "MO4": 87.94298921417565,
-        "Matière organique": 5.948674194652524,
         "pH_eau": 6.04,
         "pH_tampon": 6.4842,
         "Phosphore": 52.3477584,
         "Potassium": 106.42779235839845,
         "ISP1": 2.3385888751382193,
         "Besoin_en_chaux": 4.0,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 5.948674194652524
       },
       {
         "code": "46",
@@ -24875,14 +24875,14 @@
         "Magnesium": 270.924460743485,
         "Manganèse": 28.53752,
         "MO4": 69.29992728234284,
-        "Matière organique": 4.96087151377261,
         "pH_eau": 6.4,
         "pH_tampon": 6.670929187368576,
         "Phosphore": 113.2447011518799,
         "Potassium": 184.50973968505858,
         "ISP1": 5.539809802813874,
         "Besoin_en_chaux": 0.0,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 4.96087151377261
       },
       {
         "code": "47",
@@ -24895,14 +24895,14 @@
         "Magnesium": 227.5819574679445,
         "Manganèse": 33.39329744775772,
         "MO4": 77.37003058103976,
-        "Matière organique": 5.651436591667737,
         "pH_eau": 6.147593113956555,
         "pH_tampon": 6.53,
         "Phosphore": 135.46490474700934,
         "Potassium": 151.79394283294684,
         "ISP1": 5.79446954596274,
         "Besoin_en_chaux": 4.0,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 5.651436591667737
       },
       {
         "code": "48",
@@ -24915,14 +24915,14 @@
         "Magnesium": 201.32341796875,
         "Manganèse": 20.641962547933048,
         "MO4": 48.756128563646264,
-        "Matière organique": 3.95593815483948,
         "pH_eau": 6.39,
         "pH_tampon": 6.814276690855309,
         "Phosphore": 141.01987060546884,
         "Potassium": 156.45002723693855,
         "ISP1": 6.788642788365429,
         "Besoin_en_chaux": 0.0,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 3.95593815483948
       },
       {
         "code": "49",
@@ -24935,14 +24935,14 @@
         "Magnesium": 176.280221106667,
         "Manganèse": 14.0427359807,
         "MO4": 44.63592362108398,
-        "Matière organique": 3.8009020892728564,
         "pH_eau": 6.32,
         "pH_tampon": 6.706986679699524,
         "Phosphore": 120.77325457763665,
         "Potassium": 143.78035034179695,
         "ISP1": 5.432148655936469,
         "Besoin_en_chaux": 0.0,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 3.8009020892728564
       },
       {
         "code": "50",
@@ -24955,14 +24955,14 @@
         "Magnesium": 241.51503211975034,
         "Manganèse": 12.336460493553151,
         "MO4": 32.81556444653644,
-        "Matière organique": 3.4865312226442144,
         "pH_eau": 6.29,
         "pH_tampon": 6.74,
         "Phosphore": 114.605271836345,
         "Potassium": 181.1664064,
         "ISP1": 5.1891549060490805,
         "Besoin_en_chaux": 0.0,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 3.4865312226442144
       },
       {
         "code": "51",
@@ -24975,14 +24975,14 @@
         "Magnesium": 427.1733956909174,
         "Manganèse": 11.252750933170274,
         "MO4": 63.03434284886248,
-        "Matière organique": 4.389403257417025,
         "pH_eau": 6.24,
         "pH_tampon": 6.58,
         "Phosphore": 98.08644149780272,
         "Potassium": 286.1807855224615,
         "ISP1": 3.8536784935001247,
         "Besoin_en_chaux": 2.000000000000009,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 4.389403257417025
       },
       {
         "code": "52",
@@ -24995,14 +24995,14 @@
         "Magnesium": 466.011332636719,
         "Manganèse": 12.6692056655884,
         "MO4": 55.78004582378671,
-        "Matière organique": 4.201116297191357,
         "pH_eau": 6.23,
         "pH_tampon": 6.61,
         "Phosphore": 104.02516841992593,
         "Potassium": 279.2359153431363,
         "ISP1": 4.503507410381927,
         "Besoin_en_chaux": 2.000000000000009,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 4.201116297191357
       },
       {
         "code": "53",
@@ -25015,14 +25015,14 @@
         "Magnesium": 422.0713264465322,
         "Manganèse": 13.738094329833991,
         "MO4": 33.130646282140376,
-        "Matière organique": 3.53571368335741,
         "pH_eau": 6.41,
         "pH_tampon": 6.7771,
         "Phosphore": 98.16468761444094,
         "Potassium": 218.17022491455077,
         "ISP1": 4.810355596851436,
         "Besoin_en_chaux": 0.0,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 3.53571368335741
       },
       {
         "code": "54",
@@ -25035,14 +25035,14 @@
         "Magnesium": 334.75533129882746,
         "Manganèse": 16.309232586622244,
         "MO4": 28.46473733344649,
-        "Matière organique": 3.221462834826055,
         "pH_eau": 6.4135,
         "pH_tampon": 6.85,
         "Phosphore": 154.36795501708986,
         "Potassium": 244.929804028269,
         "ISP1": 8.245541019006085,
         "Besoin_en_chaux": 0.0,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 3.221462834826055
       },
       {
         "code": "55",
@@ -25055,14 +25055,14 @@
         "Magnesium": 456.99535247802737,
         "Manganèse": 22.614423467619602,
         "MO4": 50.533279330363165,
-        "Matière organique": 4.0193093204604775,
         "pH_eau": 6.43,
         "pH_tampon": 6.72,
         "Phosphore": 116.11935222625735,
         "Potassium": 272.6059509277339,
         "ISP1": 5.523691159335659,
         "Besoin_en_chaux": 0.0,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 4.0193093204604775
       },
       {
         "code": "56",
@@ -25075,14 +25075,14 @@
         "Magnesium": 346.2465725708005,
         "Manganèse": 21.639612504831,
         "MO4": 48.586379256482346,
-        "Matière organique": 3.9544189910839584,
         "pH_eau": 6.5,
         "pH_tampon": 6.81,
         "Phosphore": 111.00246448516847,
         "Potassium": 221.79259033203124,
         "ISP1": 5.743285956832708,
         "Besoin_en_chaux": 0.0,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 3.9544189910839584
       },
       {
         "code": "57",
@@ -25095,14 +25095,14 @@
         "Magnesium": 936.0180053710942,
         "Manganèse": 16.387048186065,
         "MO4": 54.652827487473154,
-        "Matière organique": 4.13393556780083,
         "pH_eau": 6.51,
         "pH_tampon": 6.76,
         "Phosphore": 88.9478701210022,
         "Potassium": 362.8089832421874,
         "ISP1": 4.061433415503624,
         "Besoin_en_chaux": 0.0,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 4.13393556780083
       },
       {
         "code": "58",
@@ -25115,14 +25115,14 @@
         "Magnesium": 662.6136490478747,
         "Manganèse": 28.1426665228335,
         "MO4": 62.328767123287676,
-        "Matière organique": 4.549726441994306,
         "pH_eau": 6.46,
         "pH_tampon": 6.86,
         "Phosphore": 87.85250929747913,
         "Potassium": 307.460744114765,
         "ISP1": 4.693269178938126,
         "Besoin_en_chaux": 0.0,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 4.549726441994306
       },
       {
         "code": "59",
@@ -25135,14 +25135,14 @@
         "Magnesium": 676.742357344333,
         "Manganèse": 14.844406175613392,
         "MO4": 59.70758245494729,
-        "Matière organique": 4.3779183362586,
         "pH_eau": 6.27,
         "pH_tampon": 6.65,
         "Phosphore": 82.54438322489531,
         "Potassium": 280.5079264245848,
         "ISP1": 3.840030641627742,
         "Besoin_en_chaux": 2.000000000000009,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 4.3779183362586
       },
       {
         "code": "60",
@@ -25155,14 +25155,14 @@
         "Magnesium": 505.5094378051754,
         "Manganèse": 13.462718725204502,
         "MO4": 45.001929756850636,
-        "Matière organique": 3.8319873557493844,
         "pH_eau": 6.38,
         "pH_tampon": 6.67,
         "Phosphore": 102.7178436279296,
         "Potassium": 252.078442382812,
         "ISP1": 4.6905186599515085,
         "Besoin_en_chaux": 0.0,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 3.8319873557493844
       },
       {
         "code": "61",
@@ -25175,14 +25175,14 @@
         "Magnesium": 292.6990248339848,
         "Manganèse": 12.2006475925446,
         "MO4": 49.92898258204381,
-        "Matière organique": 3.997502033205135,
         "pH_eau": 6.29,
         "pH_tampon": 6.64,
         "Phosphore": 107.9182736361042,
         "Potassium": 221.48268257141115,
         "ISP1": 4.510762046375417,
         "Besoin_en_chaux": 2.000000000000009,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 3.997502033205135
       },
       {
         "code": "62",
@@ -25195,14 +25195,14 @@
         "Magnesium": 251.11065521240272,
         "Manganèse": 12.6897466182709,
         "MO4": 70.04694835680752,
-        "Matière organique": 4.903742089222336,
         "pH_eau": 6.23,
         "pH_tampon": 6.52,
         "Phosphore": 120.29730819702144,
         "Potassium": 174.04305526733404,
         "ISP1": 4.472242505137666,
         "Besoin_en_chaux": 4.0,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 4.903742089222336
       },
       {
         "code": "63",
@@ -25215,14 +25215,14 @@
         "Magnesium": 440.442272094726,
         "Manganèse": 14.7235750528507,
         "MO4": 48.03076923076923,
-        "Matière organique": 3.941084837509737,
         "pH_eau": 6.374044953224577,
         "pH_tampon": 6.66,
         "Phosphore": 159.0172070617675,
         "Potassium": 283.081792,
         "ISP1": 6.865952069205727,
         "Besoin_en_chaux": 0.0,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 3.941084837509737
       },
       {
         "code": "64",
@@ -25235,14 +25235,14 @@
         "Magnesium": 713.1364202880861,
         "Manganèse": 16.24976380467415,
         "MO4": 48.60537190082644,
-        "Matière organique": 3.935195159558539,
         "pH_eau": 6.6033,
         "pH_tampon": 6.84,
         "Phosphore": 88.11401333322236,
         "Potassium": 357.5226035766603,
         "ISP1": 4.075434978723303,
         "Besoin_en_chaux": 0.0,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 3.935195159558539
       },
       {
         "code": "65",
@@ -25255,14 +25255,14 @@
         "Magnesium": 608.89886716241,
         "Manganèse": 33.30453585557315,
         "MO4": 37.40579135263784,
-        "Matière organique": 3.5626774052108576,
         "pH_eau": 7.14,
         "pH_tampon": 7.46,
         "Phosphore": 202.563333813279,
         "Potassium": 333.709630517939,
         "ISP1": 10.674123759201319,
         "Besoin_en_chaux": 0.0,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 3.5626774052108576
       },
       {
         "code": "66",
@@ -25275,14 +25275,14 @@
         "Magnesium": 542.040360868541,
         "Manganèse": 20.160723209381132,
         "MO4": 62.9695885509839,
-        "Matière organique": 4.88137758805933,
         "pH_eau": 6.65,
         "pH_tampon": 6.99,
         "Phosphore": 142.103136,
         "Potassium": 249.82896136474545,
         "ISP1": 7.059322010550272,
         "Besoin_en_chaux": 0.0,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 4.88137758805933
       },
       {
         "code": "67",
@@ -25295,14 +25295,14 @@
         "Magnesium": 657.2660327112307,
         "Manganèse": 37.261266708374,
         "MO4": 59.877085162423185,
-        "Matière organique": 4.2468388931157985,
         "pH_eau": 6.94119873062314,
         "pH_tampon": 7.17,
         "Phosphore": 98.3754509135709,
         "Potassium": 275.3992148590079,
         "ISP1": 5.0239690261434635,
         "Besoin_en_chaux": 0.0,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 4.2468388931157985
       },
       {
         "code": "68",
@@ -25315,14 +25315,14 @@
         "Magnesium": 561.046367539415,
         "Manganèse": 37.455130577087374,
         "MO4": 58.02130898021309,
-        "Matière organique": 4.280366194383313,
         "pH_eau": 6.74,
         "pH_tampon": 7.03,
         "Phosphore": 120.18458518981944,
         "Potassium": 231.636793672323,
         "ISP1": 6.352217288561948,
         "Besoin_en_chaux": 0.0,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 4.280366194383313
       },
       {
         "code": "69",
@@ -25335,14 +25335,14 @@
         "Magnesium": 836.6421917724605,
         "Manganèse": 23.662059965236498,
         "MO4": 78.92570281124497,
-        "Matière organique": 5.0786220713037835,
         "pH_eau": 6.35,
         "pH_tampon": 6.668064131089829,
         "Phosphore": 91.13837103460672,
         "Potassium": 273.7439636230474,
         "ISP1": 4.442163827711594,
         "Besoin_en_chaux": 0.0,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 5.0786220713037835
       },
       {
         "code": "70",
@@ -25355,14 +25355,14 @@
         "Magnesium": 964.7911849365228,
         "Manganèse": 19.626461994648004,
         "MO4": 70.32663316582915,
-        "Matière organique": 4.677113209057056,
         "pH_eau": 6.47,
         "pH_tampon": 6.732268367742211,
         "Phosphore": 99.26037063598633,
         "Potassium": 331.15164200456536,
         "ISP1": 4.555687535966211,
         "Besoin_en_chaux": 0.0,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 4.677113209057056
       },
       {
         "code": "71",
@@ -25375,14 +25375,14 @@
         "Magnesium": 840.1938894958257,
         "Manganèse": 16.289643049240098,
         "MO4": 68.44501092498179,
-        "Matière organique": 4.585017238878702,
         "pH_eau": 6.39,
         "pH_tampon": 6.7,
         "Phosphore": 90.47495500564577,
         "Potassium": 300.7892930145261,
         "ISP1": 4.186980574003897,
         "Besoin_en_chaux": 0.0,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 4.585017238878702
       },
       {
         "code": "72",
@@ -25395,14 +25395,14 @@
         "Magnesium": 926.2941021728525,
         "Manganèse": 15.860320000000002,
         "MO4": 66.58276863504356,
-        "Matière organique": 4.609766437986641,
         "pH_eau": 6.61,
         "pH_tampon": 6.74,
         "Phosphore": 103.239357328733,
         "Potassium": 363.85659519999996,
         "ISP1": 4.560124407385768,
         "Besoin_en_chaux": 0.0,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 4.609766437986641
       },
       {
         "code": "73",
@@ -25415,14 +25415,14 @@
         "Magnesium": 649.5765248,
         "Manganèse": 17.892106729745834,
         "MO4": 62.87744227353463,
-        "Matière organique": 4.4381778741864455,
         "pH_eau": 6.53,
         "pH_tampon": 6.72,
         "Phosphore": 78.95576679229737,
         "Potassium": 211.166204415454,
         "ISP1": 3.3302838116820506,
         "Besoin_en_chaux": 0.0,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 4.4381778741864455
       },
       {
         "code": "74",
@@ -25435,14 +25435,14 @@
         "Magnesium": 885.5919946289058,
         "Manganèse": 14.839119225740394,
         "MO4": 74.52219238666878,
-        "Matière organique": 5.060776919415606,
         "pH_eau": 6.46,
         "pH_tampon": 6.63,
         "Phosphore": 91.17413536071771,
         "Potassium": 305.432208407424,
         "ISP1": 3.9475045422628154,
         "Besoin_en_chaux": 2.000000000000009,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 5.060776919415606
       },
       {
         "code": "75",
@@ -25455,14 +25455,14 @@
         "Magnesium": 570.5411437988281,
         "Manganèse": 11.323018211259823,
         "MO4": 72.03290246768508,
-        "Matière organique": 4.779411764705906,
         "pH_eau": 6.42,
         "pH_tampon": 6.52,
         "Phosphore": 87.51133804321283,
         "Potassium": 249.16934509277436,
         "ISP1": 3.2364847449317127,
         "Besoin_en_chaux": 4.0,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 4.779411764705906
       },
       {
         "code": "76",
@@ -25475,14 +25475,14 @@
         "Magnesium": 516.1305323791505,
         "Manganèse": 16.831526160240152,
         "MO4": 87.07504810776139,
-        "Matière organique": 5.634215208761358,
         "pH_eau": 6.29,
         "pH_tampon": 6.4853390330539,
         "Phosphore": 77.18035245895388,
         "Potassium": 220.43012635803223,
         "ISP1": 3.2473016338469387,
         "Besoin_en_chaux": 4.0,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 5.634215208761358
       },
       {
         "code": "78",
@@ -25495,14 +25495,14 @@
         "Magnesium": 217.4548513183593,
         "Manganèse": 13.50942649129,
         "MO4": 80.68459657701712,
-        "Matière organique": 5.4948709766174275,
         "pH_eau": 6.08,
         "pH_tampon": 6.531149328571104,
         "Phosphore": 66.1942585362822,
         "Potassium": 101.14449920654306,
         "ISP1": 2.162377997043511,
         "Besoin_en_chaux": 4.0,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 5.4948709766174275
       },
       {
         "code": "79",
@@ -25515,14 +25515,14 @@
         "Magnesium": 163.687236099939,
         "Manganèse": 11.5583519104,
         "MO4": 78.32699619771863,
-        "Matière organique": 5.4911004784342,
         "pH_eau": 6.07,
         "pH_tampon": 6.47,
         "Phosphore": 68.8463663729811,
         "Potassium": 104.64822349260686,
         "ISP1": 2.2411325263525224,
         "Besoin_en_chaux": 4.0,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 5.4911004784342
       },
       {
         "code": "80",
@@ -25535,14 +25535,14 @@
         "Magnesium": 287.294198234277,
         "Manganèse": 11.114536523819002,
         "MO4": 84.06183368869937,
-        "Matière organique": 5.546762657919515,
         "pH_eau": 5.91,
         "pH_tampon": 6.31,
         "Phosphore": 48.856245788980004,
         "Potassium": 199.88325696545866,
         "ISP1": 1.7672674710257996,
         "Besoin_en_chaux": 5.900000000000005,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 5.546762657919515
       },
       {
         "code": "81",
@@ -25555,14 +25555,14 @@
         "Magnesium": 598.6653795827935,
         "Manganèse": 16.05546080387284,
         "MO4": 72.77580071174377,
-        "Matière organique": 5.134076836504976,
         "pH_eau": 6.35,
         "pH_tampon": 6.62,
         "Phosphore": 55.92512573623654,
         "Potassium": 252.24856003610842,
         "ISP1": 2.474790320936116,
         "Besoin_en_chaux": 2.000000000000009,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 5.134076836504976
       },
       {
         "code": "82",
@@ -25575,14 +25575,14 @@
         "Magnesium": 583.1911572265635,
         "Manganèse": 15.477073502540586,
         "MO4": 73.89292795769994,
-        "Matière organique": 5.159866174593844,
         "pH_eau": 6.16,
         "pH_tampon": 6.53,
         "Phosphore": 54.51475559234612,
         "Potassium": 232.6806626586915,
         "ISP1": 2.262110831259253,
         "Besoin_en_chaux": 4.0,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 5.159866174593844
       },
       {
         "code": "83",
@@ -25595,14 +25595,14 @@
         "Magnesium": 273.8612282562259,
         "Manganèse": 16.601856983884,
         "MO4": 81.77676537585421,
-        "Matière organique": 5.602640916067245,
         "pH_eau": 6.0,
         "pH_tampon": 6.43,
         "Phosphore": 56.037834403991695,
         "Potassium": 104.74729995727536,
         "ISP1": 1.982402674177087,
         "Besoin_en_chaux": 4.9,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 5.602640916067245
       },
       {
         "code": "84",
@@ -25615,14 +25615,14 @@
         "Magnesium": 369.19617297363266,
         "Manganèse": 17.026240304718,
         "MO4": 77.27562062380649,
-        "Matière organique": 4.856030432678021,
         "pH_eau": 6.16,
         "pH_tampon": 6.57,
         "Phosphore": 72.33879873657224,
         "Potassium": 179.456926147461,
         "ISP1": 2.7122998080231238,
         "Besoin_en_chaux": 2.000000000000009,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 4.856030432678021
       },
       {
         "code": "85",
@@ -25635,14 +25635,14 @@
         "Magnesium": 682.4696026604624,
         "Manganèse": 16.7715202547965,
         "MO4": 72.22222222222221,
-        "Matière organique": 4.972022101694796,
         "pH_eau": 5.99,
         "pH_tampon": 6.528987465348875,
         "Phosphore": 37.83318198541262,
         "Potassium": 239.60549759999998,
         "ISP1": 1.5873739818964747,
         "Besoin_en_chaux": 4.0,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 4.972022101694796
       },
       {
         "code": "86",
@@ -25655,14 +25655,14 @@
         "Magnesium": 721.8984985351551,
         "Manganèse": 14.591394355807001,
         "MO4": 76.85185185185185,
-        "Matière organique": 6.847869899428944,
         "pH_eau": 5.85,
         "pH_tampon": 6.36,
         "Phosphore": 30.4450962399853,
         "Potassium": 212.22635803222647,
         "ISP1": 1.2725617982210293,
         "Besoin_en_chaux": 4.9,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 6.847869899428944
       },
       {
         "code": "87",
@@ -25675,14 +25675,14 @@
         "Magnesium": 1130.99986340332,
         "Manganèse": 12.01467001258405,
         "MO4": 94.44444444444444,
-        "Matière organique": 8.344357509823698,
         "pH_eau": 5.96985,
         "pH_tampon": 6.3,
         "Phosphore": 33.26927988581455,
         "Potassium": 450.349490091368,
         "ISP1": 1.3892885536670636,
         "Besoin_en_chaux": 5.900000000000005,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 8.344357509823698
       },
       {
         "code": "88",
@@ -25695,14 +25695,14 @@
         "Magnesium": 700.4091735839833,
         "Manganèse": 14.567699999999999,
         "MO4": 94.23580786026201,
-        "Matière organique": 6.50354666454112,
         "pH_eau": 5.75,
         "pH_tampon": 6.24,
         "Phosphore": 30.3748195187427,
         "Potassium": 252.13890625,
         "ISP1": 1.2096757243934033,
         "Besoin_en_chaux": 6.9,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 6.50354666454112
       },
       {
         "code": "89",
@@ -25715,14 +25715,14 @@
         "Magnesium": 530.3951782226563,
         "Manganèse": 17.408942818641663,
         "MO4": 85.49382716049382,
-        "Matière organique": 5.61556999579572,
         "pH_eau": 6.05707577974755,
         "pH_tampon": 6.5167903130933045,
         "Phosphore": 57.810396556827044,
         "Potassium": 200.39741439819335,
         "ISP1": 2.271859335838652,
         "Besoin_en_chaux": 4.0,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 5.61556999579572
       },
       {
         "code": "90",
@@ -25735,14 +25735,14 @@
         "Magnesium": 67.25300521850579,
         "Manganèse": 8.31823348999023,
         "MO4": 38.578680203045685,
-        "Matière organique": 3.5990538899186033,
         "pH_eau": 6.36,
         "pH_tampon": 6.66,
         "Phosphore": 92.69050560000001,
         "Potassium": 52.9825061942198,
         "ISP1": 3.2315167943512155,
         "Besoin_en_chaux": 0.0,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 3.5990538899186033
       },
       {
         "code": "91",
@@ -25755,14 +25755,14 @@
         "Magnesium": 150.94205561781575,
         "Manganèse": 12.889092468661499,
         "MO4": 63.063763608087086,
-        "Matière organique": 4.52026146934459,
         "pH_eau": 6.246124999999999,
         "pH_tampon": 6.63,
         "Phosphore": 76.06746181660064,
         "Potassium": 126.84806323641604,
         "ISP1": 2.926369736485265,
         "Besoin_en_chaux": 2.000000000000009,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 4.52026146934459
       },
       {
         "code": "92",
@@ -25775,14 +25775,14 @@
         "Magnesium": 95.2476886309715,
         "Manganèse": 6.357587365610501,
         "MO4": 73.54160906828864,
-        "Matière organique": 5.27227913425251,
         "pH_eau": 5.53,
         "pH_tampon": 6.2585786599087765,
         "Phosphore": 64.8916077353354,
         "Potassium": 123.969799478591,
         "ISP1": 2.1598940647168576,
         "Besoin_en_chaux": 5.900000000000005,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 5.27227913425251
       },
       {
         "code": "93",
@@ -25795,14 +25795,14 @@
         "Magnesium": 307.180843022682,
         "Manganèse": 9.174909195971999,
         "MO4": 83.18197900695837,
-        "Matière organique": 5.99009701702828,
         "pH_eau": 6.14,
         "pH_tampon": 6.63,
         "Phosphore": 66.2634134947971,
         "Potassium": 319.164910092515,
         "ISP1": 2.296749111466213,
         "Besoin_en_chaux": 2.000000000000009,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 5.99009701702828
       },
       {
         "code": "941",
@@ -25815,14 +25815,14 @@
         "Magnesium": 273.675564086914,
         "Manganèse": 7.786424666643144,
         "MO4": 81.9599109131403,
-        "Matière organique": 6.654755301698068,
         "pH_eau": 6.08,
         "pH_tampon": 6.44,
         "Phosphore": 53.5546276053578,
         "Potassium": 313.170801575184,
         "ISP1": 1.7852180117967922,
         "Besoin_en_chaux": 4.9,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 6.654755301698068
       },
       {
         "code": "942",
@@ -25835,14 +25835,14 @@
         "Magnesium": 185.32411454099,
         "Manganèse": 7.180143097346,
         "MO4": 88.49407783417935,
-        "Matière organique": 6.88310815352554,
         "pH_eau": 5.96,
         "pH_tampon": 6.26,
         "Phosphore": 51.4918913983331,
         "Potassium": 216.76091629028323,
         "ISP1": 1.474915504943824,
         "Besoin_en_chaux": 5.900000000000005,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 6.88310815352554
       },
       {
         "code": "95",
@@ -25855,14 +25855,14 @@
         "Magnesium": 79.0466313552857,
         "Manganèse": 6.036952883005139,
         "MO4": 75.29239766081871,
-        "Matière organique": 6.587797421725005,
         "pH_eau": 5.819018015429277,
         "pH_tampon": 6.179494836708981,
         "Phosphore": 35.09846380233759,
         "Potassium": 88.20336135864252,
         "ISP1": 95.15397719465122,
         "Besoin_en_chaux": 6.9,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 6.587797421725005
       },
       {
         "code": "96",
@@ -25875,14 +25875,14 @@
         "Magnesium": 40.05212349679075,
         "Manganèse": 3.7760735273361234,
         "MO4": 57.18654434250765,
-        "Matière organique": 4.296137917478247,
         "pH_eau": 5.28,
         "pH_tampon": 6.07,
         "Phosphore": 91.50603561162112,
         "Potassium": 99.88262995147699,
         "ISP1": 2.581738684657948,
         "Besoin_en_chaux": 7.950000000000005,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 4.296137917478247
       },
       {
         "code": "971",
@@ -25895,14 +25895,14 @@
         "Magnesium": 118.55768109130854,
         "Manganèse": 8.073967337608337,
         "MO4": 69.23076923076923,
-        "Matière organique": 7.018056442495231,
         "pH_eau": 5.3794307442777916,
         "pH_tampon": 6.06,
         "Phosphore": 54.91314468383782,
         "Potassium": 74.27395082473757,
         "ISP1": 2.0568290646227703,
         "Besoin_en_chaux": 7.950000000000005,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 7.018056442495231
       },
       {
         "code": "981",
@@ -25915,14 +25915,14 @@
         "Magnesium": 21.562201118469243,
         "Manganèse": 1.6482579767703958,
         "MO4": 76.71232876712328,
-        "Matière organique": 6.165941134429155,
         "pH_eau": 5.22,
         "pH_tampon": 5.795,
         "Phosphore": 10.175376228332514,
         "Potassium": 29.5872192,
         "ISP1": 23.234598342414888,
         "Besoin_en_chaux": 11.0,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 6.165941134429155
       },
       {
         "code": "991",
@@ -25935,14 +25935,14 @@
         "Magnesium": 236.032243382018,
         "Manganèse": 14.3518775769945,
         "MO4": 29.82456140350877,
-        "Matière organique": 3.42081048374006,
         "pH_eau": 6.08,
         "pH_tampon": 6.86,
         "Phosphore": 98.60859946447664,
         "Potassium": 170.94438028898952,
         "ISP1": 4.344176847017586,
         "Besoin_en_chaux": 0.0,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 3.42081048374006
       }
     ],
     "moyenne": [
@@ -49920,14 +49920,14 @@
         "Magnesium": 494.85221923785525,
         "Manganèse": 47.42725836137792,
         "MO4": 66.27906976744185,
-        "Matière organique": 5.63384762485137,
         "pH_eau": 5.934442954958111,
         "pH_tampon": 6.447286287051241,
         "Phosphore": 196.88431902124066,
         "Potassium": 241.53649689140744,
         "ISP1": 11.415636012323294,
         "Besoin_en_chaux": 4.764814814814817,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 5.63384762485137
       },
       {
         "code": "02",
@@ -49940,14 +49940,14 @@
         "Magnesium": 158.45109347247418,
         "Manganèse": 91.97367040075154,
         "MO4": 82.98755186721992,
-        "Matière organique": 6.214359605600851,
         "pH_eau": 5.982086090512572,
         "pH_tampon": 6.506152250866635,
         "Phosphore": 86.28953835519704,
         "Potassium": 110.09534510320302,
         "ISP1": 6.852853904016771,
         "Besoin_en_chaux": 4.134079601990051,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 6.214359605600851
       },
       {
         "code": "03",
@@ -49960,14 +49960,14 @@
         "Magnesium": 313.15070563326924,
         "Manganèse": 36.96593535194093,
         "MO4": 95.8041958041958,
-        "Matière organique": 7.270820851822487,
         "pH_eau": 6.014443815902692,
         "pH_tampon": 6.334488139350042,
         "Phosphore": 88.55296334913574,
         "Potassium": 185.686214602599,
         "ISP1": 4.985157360106678,
         "Besoin_en_chaux": 6.0930894308943095,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 7.270820851822487
       },
       {
         "code": "04",
@@ -49980,14 +49980,14 @@
         "Magnesium": 312.8135986702853,
         "Manganèse": 33.75918524995797,
         "MO4": 92.56410256410257,
-        "Matière organique": 6.837746590998541,
         "pH_eau": 5.976765753564036,
         "pH_tampon": 6.434071136739697,
         "Phosphore": 33.747046100522965,
         "Potassium": 163.58164428336863,
         "ISP1": 1.8001131339689798,
         "Besoin_en_chaux": 4.650819672131149,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 6.837746590998541
       },
       {
         "code": "05",
@@ -50000,14 +50000,14 @@
         "Magnesium": 148.7534258669307,
         "Manganèse": 37.665497151559286,
         "MO4": 79.71516551193226,
-        "Matière organique": 5.749326235127586,
         "pH_eau": 5.983800146718925,
         "pH_tampon": 6.508622594808126,
         "Phosphore": 62.88574634452448,
         "Potassium": 153.73229599262356,
         "ISP1": 3.0500807362105276,
         "Besoin_en_chaux": 3.763491379310347,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 5.749326235127586
       },
       {
         "code": "06",
@@ -50020,14 +50020,14 @@
         "Magnesium": 174.897768256222,
         "Manganèse": 45.38308176912646,
         "MO4": 95.2047952047952,
-        "Matière organique": 7.022834207051539,
         "pH_eau": 6.088484640545952,
         "pH_tampon": 6.499890153315453,
         "Phosphore": 61.401026029804726,
         "Potassium": 168.30536349039855,
         "ISP1": 2.888464613117043,
         "Besoin_en_chaux": 3.7877790834312597,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 7.022834207051539
       },
       {
         "code": "07",
@@ -50040,14 +50040,14 @@
         "Magnesium": 256.14719407330955,
         "Manganèse": 35.943191290484506,
         "MO4": 98.09697170279662,
-        "Matière organique": 7.801991181360079,
         "pH_eau": 6.2027073569069,
         "pH_tampon": 6.592173699836883,
         "Phosphore": 62.84742061413137,
         "Potassium": 169.91528244770637,
         "ISP1": 3.8312598138723177,
         "Besoin_en_chaux": 2.7562885572139324,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 7.801991181360079
       },
       {
         "code": "08",
@@ -50060,14 +50060,14 @@
         "Magnesium": 296.7277578790217,
         "Manganèse": 40.98634746901963,
         "MO4": 94.1693892937924,
-        "Matière organique": 7.6012384231443635,
         "pH_eau": 6.215671265737406,
         "pH_tampon": 6.530758576193752,
         "Phosphore": 53.60605919550027,
         "Potassium": 207.74277307789646,
         "ISP1": 2.8922799550139073,
         "Besoin_en_chaux": 3.5491030003093123,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 7.6012384231443635
       },
       {
         "code": "09",
@@ -50080,14 +50080,14 @@
         "Magnesium": 312.9127725815384,
         "Manganèse": 45.14271197475543,
         "MO4": 91.93667702322828,
-        "Matière organique": 7.337109364336398,
         "pH_eau": 6.311509271455129,
         "pH_tampon": 6.641232012526389,
         "Phosphore": 60.75188670802868,
         "Potassium": 215.7827732086422,
         "ISP1": 3.4656049522095076,
         "Besoin_en_chaux": 2.498198792908338,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 7.337109364336398
       },
       {
         "code": "10",
@@ -50100,14 +50100,14 @@
         "Magnesium": 330.4640926169008,
         "Manganèse": 41.06650191277277,
         "MO4": 90.34523691759819,
-        "Matière organique": 7.631221405765753,
         "pH_eau": 6.194541941083405,
         "pH_tampon": 6.620735413979302,
         "Phosphore": 86.82674630741235,
         "Potassium": 269.3053126325898,
         "ISP1": 4.946095198868288,
         "Besoin_en_chaux": 2.7572263187748174,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 7.631221405765753
       },
       {
         "code": "11",
@@ -50120,14 +50120,14 @@
         "Magnesium": 251.47083017150598,
         "Manganèse": 46.28471527701742,
         "MO4": 89.87822236280246,
-        "Matière organique": 7.197385602062863,
         "pH_eau": 6.04289881734874,
         "pH_tampon": 6.473107865427541,
         "Phosphore": 97.12214439547846,
         "Potassium": 209.00339682124172,
         "ISP1": 4.412458861858598,
         "Besoin_en_chaux": 4.13140932265113,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 7.197385602062863
       },
       {
         "code": "12",
@@ -50140,14 +50140,14 @@
         "Magnesium": 284.6674742802519,
         "Manganèse": 34.64207731551023,
         "MO4": 87.376910813092,
-        "Matière organique": 7.092486542476057,
         "pH_eau": 6.1235484279368375,
         "pH_tampon": 6.495478730807344,
         "Phosphore": 110.31685668907834,
         "Potassium": 221.10809027855407,
         "ISP1": 5.073162707643194,
         "Besoin_en_chaux": 3.907996613995487,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 7.092486542476057
       },
       {
         "code": "13",
@@ -50160,14 +50160,14 @@
         "Magnesium": 175.90452080298257,
         "Manganèse": 39.33339708993177,
         "MO4": 91.53089207936765,
-        "Matière organique": 7.230098005606674,
         "pH_eau": 6.014160359179681,
         "pH_tampon": 6.441784820799625,
         "Phosphore": 73.12669220851768,
         "Potassium": 143.04758925471936,
         "ISP1": 3.3123343583383122,
         "Besoin_en_chaux": 4.477147184604421,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 7.230098005606674
       },
       {
         "code": "14",
@@ -50180,14 +50180,14 @@
         "Magnesium": 477.5671626860705,
         "Manganèse": 31.66519791724668,
         "MO4": 87.60945970095908,
-        "Matière organique": 6.776996114661271,
         "pH_eau": 6.2675093531122545,
         "pH_tampon": 6.627771308636327,
         "Phosphore": 114.67269835834477,
         "Potassium": 355.29014461629833,
         "ISP1": 5.847536360116475,
         "Besoin_en_chaux": 3.10631541946571,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 6.776996114661271
       },
       {
         "code": "15",
@@ -50200,14 +50200,14 @@
         "Magnesium": 211.36932166639727,
         "Manganèse": 11.449465082610573,
         "MO4": 82.11488250652742,
-        "Matière organique": 6.429720317572009,
         "pH_eau": 5.8815273396670795,
         "pH_tampon": 6.3323553816780915,
         "Phosphore": 119.38858124853498,
         "Potassium": 191.93060313498322,
         "ISP1": 4.107180128078462,
         "Besoin_en_chaux": 5.867825494205864,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 6.429720317572009
       },
       {
         "code": "16",
@@ -50220,14 +50220,14 @@
         "Magnesium": 248.649896505302,
         "Manganèse": 12.612838718391195,
         "MO4": 80.17294626312538,
-        "Matière organique": 6.698767253671477,
         "pH_eau": 6.017025156098963,
         "pH_tampon": 6.336502370442895,
         "Phosphore": 109.67330979463036,
         "Potassium": 192.6970319101367,
         "ISP1": 4.327424539973171,
         "Besoin_en_chaux": 5.575317301269207,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 6.698767253671477
       },
       {
         "code": "17",
@@ -50240,14 +50240,14 @@
         "Magnesium": 422.98449955827544,
         "Manganèse": 27.982570561536754,
         "MO4": 91.2691060676239,
-        "Matière organique": 6.661432257477745,
         "pH_eau": 6.195271623635451,
         "pH_tampon": 6.540352568032376,
         "Phosphore": 91.83253990899351,
         "Potassium": 290.8775822277868,
         "ISP1": 4.6379475445589495,
         "Besoin_en_chaux": 3.6618971989604403,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 6.661432257477745
       },
       {
         "code": "18",
@@ -50260,14 +50260,14 @@
         "Magnesium": 601.1731183150425,
         "Manganèse": 23.31856928280174,
         "MO4": 91.86011904761905,
-        "Matière organique": 6.805980917540409,
         "pH_eau": 6.240796064497379,
         "pH_tampon": 6.538037440659776,
         "Phosphore": 103.8357907846413,
         "Potassium": 337.5886894230645,
         "ISP1": 4.913279625517213,
         "Besoin_en_chaux": 3.5317791762013746,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 6.805980917540409
       },
       {
         "code": "19",
@@ -50280,14 +50280,14 @@
         "Magnesium": 271.41356226022725,
         "Manganèse": 39.73300270932831,
         "MO4": 91.3765297410113,
-        "Matière organique": 6.412581404427052,
         "pH_eau": 6.184634085131847,
         "pH_tampon": 6.549804107719659,
         "Phosphore": 154.6588556945716,
         "Potassium": 251.0097279358348,
         "ISP1": 8.142527141023663,
         "Besoin_en_chaux": 3.751303310468239,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 6.412581404427052
       },
       {
         "code": "20",
@@ -50300,14 +50300,14 @@
         "Magnesium": 301.2011550264287,
         "Manganèse": 27.69435493069441,
         "MO4": 67.65505312577218,
-        "Matière organique": 4.853108693164985,
         "pH_eau": 5.864371065443663,
         "pH_tampon": 6.375920203593762,
         "Phosphore": 219.50627369625548,
         "Potassium": 388.41257957647326,
         "ISP1": 8.46109740578877,
         "Besoin_en_chaux": 5.00048993644068,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 4.853108693164985
       },
       {
         "code": "21",
@@ -50320,14 +50320,14 @@
         "Magnesium": 243.71807099285508,
         "Manganèse": 19.614607383276923,
         "MO4": 78.06072477962782,
-        "Matière organique": 5.649785728188301,
         "pH_eau": 6.056618682640385,
         "pH_tampon": 6.470910811124762,
         "Phosphore": 108.8494769724543,
         "Potassium": 222.85888310701506,
         "ISP1": 4.629655927758748,
         "Besoin_en_chaux": 4.376431718061675,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 5.649785728188301
       },
       {
         "code": "22",
@@ -50340,14 +50340,14 @@
         "Magnesium": 286.9555713930078,
         "Manganèse": 21.184024311168166,
         "MO4": 78.26086956521739,
-        "Matière organique": 6.847410169005191,
         "pH_eau": 6.351990167578796,
         "pH_tampon": 6.529802610898525,
         "Phosphore": 132.09450458233843,
         "Potassium": 245.310812570813,
         "ISP1": 8.097308413820775,
         "Besoin_en_chaux": 4.746200000000001,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 6.847410169005191
       },
       {
         "code": "23",
@@ -50360,14 +50360,14 @@
         "Magnesium": 297.16123501583405,
         "Manganèse": 23.581119686630903,
         "MO4": 55.89310187300137,
-        "Matière organique": 5.186562215775309,
         "pH_eau": 6.176710284782366,
         "pH_tampon": 6.655527237454758,
         "Phosphore": 124.38052747374876,
         "Potassium": 226.41428476363188,
         "ISP1": 8.262440917606868,
         "Besoin_en_chaux": 3.5603917301414594,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 5.186562215775309
       },
       {
         "code": "251",
@@ -50380,14 +50380,14 @@
         "Magnesium": 283.55424651888967,
         "Manganèse": 31.762842379647772,
         "MO4": 80.62515504837509,
-        "Matière organique": 5.905158396220027,
         "pH_eau": 6.194394949531304,
         "pH_tampon": 6.787586900708086,
         "Phosphore": 149.69316810900668,
         "Potassium": 225.99389014978829,
         "ISP1": 7.587842786051518,
         "Besoin_en_chaux": 3.1449928263988536,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 5.905158396220027
       },
       {
         "code": "26",
@@ -50400,14 +50400,14 @@
         "Magnesium": 260.51133994905564,
         "Manganèse": 37.43406188012431,
         "MO4": 87.67580272186208,
-        "Matière organique": 6.434719053531065,
         "pH_eau": 6.1327866798589294,
         "pH_tampon": 6.568758113406686,
         "Phosphore": 178.7021521239742,
         "Potassium": 225.1343473217457,
         "ISP1": 7.601108900176383,
         "Besoin_en_chaux": 3.2851567990161645,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 6.434719053531065
       },
       {
         "code": "27",
@@ -50420,14 +50420,14 @@
         "Magnesium": 212.67147196639743,
         "Manganèse": 46.77321491242557,
         "MO4": 89.58451906659079,
-        "Matière organique": 6.615009234197506,
         "pH_eau": 5.9612348750829085,
         "pH_tampon": 6.515345985600492,
         "Phosphore": 118.3581209476008,
         "Potassium": 155.0301985015523,
         "ISP1": 5.344256860324444,
         "Besoin_en_chaux": 4.415938057608974,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 6.615009234197506
       },
       {
         "code": "28",
@@ -50440,14 +50440,14 @@
         "Magnesium": 192.3397437619412,
         "Manganèse": 42.17223978619341,
         "MO4": 94.95254529767041,
-        "Matière organique": 7.935950536282179,
         "pH_eau": 5.826499446913367,
         "pH_tampon": 6.322872425981216,
         "Phosphore": 95.46364577650584,
         "Potassium": 176.52985700932416,
         "ISP1": 4.047384498390389,
         "Besoin_en_chaux": 5.625815342214057,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 7.935950536282179
       },
       {
         "code": "29",
@@ -50460,14 +50460,14 @@
         "Magnesium": 231.08537878133396,
         "Manganèse": 41.15901482845148,
         "MO4": 94.87969201154957,
-        "Matière organique": 7.447214047296211,
         "pH_eau": 5.969310179435595,
         "pH_tampon": 6.4647844385929405,
         "Phosphore": 88.44490832982092,
         "Potassium": 162.37501090543617,
         "ISP1": 4.763176148410273,
         "Besoin_en_chaux": 4.271567891972995,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 7.447214047296211
       },
       {
         "code": "30",
@@ -50480,14 +50480,14 @@
         "Magnesium": 265.6690848618942,
         "Manganèse": 40.247188733795866,
         "MO4": 95.54382878921137,
-        "Matière organique": 7.991490095440529,
         "pH_eau": 5.994162295252521,
         "pH_tampon": 6.391771830275797,
         "Phosphore": 80.68738554238314,
         "Potassium": 165.630819169543,
         "ISP1": 3.7115094727072617,
         "Besoin_en_chaux": 4.906581532416505,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 7.991490095440529
       },
       {
         "code": "31",
@@ -50500,14 +50500,14 @@
         "Magnesium": 329.6974086374729,
         "Manganèse": 41.68174723340332,
         "MO4": 92.40980623059629,
-        "Matière organique": 7.705326870046854,
         "pH_eau": 5.886890324179883,
         "pH_tampon": 6.373432915454725,
         "Phosphore": 91.60354207401306,
         "Potassium": 159.3990252701099,
         "ISP1": 4.438259493657765,
         "Besoin_en_chaux": 5.082360435487609,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 7.705326870046854
       },
       {
         "code": "32",
@@ -50520,14 +50520,14 @@
         "Magnesium": 211.12728009695172,
         "Manganèse": 29.56846435628876,
         "MO4": 79.76178356917438,
-        "Matière organique": 6.617402312997081,
         "pH_eau": 5.958737753670181,
         "pH_tampon": 6.475587417433567,
         "Phosphore": 123.5607352034932,
         "Potassium": 137.89550550079088,
         "ISP1": 5.22895589942603,
         "Besoin_en_chaux": 4.26393442622951,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 6.617402312997081
       },
       {
         "code": "33",
@@ -50540,14 +50540,14 @@
         "Magnesium": 264.77563503157955,
         "Manganèse": 28.929038331954757,
         "MO4": 81.41972969559177,
-        "Matière organique": 6.0765641446617105,
         "pH_eau": 6.27191171948519,
         "pH_tampon": 6.608190429324453,
         "Phosphore": 139.9384562907378,
         "Potassium": 194.06913919613447,
         "ISP1": 6.37636788892029,
         "Besoin_en_chaux": 3.137422384352687,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 6.0765641446617105
       },
       {
         "code": "34",
@@ -50560,14 +50560,14 @@
         "Magnesium": 248.1367676732842,
         "Manganèse": 15.977170185272472,
         "MO4": 79.87234042553192,
-        "Matière organique": 6.099106986344208,
         "pH_eau": 6.222301568129812,
         "pH_tampon": 6.624598379233152,
         "Phosphore": 107.28116611049194,
         "Potassium": 214.05375386318602,
         "ISP1": 4.622771817249436,
         "Besoin_en_chaux": 3.0261836669844313,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 6.099106986344208
       },
       {
         "code": "35",
@@ -50580,14 +50580,14 @@
         "Magnesium": 296.233343086234,
         "Manganèse": 9.986018759658446,
         "MO4": 90.63352531070021,
-        "Matière organique": 6.361087706677563,
         "pH_eau": 6.234069097198841,
         "pH_tampon": 6.479727046939478,
         "Phosphore": 65.96597596814165,
         "Potassium": 232.8941861302847,
         "ISP1": 2.2373817457833343,
         "Besoin_en_chaux": 4.051360174102287,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 6.361087706677563
       },
       {
         "code": "36",
@@ -50600,14 +50600,14 @@
         "Magnesium": 286.53779108088116,
         "Manganèse": 12.921587840881381,
         "MO4": 63.858695652173914,
-        "Matière organique": 5.002634579141781,
         "pH_eau": 6.173431516404801,
         "pH_tampon": 6.569156525299991,
         "Phosphore": 122.478190520183,
         "Potassium": 231.62142232456168,
         "ISP1": 4.347134853831609,
         "Besoin_en_chaux": 3.3732456140350893,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 5.002634579141781
       },
       {
         "code": "371",
@@ -50620,14 +50620,14 @@
         "Magnesium": 260.3305243424395,
         "Manganèse": 14.618382194207278,
         "MO4": 62.08436724565757,
-        "Matière organique": 6.252422063430291,
         "pH_eau": 6.018288653962067,
         "pH_tampon": 6.488683420943007,
         "Phosphore": 118.83614741984248,
         "Potassium": 181.87295428260012,
         "ISP1": 5.775103793623014,
         "Besoin_en_chaux": 4.221703617269546,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 6.252422063430291
       },
       {
         "code": "372",
@@ -50640,14 +50640,14 @@
         "Magnesium": 255.24135100560864,
         "Manganèse": 12.620161264659746,
         "MO4": 68.50974196945761,
-        "Matière organique": 4.962697160937096,
         "pH_eau": 6.154488655822183,
         "pH_tampon": 6.58395628826036,
         "Phosphore": 114.77759811887567,
         "Potassium": 211.5743165943929,
         "ISP1": 4.496036898681713,
         "Besoin_en_chaux": 2.9568054504163532,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 4.962697160937096
       },
       {
         "code": "38",
@@ -50660,14 +50660,14 @@
         "Magnesium": 333.1198921178259,
         "Manganèse": 17.087104566590916,
         "MO4": 53.40571428571429,
-        "Matière organique": 4.325193705112692,
         "pH_eau": 6.277636548004226,
         "pH_tampon": 6.71414288343434,
         "Phosphore": 109.08047719485509,
         "Potassium": 199.17654989081566,
         "ISP1": 4.671934772563216,
         "Besoin_en_chaux": 1.8691558005108229,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 4.325193705112692
       },
       {
         "code": "39",
@@ -50680,14 +50680,14 @@
         "Magnesium": 209.13517070162214,
         "Manganèse": 34.93116404704065,
         "MO4": 65.28410520137511,
-        "Matière organique": 5.187531466167187,
         "pH_eau": 6.064592241499354,
         "pH_tampon": 6.700226286978001,
         "Phosphore": 131.6181786124924,
         "Potassium": 154.58575639191918,
         "ISP1": 5.929726352681116,
         "Besoin_en_chaux": 2.340573684368528,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 5.187531466167187
       },
       {
         "code": "40",
@@ -50700,14 +50700,14 @@
         "Magnesium": 197.30093023794387,
         "Manganèse": 44.49487461860951,
         "MO4": 96.27953745600804,
-        "Matière organique": 7.056730126906269,
         "pH_eau": 6.2091131924198715,
         "pH_tampon": 6.524050426960269,
         "Phosphore": 88.26248688883838,
         "Potassium": 160.3666163872776,
         "ISP1": 3.963913408026844,
         "Besoin_en_chaux": 3.5414224664224685,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 7.056730126906269
       },
       {
         "code": "41",
@@ -50720,14 +50720,14 @@
         "Magnesium": 168.42638709312004,
         "Manganèse": 43.32420349250057,
         "MO4": 95.91733870967742,
-        "Matière organique": 7.156485867190593,
         "pH_eau": 6.061384617960476,
         "pH_tampon": 6.434652630846984,
         "Phosphore": 88.12531364710888,
         "Potassium": 164.00213569367216,
         "ISP1": 6.5070991182999265,
         "Besoin_en_chaux": 4.567840375586856,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 7.156485867190593
       },
       {
         "code": "42",
@@ -50740,14 +50740,14 @@
         "Magnesium": 240.52524064379466,
         "Manganèse": 39.40279214129638,
         "MO4": 89.5975397780452,
-        "Matière organique": 6.534593684424185,
         "pH_eau": 6.203923382557273,
         "pH_tampon": 6.526809052793458,
         "Phosphore": 116.8276985606024,
         "Potassium": 162.08191552277054,
         "ISP1": 4.87561753889061,
         "Besoin_en_chaux": 3.7036181553868537,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 6.534593684424185
       },
       {
         "code": "43",
@@ -50760,14 +50760,14 @@
         "Magnesium": 240.35221365185248,
         "Manganèse": 33.992110087865505,
         "MO4": 80.0894266175697,
-        "Matière organique": 6.342446641808307,
         "pH_eau": 6.032611845862147,
         "pH_tampon": 6.396262908044436,
         "Phosphore": 97.62754116662866,
         "Potassium": 157.92190635897197,
         "ISP1": 5.394381134586373,
         "Besoin_en_chaux": 5.5488463969658675,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 6.342446641808307
       },
       {
         "code": "44",
@@ -50780,14 +50780,14 @@
         "Magnesium": 214.51934137247562,
         "Manganèse": 55.20751026730952,
         "MO4": 89.26315789473685,
-        "Matière organique": 6.065920573260111,
         "pH_eau": 6.231272457095669,
         "pH_tampon": 6.566550376073116,
         "Phosphore": 113.42530739382687,
         "Potassium": 186.0170731430919,
         "ISP1": 4.858531113529489,
         "Besoin_en_chaux": 3.147087941021592,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 6.065920573260111
       },
       {
         "code": "45",
@@ -50800,14 +50800,14 @@
         "Magnesium": 282.362466038186,
         "Manganèse": 46.63205981100242,
         "MO4": 87.94298921417565,
-        "Matière organique": 6.315380274037062,
         "pH_eau": 6.040017182801428,
         "pH_tampon": 6.464411391796138,
         "Phosphore": 84.72012901931289,
         "Potassium": 167.46289517997945,
         "ISP1": 5.619891854555404,
         "Besoin_en_chaux": 4.223232984293196,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 6.315380274037062
       },
       {
         "code": "46",
@@ -50820,14 +50820,14 @@
         "Magnesium": 322.43702596459707,
         "Manganèse": 35.76049502829377,
         "MO4": 69.29992728234284,
-        "Matière organique": 5.445087751770462,
         "pH_eau": 6.387181003743919,
         "pH_tampon": 6.700596029557926,
         "Phosphore": 146.30433068012832,
         "Potassium": 217.29982959802214,
         "ISP1": 7.494627440927727,
         "Besoin_en_chaux": 2.438921851161215,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 5.445087751770462
       },
       {
         "code": "47",
@@ -50840,14 +50840,14 @@
         "Magnesium": 271.04052782710727,
         "Manganèse": 44.97321245576361,
         "MO4": 77.37003058103976,
-        "Matière organique": 6.338348697111075,
         "pH_eau": 6.144295953490429,
         "pH_tampon": 6.520024303366038,
         "Phosphore": 185.15853517343203,
         "Potassium": 193.72222496459864,
         "ISP1": 8.325487713465428,
         "Besoin_en_chaux": 3.777872178544257,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 6.338348697111075
       },
       {
         "code": "48",
@@ -50860,14 +50860,14 @@
         "Magnesium": 246.1842475831592,
         "Manganèse": 27.783624699179235,
         "MO4": 48.756128563646264,
-        "Matière organique": 4.6532211531876335,
         "pH_eau": 6.399558922144007,
         "pH_tampon": 6.817993061319743,
         "Phosphore": 178.5533628720455,
         "Potassium": 188.60809087659948,
         "ISP1": 9.04468464286693,
         "Besoin_en_chaux": 1.7024093861303176,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 4.6532211531876335
       },
       {
         "code": "49",
@@ -50880,14 +50880,14 @@
         "Magnesium": 255.0883072395652,
         "Manganèse": 20.17475176942838,
         "MO4": 44.63592362108398,
-        "Matière organique": 4.294095857130354,
         "pH_eau": 6.298417808062,
         "pH_tampon": 6.714966657436524,
         "Phosphore": 165.42977143532306,
         "Potassium": 179.31822704809312,
         "ISP1": 7.421655596197747,
         "Besoin_en_chaux": 2.144454225352114,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 4.294095857130354
       },
       {
         "code": "50",
@@ -50900,14 +50900,14 @@
         "Magnesium": 359.72067801919354,
         "Manganèse": 15.577766374757822,
         "MO4": 32.81556444653644,
-        "Matière organique": 3.7319723009667145,
         "pH_eau": 6.2791477560861,
         "pH_tampon": 6.744536882611945,
         "Phosphore": 143.4565177486374,
         "Potassium": 217.76384253793216,
         "ISP1": 6.692842484621363,
         "Besoin_en_chaux": 1.6783065512979,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 3.7319723009667145
       },
       {
         "code": "51",
@@ -50920,14 +50920,14 @@
         "Magnesium": 509.9662687078358,
         "Manganèse": 13.78018312328715,
         "MO4": 63.03434284886248,
-        "Matière organique": 4.634041141176652,
         "pH_eau": 6.225375397735559,
         "pH_tampon": 6.582805918826549,
         "Phosphore": 136.79472201241578,
         "Potassium": 324.0064195383797,
         "ISP1": 5.299727252755022,
         "Besoin_en_chaux": 2.94075718015666,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 4.634041141176652
       },
       {
         "code": "52",
@@ -50940,14 +50940,14 @@
         "Magnesium": 567.3571408996918,
         "Manganèse": 15.268477655822519,
         "MO4": 55.78004582378671,
-        "Matière organique": 4.63896573562782,
         "pH_eau": 6.2200033065765705,
         "pH_tampon": 6.62274996189527,
         "Phosphore": 152.4447869602862,
         "Potassium": 322.55249744573734,
         "ISP1": 6.3776100207681585,
         "Besoin_en_chaux": 2.747510999371466,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 4.63896573562782
       },
       {
         "code": "53",
@@ -50960,14 +50960,14 @@
         "Magnesium": 519.5857495811892,
         "Manganèse": 18.2079294578264,
         "MO4": 33.130646282140376,
-        "Matière organique": 3.862543773474154,
         "pH_eau": 6.4215103197845655,
         "pH_tampon": 6.8146576767959255,
         "Phosphore": 120.31581381059682,
         "Potassium": 244.71254500221175,
         "ISP1": 6.422032439296346,
         "Besoin_en_chaux": 1.3936969301110398,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 3.862543773474154
       },
       {
         "code": "54",
@@ -50980,14 +50980,14 @@
         "Magnesium": 468.3784978465781,
         "Manganèse": 20.79648011276488,
         "MO4": 28.46473733344649,
-        "Matière organique": 3.6808377723918446,
         "pH_eau": 6.420128435400541,
         "pH_tampon": 6.894191872778904,
         "Phosphore": 188.66483277339486,
         "Potassium": 286.9741491564721,
         "ISP1": 10.644382848039562,
         "Besoin_en_chaux": 1.163392259745749,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 3.6808377723918446
       },
       {
         "code": "55",
@@ -51000,14 +51000,14 @@
         "Magnesium": 637.6170012589874,
         "Manganèse": 29.662674386988172,
         "MO4": 50.533279330363165,
-        "Matière organique": 4.3953875907683075,
         "pH_eau": 6.42776076180987,
         "pH_tampon": 6.881720217642467,
         "Phosphore": 165.731712572722,
         "Potassium": 318.40923875219863,
         "ISP1": 8.286736490465172,
         "Besoin_en_chaux": 1.9473598769651415,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 4.3953875907683075
       },
       {
         "code": "56",
@@ -51020,14 +51020,14 @@
         "Magnesium": 454.2440279371385,
         "Manganèse": 27.791490782118974,
         "MO4": 48.586379256482346,
-        "Matière organique": 4.336619691700139,
         "pH_eau": 6.487697242706242,
         "pH_tampon": 6.84027830510145,
         "Phosphore": 138.2877644727217,
         "Potassium": 261.00732170828576,
         "ISP1": 7.873714325626099,
         "Besoin_en_chaux": 1.5328907512116328,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 4.336619691700139
       },
       {
         "code": "57",
@@ -51040,14 +51040,14 @@
         "Magnesium": 957.91431249839,
         "Manganèse": 21.483896725494425,
         "MO4": 54.652827487473154,
-        "Matière organique": 4.543960959148149,
         "pH_eau": 6.504600062902498,
         "pH_tampon": 6.815452947530162,
         "Phosphore": 116.17218625606746,
         "Potassium": 387.1217951595325,
         "ISP1": 5.711757936191364,
         "Besoin_en_chaux": 1.6928832116788333,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 4.543960959148149
       },
       {
         "code": "58",
@@ -51060,14 +51060,14 @@
         "Magnesium": 762.80995430498,
         "Manganèse": 47.08861554629926,
         "MO4": 62.328767123287676,
-        "Matière organique": 5.943554254259262,
         "pH_eau": 6.454927261872619,
         "pH_tampon": 6.975160228709777,
         "Phosphore": 158.61895989028616,
         "Potassium": 493.5975515634559,
         "ISP1": 21.35510504666122,
         "Besoin_en_chaux": 1.8282148900169215,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 5.943554254259262
       },
       {
         "code": "59",
@@ -51080,14 +51080,14 @@
         "Magnesium": 733.144188166691,
         "Manganèse": 19.316250826722765,
         "MO4": 59.70758245494729,
-        "Matière organique": 4.863393194042113,
         "pH_eau": 6.274398334971098,
         "pH_tampon": 6.693834250671239,
         "Phosphore": 156.04782045041318,
         "Potassium": 328.57933991617756,
         "ISP1": 7.3334691093700375,
         "Besoin_en_chaux": 2.3588282828282847,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 4.863393194042113
       },
       {
         "code": "60",
@@ -51100,14 +51100,14 @@
         "Magnesium": 640.1230074936423,
         "Manganèse": 17.188179591965127,
         "MO4": 45.001929756850636,
-        "Matière organique": 4.214462874452518,
         "pH_eau": 6.40096753314064,
         "pH_tampon": 6.733447430936907,
         "Phosphore": 169.37348028502385,
         "Potassium": 305.38778407721287,
         "ISP1": 7.283345839649139,
         "Besoin_en_chaux": 2.007455708661419,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 4.214462874452518
       },
       {
         "code": "61",
@@ -51120,14 +51120,14 @@
         "Magnesium": 435.9556031066212,
         "Manganèse": 16.05135758058667,
         "MO4": 49.92898258204381,
-        "Matière organique": 4.375639760169827,
         "pH_eau": 6.265601888675077,
         "pH_tampon": 6.674674337036079,
         "Phosphore": 168.22394240893618,
         "Potassium": 262.8990194250259,
         "ISP1": 6.83357632765157,
         "Besoin_en_chaux": 2.652804900515845,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 4.375639760169827
       },
       {
         "code": "62",
@@ -51140,14 +51140,14 @@
         "Magnesium": 319.54903947244645,
         "Manganèse": 18.024325393611857,
         "MO4": 70.04694835680752,
-        "Matière organique": 5.319517960261171,
         "pH_eau": 6.2663831072279965,
         "pH_tampon": 6.628055557931235,
         "Phosphore": 165.5118823678586,
         "Potassium": 225.58586917085952,
         "ISP1": 6.3224908070393875,
         "Besoin_en_chaux": 3.5103373231773682,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 5.319517960261171
       },
       {
         "code": "63",
@@ -51160,14 +51160,14 @@
         "Magnesium": 510.403956578822,
         "Manganèse": 19.74014762785708,
         "MO4": 48.03076923076923,
-        "Matière organique": 4.117131159110498,
         "pH_eau": 6.373037455197545,
         "pH_tampon": 6.6953688485227945,
         "Phosphore": 197.46887617421828,
         "Potassium": 314.81529354944746,
         "ISP1": 8.553328869855411,
         "Besoin_en_chaux": 2.296577561765899,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 4.117131159110498
       },
       {
         "code": "64",
@@ -51180,14 +51180,14 @@
         "Magnesium": 848.6684300320896,
         "Manganèse": 20.806680205949196,
         "MO4": 48.60537190082644,
-        "Matière organique": 4.887254819452284,
         "pH_eau": 6.6316668212530105,
         "pH_tampon": 6.9265358094639105,
         "Phosphore": 114.82267238050781,
         "Potassium": 392.9628260030235,
         "ISP1": 5.720360228875234,
         "Besoin_en_chaux": 1.852636655948554,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 4.887254819452284
       },
       {
         "code": "65",
@@ -51200,14 +51200,14 @@
         "Magnesium": 751.0610906768875,
         "Manganèse": 48.55869027509595,
         "MO4": 37.40579135263784,
-        "Matière organique": 3.9105896690402475,
         "pH_eau": 6.98592211710169,
         "pH_tampon": 7.375150208200854,
         "Phosphore": 240.42568168148784,
         "Potassium": 352.6650401422272,
         "ISP1": 13.497700839379213,
         "Besoin_en_chaux": 0.5111064543168486,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 3.9105896690402475
       },
       {
         "code": "66",
@@ -51220,14 +51220,14 @@
         "Magnesium": 674.1374686238747,
         "Manganèse": 29.407609496788236,
         "MO4": 62.9695885509839,
-        "Matière organique": 6.638644291509752,
         "pH_eau": 6.607588104921507,
         "pH_tampon": 7.00783629744458,
         "Phosphore": 187.58416274025916,
         "Potassium": 355.9026695018678,
         "ISP1": 18.136549391925374,
         "Besoin_en_chaux": 1.6290983606557385,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 6.638644291509752
       },
       {
         "code": "67",
@@ -51240,14 +51240,14 @@
         "Magnesium": 801.4173090811208,
         "Manganèse": 42.75434886309171,
         "MO4": 59.877085162423185,
-        "Matière organique": 4.616219782536782,
         "pH_eau": 6.8796384684664895,
         "pH_tampon": 7.090366956616293,
         "Phosphore": 123.55069251606427,
         "Potassium": 324.4165231462267,
         "ISP1": 6.869396663137807,
         "Besoin_en_chaux": 1.0871906291328175,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 4.616219782536782
       },
       {
         "code": "68",
@@ -51260,14 +51260,14 @@
         "Magnesium": 660.026696395851,
         "Manganèse": 46.448759044379734,
         "MO4": 58.02130898021309,
-        "Matière organique": 5.3571908668171595,
         "pH_eau": 6.689578342968156,
         "pH_tampon": 6.987026860240347,
         "Phosphore": 173.51186699494554,
         "Potassium": 288.95794970955086,
         "ISP1": 9.839518695875968,
         "Besoin_en_chaux": 1.2629188987168316,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 5.3571908668171595
       },
       {
         "code": "69",
@@ -51280,14 +51280,14 @@
         "Magnesium": 861.8926302525922,
         "Manganèse": 32.62084488717162,
         "MO4": 78.92570281124497,
-        "Matière organique": 5.449604922354258,
         "pH_eau": 6.372578052427896,
         "pH_tampon": 6.716894264655844,
         "Phosphore": 121.52524554476517,
         "Potassium": 297.847918612122,
         "ISP1": 6.036335010695641,
         "Besoin_en_chaux": 2.251419011029869,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 5.449604922354258
       },
       {
         "code": "70",
@@ -51300,14 +51300,14 @@
         "Magnesium": 980.0764864252955,
         "Manganèse": 24.857812637210543,
         "MO4": 70.32663316582915,
-        "Matière organique": 4.999477466294759,
         "pH_eau": 6.472544655563958,
         "pH_tampon": 6.800542751918094,
         "Phosphore": 121.24544064989041,
         "Potassium": 364.32305758844865,
         "ISP1": 5.948287552381222,
         "Besoin_en_chaux": 1.9927468892739026,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 4.999477466294759
       },
       {
         "code": "71",
@@ -51320,14 +51320,14 @@
         "Magnesium": 882.4552535068044,
         "Manganèse": 22.22661275920408,
         "MO4": 68.44501092498179,
-        "Matière organique": 4.908806807369715,
         "pH_eau": 6.3790460082750515,
         "pH_tampon": 6.740154593689705,
         "Phosphore": 112.08430995873803,
         "Potassium": 320.9676327694104,
         "ISP1": 5.4819605590280585,
         "Besoin_en_chaux": 2.0674401197604806,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 4.908806807369715
       },
       {
         "code": "72",
@@ -51340,14 +51340,14 @@
         "Magnesium": 912.7878528850026,
         "Manganèse": 35.75523922849027,
         "MO4": 66.58276863504356,
-        "Matière organique": 4.949620745191583,
         "pH_eau": 6.6061498405273,
         "pH_tampon": 6.853018594424135,
         "Phosphore": 142.81066292013412,
         "Potassium": 385.5888594726838,
         "ISP1": 6.628261777303152,
         "Besoin_en_chaux": 2.0447974583002395,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 4.949620745191583
       },
       {
         "code": "73",
@@ -51360,14 +51360,14 @@
         "Magnesium": 759.9682517615275,
         "Manganèse": 22.462737206885812,
         "MO4": 62.87744227353463,
-        "Matière organique": 5.283544880863211,
         "pH_eau": 6.511972045890148,
         "pH_tampon": 6.7911726551293405,
         "Phosphore": 130.34575981707258,
         "Potassium": 272.38870591539063,
         "ISP1": 5.705194275756438,
         "Besoin_en_chaux": 2.224721603563476,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 5.283544880863211
       },
       {
         "code": "74",
@@ -51380,14 +51380,14 @@
         "Magnesium": 913.4254603920688,
         "Manganèse": 21.129842963674307,
         "MO4": 74.52219238666878,
-        "Matière organique": 5.542742637380566,
         "pH_eau": 6.468490882020051,
         "pH_tampon": 6.847338940551669,
         "Phosphore": 127.29723885856384,
         "Potassium": 336.92394061320186,
         "ISP1": 5.637068358255448,
         "Besoin_en_chaux": 2.5008749736453737,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 5.542742637380566
       },
       {
         "code": "75",
@@ -51400,14 +51400,14 @@
         "Magnesium": 781.0399345429637,
         "Manganèse": 14.664164845780094,
         "MO4": 72.03290246768508,
-        "Matière organique": 5.307046253126242,
         "pH_eau": 6.403614852633178,
         "pH_tampon": 6.564425135413894,
         "Phosphore": 119.53234015806996,
         "Potassium": 276.64514678633685,
         "ISP1": 4.528803702713034,
         "Besoin_en_chaux": 3.3688729874776406,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 5.307046253126242
       },
       {
         "code": "76",
@@ -51420,14 +51420,14 @@
         "Magnesium": 634.2406057539588,
         "Manganèse": 26.040597809697537,
         "MO4": 87.07504810776139,
-        "Matière organique": 6.138885273748103,
         "pH_eau": 6.301898244601168,
         "pH_tampon": 6.542349056819282,
         "Phosphore": 108.7507485943187,
         "Potassium": 279.96693850269764,
         "ISP1": 5.006606113131001,
         "Besoin_en_chaux": 3.8685018419975457,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 6.138885273748103
       },
       {
         "code": "78",
@@ -51440,14 +51440,14 @@
         "Magnesium": 269.32341404390945,
         "Manganèse": 16.026047131789714,
         "MO4": 80.68459657701712,
-        "Matière organique": 5.944266431181512,
         "pH_eau": 6.075287821710143,
         "pH_tampon": 6.544754640220499,
         "Phosphore": 106.3529936702766,
         "Potassium": 147.1408440354331,
         "ISP1": 3.8517920814722832,
         "Besoin_en_chaux": 3.52582697201018,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 5.944266431181512
       },
       {
         "code": "79",
@@ -51460,14 +51460,14 @@
         "Magnesium": 231.74761926688097,
         "Manganèse": 14.320434404449102,
         "MO4": 78.32699619771863,
-        "Matière organique": 5.995676707648872,
         "pH_eau": 6.069232624535533,
         "pH_tampon": 6.4935713410132685,
         "Phosphore": 104.2006408517741,
         "Potassium": 168.58786394333418,
         "ISP1": 3.956272456113949,
         "Besoin_en_chaux": 4.277244258872653,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 5.995676707648872
       },
       {
         "code": "80",
@@ -51480,14 +51480,14 @@
         "Magnesium": 490.1380676871457,
         "Manganèse": 14.916601405545679,
         "MO4": 84.06183368869937,
-        "Matière organique": 6.075324668593729,
         "pH_eau": 5.928629725114206,
         "pH_tampon": 6.306224336713287,
         "Phosphore": 96.86077107012828,
         "Potassium": 282.434142413255,
         "ISP1": 3.7926300208312846,
         "Besoin_en_chaux": 5.986620530565169,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 6.075324668593729
       },
       {
         "code": "81",
@@ -51500,14 +51500,14 @@
         "Magnesium": 713.356990503784,
         "Manganèse": 22.765060618096157,
         "MO4": 72.77580071174377,
-        "Matière organique": 6.040982496048697,
         "pH_eau": 6.449540625745932,
         "pH_tampon": 6.834531907609679,
         "Phosphore": 109.72128634397019,
         "Potassium": 498.52331512389117,
         "ISP1": 13.433882466685379,
         "Besoin_en_chaux": 2.985928143712576,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 6.040982496048697
       },
       {
         "code": "82",
@@ -51520,14 +51520,14 @@
         "Magnesium": 734.3057245178096,
         "Manganèse": 20.172933303691405,
         "MO4": 73.89292795769994,
-        "Matière organique": 5.341416772788534,
         "pH_eau": 6.198909614298445,
         "pH_tampon": 6.573449093796458,
         "Phosphore": 84.25651957306316,
         "Potassium": 299.76730549250846,
         "ISP1": 3.912579919360187,
         "Besoin_en_chaux": 3.448348694316438,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 5.341416772788534
       },
       {
         "code": "83",
@@ -51540,14 +51540,14 @@
         "Magnesium": 334.4924562229646,
         "Manganèse": 19.57256372923974,
         "MO4": 81.77676537585421,
-        "Matière organique": 5.836334703711827,
         "pH_eau": 6.040487031126001,
         "pH_tampon": 6.448675878807004,
         "Phosphore": 80.815498119343,
         "Potassium": 161.42895972819008,
         "ISP1": 2.97389663323173,
         "Besoin_en_chaux": 4.500252206809585,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 5.836334703711827
       },
       {
         "code": "84",
@@ -51560,14 +51560,14 @@
         "Magnesium": 459.5539151419405,
         "Manganèse": 21.827506695681652,
         "MO4": 77.27562062380649,
-        "Matière organique": 4.971131580738951,
         "pH_eau": 6.176730956424233,
         "pH_tampon": 6.581988819720543,
         "Phosphore": 94.56131707759465,
         "Potassium": 236.10374939202836,
         "ISP1": 3.7868606176797637,
         "Besoin_en_chaux": 2.8985531135531155,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 4.971131580738951
       },
       {
         "code": "85",
@@ -51580,14 +51580,14 @@
         "Magnesium": 728.0849267497379,
         "Manganèse": 20.167036585799764,
         "MO4": 72.22222222222221,
-        "Matière organique": 5.435573434909066,
         "pH_eau": 5.991940755518616,
         "pH_tampon": 6.504383150801846,
         "Phosphore": 53.87418303008285,
         "Potassium": 286.55043521609406,
         "ISP1": 2.495659705433873,
         "Besoin_en_chaux": 3.678797468354432,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 5.435573434909066
       },
       {
         "code": "86",
@@ -51600,14 +51600,14 @@
         "Magnesium": 715.7523174428511,
         "Manganèse": 17.20009712181994,
         "MO4": 76.85185185185185,
-        "Matière organique": 7.650022478560136,
         "pH_eau": 5.847402936012426,
         "pH_tampon": 6.380899268748816,
         "Phosphore": 68.41261535705203,
         "Potassium": 323.6717839439991,
         "ISP1": 4.665477947306385,
         "Besoin_en_chaux": 5.784313725490197,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 7.650022478560136
       },
       {
         "code": "87",
@@ -51620,14 +51620,14 @@
         "Magnesium": 1128.5082034478742,
         "Manganèse": 13.707950102322748,
         "MO4": 94.44444444444444,
-        "Matière organique": 9.232139451207106,
         "pH_eau": 6.030747459188965,
         "pH_tampon": 6.352373194277343,
         "Phosphore": 53.51369558773025,
         "Potassium": 481.0804986201483,
         "ISP1": 2.448546522131004,
         "Besoin_en_chaux": 5.8251371115173685,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 9.232139451207106
       },
       {
         "code": "88",
@@ -51640,14 +51640,14 @@
         "Magnesium": 726.3369546421768,
         "Manganèse": 17.21705889853077,
         "MO4": 94.23580786026201,
-        "Matière organique": 7.2140630378605515,
         "pH_eau": 5.793123053733964,
         "pH_tampon": 6.253539105029655,
         "Phosphore": 41.37076389625668,
         "Potassium": 277.17291964850375,
         "ISP1": 1.725590830446196,
         "Besoin_en_chaux": 6.40885275519422,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 7.2140630378605515
       },
       {
         "code": "89",
@@ -51660,14 +51660,14 @@
         "Magnesium": 554.1624786870626,
         "Manganèse": 21.96619213836698,
         "MO4": 85.49382716049382,
-        "Matière organique": 6.4393563585904126,
         "pH_eau": 6.066800697209151,
         "pH_tampon": 6.496694326049327,
         "Phosphore": 77.8992041671346,
         "Potassium": 227.37597061287553,
         "ISP1": 3.9927973856326058,
         "Besoin_en_chaux": 4.140862068965519,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 6.4393563585904126
       },
       {
         "code": "90",
@@ -51680,14 +51680,14 @@
         "Magnesium": 80.2236149564255,
         "Manganèse": 9.892077274631676,
         "MO4": 38.578680203045685,
-        "Matière organique": 4.046585659986996,
         "pH_eau": 6.359221895850013,
         "pH_tampon": 6.6700283704923695,
         "Phosphore": 109.09147714861436,
         "Potassium": 69.11607982198888,
         "ISP1": 4.071487124612648,
         "Besoin_en_chaux": 2.2048951048951064,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 4.046585659986996
       },
       {
         "code": "91",
@@ -51700,14 +51700,14 @@
         "Magnesium": 225.88073926404186,
         "Manganèse": 16.17141417877645,
         "MO4": 63.063763608087086,
-        "Matière organique": 5.312972374502467,
         "pH_eau": 6.223618572544906,
         "pH_tampon": 6.64558798558294,
         "Phosphore": 113.11436522196706,
         "Potassium": 181.1857596290129,
         "ISP1": 5.149207036038413,
         "Besoin_en_chaux": 2.7829670329670346,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 5.312972374502467
       },
       {
         "code": "92",
@@ -51720,14 +51720,14 @@
         "Magnesium": 205.11752927851342,
         "Manganèse": 8.103200174787048,
         "MO4": 73.54160906828864,
-        "Matière organique": 6.095409081193532,
         "pH_eau": 5.4759091659710935,
         "pH_tampon": 6.235519777771726,
         "Phosphore": 92.55280722974466,
         "Potassium": 180.44534593750703,
         "ISP1": 3.308947821431519,
         "Besoin_en_chaux": 6.613627254509019,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 6.095409081193532
       },
       {
         "code": "93",
@@ -51740,14 +51740,14 @@
         "Magnesium": 335.4025999857786,
         "Manganèse": 11.76747501156934,
         "MO4": 83.18197900695837,
-        "Matière organique": 6.736993292389786,
         "pH_eau": 6.12517214110005,
         "pH_tampon": 6.6305106474260365,
         "Phosphore": 87.56190852798014,
         "Potassium": 352.3879950401112,
         "ISP1": 3.330251833887923,
         "Besoin_en_chaux": 3.029327098263089,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 6.736993292389786
       },
       {
         "code": "941",
@@ -51760,14 +51760,14 @@
         "Magnesium": 314.03934398006044,
         "Manganèse": 13.318101518701724,
         "MO4": 81.9599109131403,
-        "Matière organique": 7.0483310831600186,
         "pH_eau": 6.151465406019707,
         "pH_tampon": 6.534102506721182,
         "Phosphore": 80.09818225408966,
         "Potassium": 365.6891744983085,
         "ISP1": 2.91607588191323,
         "Besoin_en_chaux": 4.470833333333335,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 7.0483310831600186
       },
       {
         "code": "942",
@@ -51780,14 +51780,14 @@
         "Magnesium": 364.75655267910895,
         "Manganèse": 12.385212787108319,
         "MO4": 88.49407783417935,
-        "Matière organique": 7.72023237789489,
         "pH_eau": 6.056609479121937,
         "pH_tampon": 6.365607813991082,
         "Phosphore": 69.22157255711171,
         "Potassium": 321.78215508028734,
         "ISP1": 2.2488177145989554,
         "Besoin_en_chaux": 5.9846902654867264,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 7.72023237789489
       },
       {
         "code": "95",
@@ -51800,14 +51800,14 @@
         "Magnesium": 138.24945996569573,
         "Manganèse": 7.66875162889017,
         "MO4": 75.29239766081871,
-        "Matière organique": 6.579576211283156,
         "pH_eau": 5.812881113248442,
         "pH_tampon": 6.207271392248468,
         "Phosphore": 52.86795763236751,
         "Potassium": 138.34004559888902,
         "ISP1": 1.6631727814314572,
         "Besoin_en_chaux": 7.094603174603176,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 6.579576211283156
       },
       {
         "code": "96",
@@ -51820,14 +51820,14 @@
         "Magnesium": 117.60041531316979,
         "Manganèse": 7.238648634370701,
         "MO4": 57.18654434250765,
-        "Matière organique": 5.153954548207542,
         "pH_eau": 5.346808586172538,
         "pH_tampon": 6.13757901676331,
         "Phosphore": 114.09815004869002,
         "Potassium": 125.92787121691997,
         "ISP1": 5.262382986690097,
         "Besoin_en_chaux": 7.996159874608151,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 5.153954548207542
       },
       {
         "code": "971",
@@ -51840,14 +51840,14 @@
         "Magnesium": 262.5551067613244,
         "Manganèse": 27.8045251428173,
         "MO4": 69.23076923076923,
-        "Matière organique": 8.065789823122278,
         "pH_eau": 5.4692888067759915,
         "pH_tampon": 6.163982810615876,
         "Phosphore": 100.53106710790905,
         "Potassium": 150.74683883332008,
         "ISP1": 8.731807179384916,
         "Besoin_en_chaux": 7.304166666666667,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 8.065789823122278
       },
       {
         "code": "981",
@@ -51860,14 +51860,14 @@
         "Magnesium": 118.92480361690275,
         "Manganèse": 4.769309351912134,
         "MO4": 76.71232876712328,
-        "Matière organique": 5.761310070525976,
         "pH_eau": 5.5401702342715105,
         "pH_tampon": 6.0379147610976185,
         "Phosphore": 86.69440790994373,
         "Potassium": 68.09979442889832,
         "ISP1": 3.944157078635956,
         "Besoin_en_chaux": 9.057575757575759,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 5.761310070525976
       },
       {
         "code": "991",
@@ -51880,14 +51880,14 @@
         "Magnesium": 443.7339390483646,
         "Manganèse": 37.71244896561791,
         "MO4": 29.82456140350877,
-        "Matière organique": 4.03127704680707,
         "pH_eau": 6.232325109975682,
         "pH_tampon": 6.895075031226613,
         "Phosphore": 101.85108002172346,
         "Potassium": 444.84728694907767,
         "ISP1": 5.567456437794828,
         "Besoin_en_chaux": 1.9734513274336294,
-        "groupe": "MRC"
+        "groupe": "MRC",
+        "Matiere_organique": 4.03127704680707
       }
     ]
   },
@@ -56104,14 +56104,14 @@
         "Fer": 224.8088761627195,
         "Magnesium": 272.85417984008865,
         "Manganèse": 30.951301515102408,
-        "Matière organique": 6.664181384393606,
         "pH_eau": 6.203736127723989,
         "pH_tampon": 6.559886323378374,
         "Phosphore": 59.357871246337886,
         "Potassium": 190.55043334960942,
         "Besoin_en_chaux": 0.0,
         "ISP1": 3.0006760373806696,
-        "code": "01"
+        "code": "01",
+        "Matiere_organique": 6.664181384393606
       },
       {
         "n": 15322,
@@ -56122,14 +56122,14 @@
         "Fer": 199.49404756717502,
         "Magnesium": 245.2909631727295,
         "Manganèse": 8.527516732555,
-        "Matière organique": 5.766977617888516,
         "pH_eau": 6.04,
         "pH_tampon": 6.53,
         "Phosphore": 65.298693014212,
         "Potassium": 252.727697458085,
         "Besoin_en_chaux": 0.0,
         "ISP1": 2.2369885314802076,
-        "code": "02"
+        "code": "02",
+        "Matiere_organique": 5.766977617888516
       },
       {
         "n": 19946,
@@ -56140,14 +56140,14 @@
         "Fer": 227.57186889648398,
         "Magnesium": 206.85615259297595,
         "Manganèse": 14.251994311809549,
-        "Matière organique": 5.19514599269871,
         "pH_eau": 6.09,
         "pH_tampon": 6.48,
         "Phosphore": 89.65176353240966,
         "Potassium": 200.3198123016357,
         "Besoin_en_chaux": 0.0,
         "ISP1": 3.5669708899423473,
-        "code": "03"
+        "code": "03",
+        "Matiere_organique": 5.19514599269871
       },
       {
         "n": 20376,
@@ -56158,14 +56158,14 @@
         "Fer": 224.04685290636002,
         "Magnesium": 244.12199859619153,
         "Manganèse": 9.938055514679,
-        "Matière organique": 4.703105059714353,
         "pH_eau": 6.21,
         "pH_tampon": 6.56,
         "Phosphore": 80.60502325094276,
         "Potassium": 203.55207885742186,
         "Besoin_en_chaux": 0.0,
         "ISP1": 3.098151671185001,
-        "code": "04"
+        "code": "04",
+        "Matiere_organique": 4.703105059714353
       },
       {
         "n": 56815,
@@ -56176,14 +56176,14 @@
         "Fer": 230.65627098083502,
         "Magnesium": 213.10545083618078,
         "Manganèse": 35.35856151580809,
-        "Matière organique": 5.897447895050425,
         "pH_eau": 6.23,
         "pH_tampon": 6.56,
         "Phosphore": 87.8916670524167,
         "Potassium": 148.64403762817378,
         "Besoin_en_chaux": 0.0,
         "ISP1": 3.855856938798975,
-        "code": "05"
+        "code": "05",
+        "Matiere_organique": 5.897447895050425
       },
       {
         "n": 1677,
@@ -56194,14 +56194,14 @@
         "Fer": 217.73401669308,
         "Magnesium": 542.040360868541,
         "Manganèse": 20.160723209381132,
-        "Matière organique": 4.88137758805933,
         "pH_eau": 6.65,
         "pH_tampon": 6.99,
         "Phosphore": 142.103136,
         "Potassium": 249.82896136474545,
         "Besoin_en_chaux": 0.0,
         "ISP1": 7.059322010550272,
-        "code": "06"
+        "code": "06",
+        "Matiere_organique": 4.88137758805933
       },
       {
         "n": 7971,
@@ -56212,14 +56212,14 @@
         "Fer": 212.28710937500003,
         "Magnesium": 378.4750976562505,
         "Manganèse": 14.79328599572181,
-        "Matière organique": 5.130417131838026,
         "pH_eau": 6.1,
         "pH_tampon": 6.499972560645783,
         "Phosphore": 60.130559999999996,
         "Potassium": 187.13791198730476,
         "Besoin_en_chaux": 0.0,
         "ISP1": 2.337481464158525,
-        "code": "07"
+        "code": "07",
+        "Matiere_organique": 5.130417131838026
       },
       {
         "n": 2442,
@@ -56230,14 +56230,14 @@
         "Fer": 274.894409179688,
         "Magnesium": 765.8573620605466,
         "Manganèse": 14.2081010341644,
-        "Matière organique": 6.65838619527126,
         "pH_eau": 5.85,
         "pH_tampon": 6.31,
         "Phosphore": 33.80297475373979,
         "Potassium": 279.6337152,
         "Besoin_en_chaux": 0.0,
         "ISP1": 1.3790723155427251,
-        "code": "08"
+        "code": "08",
+        "Matiere_organique": 6.65838619527126
       },
       {
         "n": 1437,
@@ -56248,14 +56248,14 @@
         "Fer": 196.65743923187281,
         "Magnesium": 50.591123199462935,
         "Manganèse": 4.4910150319337845,
-        "Matière organique": 5.211978524907669,
         "pH_eau": 5.51,
         "pH_tampon": 6.11,
         "Phosphore": 55.07491265869134,
         "Potassium": 88.94003295898447,
         "Besoin_en_chaux": 0.0,
         "ISP1": 1.5138446712261577,
-        "code": "09"
+        "code": "09",
+        "Matiere_organique": 5.211978524907669
       },
       {
         "n": 116,
@@ -56266,14 +56266,14 @@
         "Fer": 250.69389345550502,
         "Magnesium": 236.032243382018,
         "Manganèse": 14.3518775769945,
-        "Matière organique": 3.42081048374006,
         "pH_eau": 6.08,
         "pH_tampon": 6.86,
         "Phosphore": 98.60859946447664,
         "Potassium": 170.94438028898952,
         "Besoin_en_chaux": 0.0,
         "ISP1": 4.344176847017586,
-        "code": "10"
+        "code": "10",
+        "Matiere_organique": 3.42081048374006
       },
       {
         "n": 4545,
@@ -56284,14 +56284,14 @@
         "Fer": 196.88152599334694,
         "Magnesium": 148.3970210266113,
         "Manganèse": 34.259,
-        "Matière organique": 5.73038373424961,
         "pH_eau": 5.95,
         "pH_tampon": 6.48,
         "Phosphore": 39.66356735229481,
         "Potassium": 123.614285388931,
         "Besoin_en_chaux": 0.0,
         "ISP1": 1.866910553470924,
-        "code": "11"
+        "code": "11",
+        "Matiere_organique": 5.73038373424961
       },
       {
         "n": 109200,
@@ -56302,14 +56302,14 @@
         "Fer": 235.05773162841837,
         "Magnesium": 225.63079975830124,
         "Manganèse": 28.086047172546444,
-        "Matière organique": 6.211496398428686,
         "pH_eau": 6.15,
         "pH_tampon": 6.53,
         "Phosphore": 104.27521545410153,
         "Potassium": 167.4147762451171,
         "Besoin_en_chaux": 0.0,
         "ISP1": 4.557567437329836,
-        "code": "12"
+        "code": "12",
+        "Matiere_organique": 6.211496398428686
       },
       {
         "n": 2521,
@@ -56320,14 +56320,14 @@
         "Fer": 232.54100075749,
         "Magnesium": 608.89886716241,
         "Manganèse": 33.30453585557315,
-        "Matière organique": 3.5626774052108576,
         "pH_eau": 7.14,
         "pH_tampon": 7.46,
         "Phosphore": 202.563333813279,
         "Potassium": 333.709630517939,
         "Besoin_en_chaux": 0.0,
         "ISP1": 10.674123759201319,
-        "code": "13"
+        "code": "13",
+        "Matiere_organique": 3.5626774052108576
       },
       {
         "n": 52766,
@@ -56338,14 +56338,14 @@
         "Fer": 236.1514538968,
         "Magnesium": 368.7937460908198,
         "Manganèse": 12.91712956643335,
-        "Matière organique": 4.039591120604157,
         "pH_eau": 6.31,
         "pH_tampon": 6.64,
         "Phosphore": 115.48823849942622,
         "Potassium": 246.99307835815472,
         "Besoin_en_chaux": 0.0,
         "ISP1": 4.899077280891341,
-        "code": "14"
+        "code": "14",
+        "Matiere_organique": 4.039591120604157
       },
       {
         "n": 17375,
@@ -56356,14 +56356,14 @@
         "Fer": 211.58928918838527,
         "Magnesium": 732.9512233886712,
         "Manganèse": 15.000740873486,
-        "Matière organique": 5.001778806819365,
         "pH_eau": 6.45,
         "pH_tampon": 6.61,
         "Phosphore": 89.61249427795416,
         "Potassium": 283.9519761657724,
         "Besoin_en_chaux": 0.0,
         "ISP1": 3.7276036523526965,
-        "code": "15"
+        "code": "15",
+        "Matiere_organique": 5.001778806819365
       },
       {
         "n": 124757,
@@ -56374,14 +56374,14 @@
         "Fer": 244.743891525269,
         "Magnesium": 497.685764504186,
         "Manganèse": 19.551435548064802,
-        "Matière organique": 4.005976946065194,
         "pH_eau": 6.464,
         "pH_tampon": 6.8,
         "Phosphore": 115.0371271362305,
         "Potassium": 258.0517721557628,
         "Besoin_en_chaux": 0.0,
         "ISP1": 5.747206594850792,
-        "code": "16"
+        "code": "16",
+        "Matiere_organique": 4.005976946065194
       },
       {
         "n": 98649,
@@ -56392,14 +56392,14 @@
         "Fer": 219.07391804856,
         "Magnesium": 201.55011901855468,
         "Manganèse": 15.45707273483277,
-        "Matière organique": 4.16104857169734,
         "pH_eau": 6.23,
         "pH_tampon": 6.69,
         "Phosphore": 108.58454132080084,
         "Potassium": 143.476839315613,
         "Besoin_en_chaux": 0.0,
         "ISP1": 4.731953347416211,
-        "code": "17"
+        "code": "17",
+        "Matiere_organique": 4.16104857169734
       }
     ],
     "moyenne": [
@@ -60616,14 +60616,14 @@
         "Magnesium": 327.79383331965647,
         "Manganèse": 37.87257572416508,
         "MO4": 90.33980437318657,
-        "Matière organique": 7.236537409244807,
         "pH_eau": 6.183836686339267,
         "pH_tampon": 6.563844934370962,
         "Phosphore": 90.48758041616547,
         "Potassium": 247.74262480094535,
         "ISP1": 4.618100632519958,
         "Besoin_en_chaux": 3.3565287172884077,
-        "groupe": "Région"
+        "groupe": "Région",
+        "Matiere_organique": 7.236537409244807
       },
       {
         "code": "02",
@@ -60636,14 +60636,14 @@
         "Magnesium": 294.6851009609022,
         "Manganèse": 11.427491437394147,
         "MO4": 79.31462140992167,
-        "Matière organique": 6.531286067285418,
         "pH_eau": 5.97979008110634,
         "pH_tampon": 6.518917408705996,
         "Phosphore": 89.5245026394815,
         "Potassium": 297.39540897434443,
         "ISP1": 3.4000035057000444,
         "Besoin_en_chaux": 4.104039472785632,
-        "groupe": "Région"
+        "groupe": "Région",
+        "Matiere_organique": 6.531286067285418
       },
       {
         "code": "03",
@@ -60656,14 +60656,14 @@
         "Magnesium": 267.2192780241277,
         "Manganèse": 19.651480070585638,
         "MO4": 72.20996691065878,
-        "Matière organique": 5.708284723496286,
         "pH_eau": 6.089993743197331,
         "pH_tampon": 6.521521709988447,
         "Phosphore": 135.38092990559727,
         "Potassium": 249.63037422304572,
         "ISP1": 6.189303271559481,
         "Besoin_en_chaux": 4.092867136780839,
-        "groupe": "Région"
+        "groupe": "Région",
+        "Matiere_organique": 5.708284723496286
       },
       {
         "code": "04",
@@ -60676,14 +60676,14 @@
         "Magnesium": 347.53409375666905,
         "Manganèse": 12.759317297509533,
         "MO4": 69.22850412249706,
-        "Matière organique": 5.197201180409363,
         "pH_eau": 6.180234070281027,
         "pH_tampon": 6.557967859068393,
         "Phosphore": 114.81697088723239,
         "Potassium": 249.15249725898047,
         "ISP1": 4.522236904539508,
         "Besoin_en_chaux": 3.253143418467585,
-        "groupe": "Région"
+        "groupe": "Région",
+        "Matiere_organique": 5.197201180409363
       },
       {
         "code": "05",
@@ -60696,14 +60696,14 @@
         "Magnesium": 254.70676141570792,
         "Manganèse": 42.88311519941019,
         "MO4": 83.69239976062238,
-        "Matière organique": 6.275321683645352,
         "pH_eau": 6.212476162844081,
         "pH_tampon": 6.550631399857503,
         "Phosphore": 120.54483899180933,
         "Potassium": 184.5314427578678,
         "ISP1": 5.896327716328391,
         "Besoin_en_chaux": 3.557861264237148,
-        "groupe": "Région"
+        "groupe": "Région",
+        "Matiere_organique": 6.275321683645352
       },
       {
         "code": "06",
@@ -60716,14 +60716,14 @@
         "Magnesium": 674.1374686238747,
         "Manganèse": 29.407609496788236,
         "MO4": 62.9695885509839,
-        "Matière organique": 6.638644291509752,
         "pH_eau": 6.607588104921507,
         "pH_tampon": 7.00783629744458,
         "Phosphore": 187.58416274025916,
         "Potassium": 355.9026695018678,
         "ISP1": 18.136549391925374,
         "Besoin_en_chaux": 1.6290983606557385,
-        "groupe": "Région"
+        "groupe": "Région",
+        "Matiere_organique": 6.638644291509752
       },
       {
         "code": "07",
@@ -60736,14 +60736,14 @@
         "Magnesium": 523.0225796988329,
         "Manganèse": 19.629128679391243,
         "MO4": 78.40923347133358,
-        "Matière organique": 5.472023850813075,
         "pH_eau": 6.126722544704274,
         "pH_tampon": 6.515710076483594,
         "Phosphore": 92.70128580774082,
         "Potassium": 269.3685980062931,
         "ISP1": 4.402703122327928,
         "Besoin_en_chaux": 3.944511331444761,
-        "groupe": "Région"
+        "groupe": "Région",
+        "Matiere_organique": 5.472023850813075
       },
       {
         "code": "08",
@@ -60756,14 +60756,14 @@
         "Magnesium": 797.5424738107813,
         "Manganèse": 17.23065792295636,
         "MO4": 89.9631298648095,
-        "Matière organique": 7.494868511299279,
         "pH_eau": 5.9049613562743835,
         "pH_tampon": 6.33601616207428,
         "Phosphore": 52.406079421700795,
         "Potassium": 323.50040135225015,
         "ISP1": 2.5149296118332924,
         "Besoin_en_chaux": 5.742866435385951,
-        "groupe": "Région"
+        "groupe": "Région",
+        "Matiere_organique": 7.494868511299279
       },
       {
         "code": "09",
@@ -60776,14 +60776,14 @@
         "Magnesium": 130.11916887347058,
         "Manganèse": 7.70675490074767,
         "MO4": 67.01461377870564,
-        "Matière organique": 5.916076947526086,
         "pH_eau": 5.580856980717686,
         "pH_tampon": 6.165512825986397,
         "Phosphore": 83.31549942561877,
         "Potassium": 129.34733595579794,
         "ISP1": 3.5449959006255205,
         "Besoin_en_chaux": 7.617268041237114,
-        "groupe": "Région"
+        "groupe": "Région",
+        "Matiere_organique": 5.916076947526086
       },
       {
         "code": "10",
@@ -60796,14 +60796,14 @@
         "Magnesium": 443.7339390483646,
         "Manganèse": 37.71244896561791,
         "MO4": 29.82456140350877,
-        "Matière organique": 4.03127704680707,
         "pH_eau": 6.232325109975682,
         "pH_tampon": 6.895075031226613,
         "Phosphore": 101.85108002172346,
         "Potassium": 444.84728694907767,
         "ISP1": 5.567456437794828,
         "Besoin_en_chaux": 1.9734513274336294,
-        "groupe": "Région"
+        "groupe": "Région",
+        "Matiere_organique": 4.03127704680707
       },
       {
         "code": "11",
@@ -60816,14 +60816,14 @@
         "Magnesium": 187.3736448953818,
         "Manganèse": 41.720731602104465,
         "MO4": 84.4004400440044,
-        "Matière organique": 6.191361410086765,
         "pH_eau": 6.005309631885252,
         "pH_tampon": 6.492193734052879,
         "Phosphore": 67.17797566827181,
         "Potassium": 159.80140801685465,
         "ISP1": 3.4863391947493763,
         "Besoin_en_chaux": 3.9794183445190177,
-        "groupe": "Région"
+        "groupe": "Région",
+        "Matiere_organique": 6.191361410086765
       },
       {
         "code": "12",
@@ -60836,14 +60836,14 @@
         "Magnesium": 289.29618616434624,
         "Manganèse": 36.70632203429281,
         "MO4": 89.02086118793385,
-        "Matière organique": 6.642174428164128,
         "pH_eau": 6.11747943044648,
         "pH_tampon": 6.537254906694779,
         "Phosphore": 136.6664548570773,
         "Potassium": 216.91106031280245,
         "ISP1": 6.447409740493787,
         "Besoin_en_chaux": 3.789600635009775,
-        "groupe": "Région"
+        "groupe": "Région",
+        "Matiere_organique": 6.642174428164128
       },
       {
         "code": "13",
@@ -60856,14 +60856,14 @@
         "Magnesium": 751.0610906768875,
         "Manganèse": 48.55869027509595,
         "MO4": 37.40579135263784,
-        "Matière organique": 3.9105896690402475,
         "pH_eau": 6.98592211710169,
         "pH_tampon": 7.375150208200854,
         "Phosphore": 240.42568168148784,
         "Potassium": 352.6650401422272,
         "ISP1": 13.497700839379213,
         "Besoin_en_chaux": 0.5111064543168486,
-        "groupe": "Région"
+        "groupe": "Région",
+        "Matiere_organique": 3.9105896690402475
       },
       {
         "code": "14",
@@ -60876,14 +60876,14 @@
         "Magnesium": 494.1049559337912,
         "Manganèse": 16.900683568692962,
         "MO4": 51.164641889202656,
-        "Matière organique": 4.424752493829608,
         "pH_eau": 6.297270871584542,
         "pH_tampon": 6.678567151089765,
         "Phosphore": 168.74459594533727,
         "Potassium": 288.70054301312337,
         "ISP1": 7.029017953694589,
         "Besoin_en_chaux": 2.5853996564625064,
-        "groupe": "Région"
+        "groupe": "Région",
+        "Matiere_organique": 4.424752493829608
       },
       {
         "code": "15",
@@ -60896,14 +60896,14 @@
         "Magnesium": 800.69717891809,
         "Manganèse": 25.6053963240396,
         "MO4": 74.32370208357315,
-        "Matière organique": 5.487020345731266,
         "pH_eau": 6.447399832694994,
         "pH_tampon": 6.747846998589423,
         "Phosphore": 126.64759115869153,
         "Potassium": 322.0641457302305,
         "ISP1": 5.633521130025082,
         "Besoin_en_chaux": 2.77517751926273,
-        "groupe": "Région"
+        "groupe": "Région",
+        "Matiere_organique": 5.487020345731266
       },
       {
         "code": "16",
@@ -60916,14 +60916,14 @@
         "Magnesium": 640.5971848313594,
         "Manganèse": 27.481585951497873,
         "MO4": 50.168749649273295,
-        "Matière organique": 4.4944802949612335,
         "pH_eau": 6.470509408873587,
         "pH_tampon": 6.85957161536283,
         "Phosphore": 152.43066473526454,
         "Potassium": 302.6616008169171,
         "ISP1": 8.590046927975113,
         "Besoin_en_chaux": 1.580015147589342,
-        "groupe": "Région"
+        "groupe": "Région",
+        "Matiere_organique": 4.4944802949612335
       },
       {
         "code": "17",
@@ -60936,14 +60936,14 @@
         "Magnesium": 268.1432611614126,
         "Manganèse": 24.964574635332088,
         "MO4": 53.345768244346004,
-        "Matière organique": 4.706976129218885,
         "pH_eau": 6.172936976073425,
         "pH_tampon": 6.692252809114507,
         "Phosphore": 138.32009310878314,
         "Potassium": 177.91961408306742,
         "ISP1": 6.22992806903132,
         "Besoin_en_chaux": 2.29645555011541,
-        "groupe": "Région"
+        "groupe": "Région",
+        "Matiere_organique": 4.706976129218885
       }
     ]
   },
