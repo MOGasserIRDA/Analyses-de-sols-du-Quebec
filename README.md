@@ -7,8 +7,8 @@ Ce tableau de bord permet de visualiser et de comparer les données d'analyses d
 
 ### Indicateurs présentés
 
-- **P, K, Ca, Mg** Phosphore, potassium, calcium, magnésium extraits en solution Mehlich-3 et exprimés en kg/ha
-- **Al, Fe, Mn, Cu** Aluminium, fer, manganèse, cuivre extraits en solution Mehlich-3 et exprimés en ppm ou mg/kg 
+- **P, K, Ca, Mg** - Phosphore, potassium, calcium, magnésium extraits en solution Mehlich-3 et exprimés en kg/ha
+- **Al, Fe, Mn, Cu** - Aluminium, fer, manganèse, cuivre extraits en solution Mehlich-3 et exprimés en ppm ou mg/kg 
 
 - **pH eau** - pH mesuré dans un ratio sol-eau de 1:1; exprime le niveau d'acidité du sol
 - **pH tampon** - pH mesuré en solution SMP; exprime la réserve d'acidité du sol
@@ -17,8 +17,8 @@ Ce tableau de bord permet de visualiser et de comparer les données d'analyses d
 - **Matière organique (%)**  - Teneur en matière organique du sol
 - **Analyses >= 4% MO (%)**  - Pourcentage d'échantillons de sol avec plus de 4 % de MO, le seuil ciblé dans le Plan d'agriculture durable
 
-- **ISP - G1** (%) - Indice de saturation en phosphore et risque environnemental dans les sols du groupe textural G1 - argileux  
-- **ISP - G2-G3** (%) - Indice de saturation en phosphore et risque environnemental dans les sols des groupes texturaux G2-G3 - loamaux à sableux  
+- **ISP - G1** (%) - Indice de saturation en phosphore et risque environnemental dans les sols lourds (groupe textural G1)
+- **ISP - G2-G3** (%) - Indice de saturation en phosphore et risque environnemental dans les sols moyens et légers (groupes texturaux G2 et G3)
 - **CEC (méq/100g)**  - Capacité d'échange cationique calculée avec la somme des bases et le pH tampon
 
 ### Fonctionnalités
