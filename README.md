@@ -1,10 +1,9 @@
 # Analyse de sols du Québec (2007-2024)
 
-Tableaux de bord interactifs présentant l'évolution spatio-temporelle d'indicateurs de la chimie-fertilité des sols agricoles du Québec, basés sur plus de 600 000 échantillons de sols provenant de laboratoires privés.
-
+Tableaux de bord interactifs présentant l'évolution spatio-temporelle d'indicateurs de chimie-fertilité, basés sur les analyses de plus de 600 000 échantillons de sols agricoles du Québec.
 ## Aperçu
 
-Ce tableau de bord permet de visualiser et comparer les données d'analyses de sols à l'échelle des régions administratives et des MRC du Québec, de 2007 à 2024. Les données provenant de deux laboratoires privés ont été acquises au cours du temps par le MAPAQ et sont présentées ici dans le cadre de son mécanisme mis en oeuvre pour suivre l'état de santé des sols agricoles du Québec.
+Ce tableau de bord permet de visualiser et de comparer les données d'analyses de sols à l'échelle des régions administratives et des MRC du Québec, de 2007 à 2024. Les données provenant de deux laboratoires privés ont été acquises au cours du temps par le MAPAQ et sont présentées ici dans le cadre du mécanisme mis en oeuvre pour suivre l'état de santé des sols agricoles du Québec.
 
 ### Indicateurs présentés
 
